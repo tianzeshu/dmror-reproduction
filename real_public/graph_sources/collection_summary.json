@@ -1,0 +1,111 @@
+{
+  "status": "collected",
+  "retrieval_finished_at_utc": "2026-10-05T11:58:12.288463+00:00",
+  "license": "CC0-1.0",
+  "official_documentation": [
+    "https://www.wikidata.org/wiki/Wikidata:Data_access",
+    "https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits",
+    "https://www.mediawiki.org/wiki/Wikidata_query_service/User_Manual",
+    "https://www.wikidata.org/wiki/Wikidata:REST_API"
+  ],
+  "is_synthetic": false,
+  "entity_records": 6524,
+  "relation_statement_records": 40161,
+  "all_statement_records": 391667,
+  "resolved_relation_statement_records": 24166,
+  "uncollected_target_qids": 9076,
+  "seed_qids": 2773,
+  "related_requested": 3758,
+  "related_candidates": 3758,
+  "selectors": [
+    {
+      "domain": "Auto",
+      "query": "SELECT DISTINCT ?item WHERE { { VALUES ?industry { wd:Q190117 } ?item wdt:P452 ?industry . } UNION { VALUES ?class { wd:Q786820 } ?item wdt:P31 ?class . } } ORDER BY ?item LIMIT 1500",
+      "source_url": "https://query.wikidata.org/sparql?query=SELECT+DISTINCT+%3Fitem+WHERE+%7B+%7B+VALUES+%3Findustry+%7B+wd%3AQ190117+%7D+%3Fitem+wdt%3AP452+%3Findustry+.+%7D+UNION+%7B+VALUES+%3Fclass+%7B+wd%3AQ786820+%7D+%3Fitem+wdt%3AP31+%3Fclass+.+%7D+%7D+ORDER+BY+%3Fitem+LIMIT+1500&format=json",
+      "raw_sha256": "b371ba8069b54576f7c6bcec2f42806d6fe91bd5435f82e46909cdc0ceccfbff",
+      "status": 200,
+      "count": 1500,
+      "limit": 1500,
+      "possibly_truncated": true
+    },
+    {
+      "domain": "Semi",
+      "query": "SELECT DISTINCT ?item WHERE { { VALUES ?industry { wd:Q2986369 } ?item wdt:P452 ?industry . } } ORDER BY ?item LIMIT 1500",
+      "source_url": "https://query.wikidata.org/sparql?query=SELECT+DISTINCT+%3Fitem+WHERE+%7B+%7B+VALUES+%3Findustry+%7B+wd%3AQ2986369+%7D+%3Fitem+wdt%3AP452+%3Findustry+.+%7D+%7D+ORDER+BY+%3Fitem+LIMIT+1500&format=json",
+      "raw_sha256": "a805df3979858f31450f60da75bf5de2a761b7a8ca284ad759c7425ea2fb4f50",
+      "status": 200,
+      "count": 231,
+      "limit": 1500,
+      "possibly_truncated": false
+    },
+    {
+      "domain": "Energy",
+      "query": "SELECT DISTINCT ?item WHERE { { VALUES ?industry { wd:Q2151621 wd:Q2316331 } ?item wdt:P452 ?industry . } } ORDER BY ?item LIMIT 1500",
+      "source_url": "https://query.wikidata.org/sparql?query=SELECT+DISTINCT+%3Fitem+WHERE+%7B+%7B+VALUES+%3Findustry+%7B+wd%3AQ2151621+wd%3AQ2316331+%7D+%3Fitem+wdt%3AP452+%3Findustry+.+%7D+%7D+ORDER+BY+%3Fitem+LIMIT+1500&format=json",
+      "raw_sha256": "df3f99d23e971eee6034ce546b808d28de4279eb4282a08d5dbcf8ea3b017be2",
+      "status": 200,
+      "count": 1033,
+      "limit": 1500,
+      "possibly_truncated": false
+    }
+  ],
+  "property_counts": {
+    "has_part": 1544,
+    "part_of": 1250,
+    "instance_of": 10973,
+    "located_in_or_next_to_water": 1257,
+    "named_after": 585,
+    "country": 6140,
+    "located_in_administrative_entity": 3093,
+    "subsidiary": 2956,
+    "industry": 4033,
+    "parent_organization": 1368,
+    "product_or_material_produced": 1724,
+    "headquarters": 3271,
+    "location": 99,
+    "manufacturer": 96,
+    "owned_by": 1641,
+    "country_of_origin": 75,
+    "operator": 56
+  },
+  "role_counts": {
+    "geographic_object": 1347,
+    "organization_related": 1661,
+    "organization_candidate": 2763,
+    "product_or_material": 400,
+    "industry": 273,
+    "material_seed": 5,
+    "industry_or_organization_class": 5
+  },
+  "domain_entity_counts": {
+    "Auto": 2967,
+    "Energy": 3097,
+    "Semi": 860
+  },
+  "failed_requests": [],
+  "limitations": [
+    "Wikidata is a real community knowledge base, not a gold-standard supplier dependency/risk dataset.",
+    "Current statements and modified times are not historical knowledge-availability dates.",
+    "Only preserved non-deprecated item-valued statements become graph relations; no random relation or inferred supplier link is added.",
+    "Industry query results are candidates; roles retain their claim-derived meanings instead of forcing all targets into the five paper types.",
+    "Missing targets, corporate risk labels, resilience capacities, future failure events and causal paths remain missing."
+  ],
+  "files": {
+    "entities.jsonl": {
+      "bytes": 8693140,
+      "sha256": "4d52d82c1f338c64c9f54cf0c3d749d431f762a46e0f873a289fe9425fdc986f"
+    },
+    "relations.jsonl": {
+      "bytes": 61621412,
+      "sha256": "bfdcdac86068c23cfbff8ef1518a3d044fb223087ffef1120be24f6c71f754ec"
+    },
+    "statements.jsonl": {
+      "bytes": 380704649,
+      "sha256": "429d80a7ee574b1cf1164270a9d5c31ee1bcbf117b6d138672c8b5887665fa8e"
+    },
+    "uncollected_targets.jsonl": {
+      "bytes": 1468827,
+      "sha256": "c98a9689fc45c7e6d417aa5fea3374440f85df139321e0bd53458f42f52f8a79"
+    }
+  }
+}

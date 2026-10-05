@@ -1,0 +1,32 @@
+[
+  {
+    "domain": "Auto",
+    "query": "SELECT DISTINCT ?item WHERE { { VALUES ?industry { wd:Q190117 } ?item wdt:P452 ?industry . } UNION { VALUES ?class { wd:Q786820 } ?item wdt:P31 ?class . } } ORDER BY ?item LIMIT 1500",
+    "source_url": "https://query.wikidata.org/sparql?query=SELECT+DISTINCT+%3Fitem+WHERE+%7B+%7B+VALUES+%3Findustry+%7B+wd%3AQ190117+%7D+%3Fitem+wdt%3AP452+%3Findustry+.+%7D+UNION+%7B+VALUES+%3Fclass+%7B+wd%3AQ786820+%7D+%3Fitem+wdt%3AP31+%3Fclass+.+%7D+%7D+ORDER+BY+%3Fitem+LIMIT+1500&format=json",
+    "raw_sha256": "b371ba8069b54576f7c6bcec2f42806d6fe91bd5435f82e46909cdc0ceccfbff",
+    "status": 200,
+    "count": 1500,
+    "limit": 1500,
+    "possibly_truncated": true
+  },
+  {
+    "domain": "Semi",
+    "query": "SELECT DISTINCT ?item WHERE { { VALUES ?industry { wd:Q2986369 } ?item wdt:P452 ?industry . } } ORDER BY ?item LIMIT 1500",
+    "source_url": "https://query.wikidata.org/sparql?query=SELECT+DISTINCT+%3Fitem+WHERE+%7B+%7B+VALUES+%3Findustry+%7B+wd%3AQ2986369+%7D+%3Fitem+wdt%3AP452+%3Findustry+.+%7D+%7D+ORDER+BY+%3Fitem+LIMIT+1500&format=json",
+    "raw_sha256": "a805df3979858f31450f60da75bf5de2a761b7a8ca284ad759c7425ea2fb4f50",
+    "status": 200,
+    "count": 231,
+    "limit": 1500,
+    "possibly_truncated": false
+  },
+  {
+    "domain": "Energy",
+    "query": "SELECT DISTINCT ?item WHERE { { VALUES ?industry { wd:Q2151621 wd:Q2316331 } ?item wdt:P452 ?industry . } } ORDER BY ?item LIMIT 1500",
+    "source_url": "https://query.wikidata.org/sparql?query=SELECT+DISTINCT+%3Fitem+WHERE+%7B+%7B+VALUES+%3Findustry+%7B+wd%3AQ2151621+wd%3AQ2316331+%7D+%3Fitem+wdt%3AP452+%3Findustry+.+%7D+%7D+ORDER+BY+%3Fitem+LIMIT+1500&format=json",
+    "raw_sha256": "df3f99d23e971eee6034ce546b808d28de4279eb4282a08d5dbcf8ea3b017be2",
+    "status": 200,
+    "count": 1033,
+    "limit": 1500,
+    "possibly_truncated": false
+  }
+]

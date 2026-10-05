@@ -1,0 +1,22 @@
+{
+  "status": "real_sources_collected_original_benchmark_not_ready",
+  "can_claim_original_sc_dataset_recovery": false,
+  "can_claim_exact_original_table1_counts": false,
+  "can_claim_original_paper_real_data_metrics": false,
+  "can_use_previous_synthetic_scores_for_this_data": false,
+  "generated_data_records": 0,
+  "observed_official_recall_events": 8090,
+  "observed_official_electric_disturbances": 2006,
+  "firm_risk_gold_label_count": 0,
+  "verified_negative_label_count": 0,
+  "causal_propagation_gold_path_count": 0,
+  "observed_resilience_buffer_attribute_count": 0,
+  "remaining_work": [
+    "Fix operational supply-chain risk definition and entity ontology",
+    "Review event-to-entity links and dated outcome evidence",
+    "Acquire validated supplier dependencies and buffer/resilience measurements",
+    "Obtain covered-window negatives or define an explicitly observed-event task",
+    "Establish historical publication/availability versions, not current snapshot dates",
+    "Build leakage-safe tensors only after those decisions; run and report new experiments separately"
+  ]
+}

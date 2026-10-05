@@ -1,0 +1,16 @@
+{
+  "zip_file": "raw/FLAT_RCL_POST_2010.zip",
+  "zip_sha256": "9a3b56b02d36322ecd0b74e84bc6459ee4cf82cc88c59b2cf86cf1e4c1f09471",
+  "crc_check": "passed",
+  "members": [
+    "FLAT_RCL_POST_2010.txt"
+  ],
+  "extracted": [
+    {
+      "zip_member": "FLAT_RCL_POST_2010.txt",
+      "local_file": "raw/FLAT_RCL_POST_2010.txt",
+      "bytes": 311382677,
+      "sha256": "8234e6772a3151a2d86b1cb588335cd408a5891c59a97eee3f0135ba43a1dffc"
+    }
+  ]
+}

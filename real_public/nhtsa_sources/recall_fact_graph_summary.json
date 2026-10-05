@@ -1,0 +1,35 @@
+{
+  "data_kind": "official_recall_fact_graph",
+  "synthetic_nodes": 0,
+  "synthetic_edges": 0,
+  "node_count": 32917,
+  "edge_count": 88959,
+  "node_types": {
+    "recall_reporting_manufacturer": 899,
+    "listed_recalled_product_manufacturer": 796,
+    "official_recall_campaign": 8090,
+    "recalled_make_model_year_product": 22547,
+    "official_component_descriptor": 585
+  },
+  "relation_types": {
+    "filed_official_recall": 8090,
+    "recalls_listed_product": 48437,
+    "identifies_component_descriptor": 9839,
+    "listed_manufacturer_for_recalled_product": 22593
+  },
+  "product_definition": "distinct literal (recall type, make, model, model year); 9999 denotes unknown/not-applicable year",
+  "manufacturer_identity": "literal official filer MFGNAME and listed manufacturer MFGTXT retained as separate source roles; no inferred aliases or parents",
+  "component_definition": "literal official COMPNAME descriptor; not an inferred material or physical supplier",
+  "edge_semantics": "only source-listed recall/product/manufacturer/component associations; no supply dependencies or risk-propagation truth",
+  "historical_limitation": "2026 source snapshot; report received dates 2018-2025; not guaranteed contemporaneous point-in-time text",
+  "files": {
+    "recall_fact_edges.jsonl": {
+      "bytes": 70977557,
+      "sha256": "24e8912435486e539f74a2ad745f903a60463d5a44ea51b6413d05ad021d1d1d"
+    },
+    "recall_fact_nodes.jsonl": {
+      "bytes": 23416966,
+      "sha256": "647fe836e295c1718b67cc466903e3222162d4d5210ec3e47d2d8170be086ce9"
+    }
+  }
+}

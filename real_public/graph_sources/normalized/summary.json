@@ -1,0 +1,162 @@
+{
+  "status": "real_public_wikidata_snapshot_normalized",
+  "completed_at_utc": "2026-10-05T12:04:38.088148+00:00",
+  "license": "CC0-1.0",
+  "is_synthetic": false,
+  "downloaded_entity_count": 6524,
+  "usable_real_entity_count": 6524,
+  "node_records": 6524,
+  "strict_type_counts": {
+    "firm": 1183,
+    "product": 114,
+    "material": 106,
+    "industry": 169,
+    "region": 1323,
+    "unclassified": 3629
+  },
+  "class_or_category_records": 928,
+  "fictional_or_hypothetical_excluded_records": 0,
+  "excluded_incident_relation_statements": 0,
+  "downloaded_selected_relation_statements": 40161,
+  "statement_records": 24166,
+  "unique_graph_facts": 24032,
+  "nonfictional_relation_statements_including_unresolved": 40161,
+  "nonfictional_unique_facts_including_unresolved": 39855,
+  "facts_with_both_entities_collected": 24032,
+  "closed_real_world_graph_facts": 24032,
+  "uncollected_object_qids": 9076,
+  "predicate_unique_fact_counts": {
+    "country": 4425,
+    "located_in_administrative_entity": 435,
+    "named_after": 81,
+    "instance_of": 6640,
+    "part_of": 367,
+    "subsidiary": 1145,
+    "industry": 3797,
+    "headquarters": 2807,
+    "has_part": 258,
+    "parent_organization": 1207,
+    "product_or_material_produced": 1456,
+    "location": 47,
+    "manufacturer": 90,
+    "owned_by": 1197,
+    "country_of_origin": 64,
+    "operator": 14,
+    "located_in_or_next_to_water": 2
+  },
+  "domain_candidate_counts": {
+    "Auto": {
+      "node_records": 2967,
+      "strict_type_counts": {
+        "firm": 259,
+        "product": 111,
+        "material": 32,
+        "industry": 63,
+        "region": 670,
+        "unclassified": 1832
+      },
+      "domain_membership": "selector candidate or one-hop relation to candidate; domains may overlap"
+    },
+    "Semi": {
+      "node_records": 860,
+      "strict_type_counts": {
+        "firm": 120,
+        "product": 1,
+        "material": 24,
+        "industry": 30,
+        "region": 173,
+        "unclassified": 512
+      },
+      "domain_membership": "selector candidate or one-hop relation to candidate; domains may overlap"
+    },
+    "Energy": {
+      "node_records": 3097,
+      "strict_type_counts": {
+        "firm": 815,
+        "product": 2,
+        "material": 43,
+        "industry": 120,
+        "region": 720,
+        "unclassified": 1397
+      },
+      "domain_membership": "selector candidate or one-hop relation to candidate; domains may overlap"
+    }
+  },
+  "supplier_dependency_edges": 0,
+  "observed_risk_labels": 0,
+  "unknown_risk_labels": 6524,
+  "historically_available_training_records": 0,
+  "limitations": [
+    "Actual current community facts; not recovered original SC data or exact Table 1 counts.",
+    "Five-type mapping uses only saved P31/P279 facts; unsupported or conflicting mappings remain unclassified.",
+    "Products/materials/industries may include classes or categories, explicitly marked entity_form.",
+    "Domain membership is candidate provenance and may overlap; it is not a guaranteed firm sector classification.",
+    "P1056 may name a product, material or service; it is not a product type label or Supplies edge.",
+    "Ownership, industry, location and manufacture facts are not supplier dependencies or causal risk edges.",
+    "All risk outcomes, resilience capacities and causal failure paths remain unknown.",
+    "No publication time is inferred from retrieval, revision, relationship-validity or reference-retrieval dates.",
+    "This October 2026 snapshot cannot be used as known-at-2018--2025 prediction input without historical provenance."
+  ],
+  "files": {
+    "all_nonfictional_relations_including_unresolved.jsonl": {
+      "bytes": 15594779,
+      "sha256": "a19bd69c1c3498f5beb08061319e3aed8b47136e4514e7c64c02671720670107"
+    },
+    "all_nonfictional_relation_statements.jsonl": {
+      "bytes": 68649587,
+      "sha256": "0248c6fb8111a73c3b4145fa74887b730c5f80093d325e0bc316ca258032185a"
+    },
+    "domain_auto_firm_candidates.jsonl": {
+      "bytes": 581919,
+      "sha256": "93409aa41ae7296cc2bf2005167430b1ba7cbe0bbcc3fad6808bfb3b7aace443"
+    },
+    "domain_energy_firm_candidates.jsonl": {
+      "bytes": 1957794,
+      "sha256": "20829815bb79df0dc181776fb556635b06869ad6cbc0ce812cec3fcbf64fc1b9"
+    },
+    "domain_semi_firm_candidates.jsonl": {
+      "bytes": 296505,
+      "sha256": "8a9eb2d1b431ea8806ce261683d3e60d870e0e4c266a48320699c36c5510b20a"
+    },
+    "downloaded_entities_audit.jsonl": {
+      "bytes": 13478809,
+      "sha256": "bab0d1130000c3ed166e4ce7bbc6326d5f717efbc50b341a93a8bfd31b153abc"
+    },
+    "excluded_entities.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "excluded_relation_statements.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "nodes.jsonl": {
+      "bytes": 13478809,
+      "sha256": "bab0d1130000c3ed166e4ce7bbc6326d5f717efbc50b341a93a8bfd31b153abc"
+    },
+    "relations.jsonl": {
+      "bytes": 9387784,
+      "sha256": "86243dd690a718b21df271394d734a3f4f23560f7d5443841d632e14dd2f892d"
+    },
+    "relation_statements.jsonl": {
+      "bytes": 42555747,
+      "sha256": "785f64ad75775276565cacaa3ddaa5fc73388a6896ae57ad207c8896628c33c4"
+    },
+    "risk_labels.jsonl": {
+      "bytes": 1226866,
+      "sha256": "e2f2eeff9bd1ba69dc9b7409a94b2e0b7e7cf89fd7353a09459c21371ac8c462"
+    },
+    "type_evidence.jsonl": {
+      "bytes": 17876269,
+      "sha256": "9c6026fd335ea5e4001b06fa6b6801d42814c69a1df7b8d2a63104ed1b02a391"
+    },
+    "unknown_targets.jsonl": {
+      "bytes": 1042252,
+      "sha256": "facef697e070d10ba3184cc880720ed4851037ac046f1ab62f586771db6f69fd"
+    },
+    "unresolved_relation_statements.jsonl": {
+      "bytes": 26093840,
+      "sha256": "6930e50d3cb82101b6c59690b8e2dd39d0e2468f9e3d2e9d73034f1faacb61a5"
+    }
+  }
+}

@@ -50,3 +50,8 @@ SIM 是合成实验；ICKG-Weak 是未来词汇报道代理任务。真实节点
 
 每个公开新数据集提供原始合成记录、可训练 NPZ、元数据和独立数量/时间验收报告。生成与计数定义见 `DATASET_TABLE1_SCALE.md`。哈希编码是明确披露的诊断特征，不能描述为已执行完整 LLM 提示编码。
 
+
+
+## v1.2.0 真实公开来源增补
+
+`real_public/` 是独立版本的真实来源采集代码与元数据，不属于 SIM、ICKG-Weak 或 Table 1 Synthetic。完整 v1.2.0 Release 包包含官方 NHTSA、EIA/DOE 数据文件、Wikidata CC0 API 响应和全部归一化数据；Release 另提供小型归一化数据包。Git 仅包含采集/处理代码、实际统计、来源和证据核验元数据，真实 JSONL/CSV gzip 不随 Git 克隆分发。数据按 [真实来源说明](REAL_PUBLIC_DATA.md) 中各自条件提供，工程 MIT 许可不替代第三方数据条件。没有加入旧新闻正文、未发表稿、模型权重或设备缓存。没有真实供应风险评估成绩；旧报告只对应其注明的历史数据。

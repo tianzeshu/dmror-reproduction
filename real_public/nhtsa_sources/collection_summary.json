@@ -1,0 +1,135 @@
+{
+  "source_agency": "NHTSA, U.S. Department of Transportation",
+  "data_kind": "actual_official_recall_records",
+  "synthetic_records": 0,
+  "generated_summaries": 0,
+  "collection_snapshot_utc": "2026-10-05T11:50:11.599222+00:00",
+  "date_filter_field": "RCDATE (report received date), not vehicle model year",
+  "date_range": [
+    "2018-01-01",
+    "2025-12-31"
+  ],
+  "raw_rows_total": 245719,
+  "raw_report_year_row_distribution": {
+    "2010": 5342,
+    "2011": 4141,
+    "2012": 3944,
+    "2013": 6124,
+    "2014": 6597,
+    "2015": 7843,
+    "2016": 7197,
+    "2017": 8665,
+    "2018": 7989,
+    "2019": 7097,
+    "2020": 14224,
+    "2021": 44304,
+    "2022": 31176,
+    "2023": 19478,
+    "2024": 35882,
+    "2025": 25549,
+    "2026": 10167
+  },
+  "selected_rows": 185699,
+  "unique_source_record_ids": 185699,
+  "unique_recall_campaigns": 8090,
+  "literal_manufacturer_names": 899,
+  "distinct_make_model_year_type_products": 22547,
+  "selected_row_year_distribution": {
+    "2018": 7989,
+    "2019": 7097,
+    "2020": 14224,
+    "2021": 44304,
+    "2022": 31176,
+    "2023": 19478,
+    "2024": 35882,
+    "2025": 25549
+  },
+  "campaign_year_distribution": {
+    "2018": 1033,
+    "2019": 963,
+    "2020": 881,
+    "2021": 1094,
+    "2022": 1051,
+    "2023": 1000,
+    "2024": 1073,
+    "2025": 995
+  },
+  "selected_row_recall_type_distribution": {
+    "V": 161929,
+    "E": 3529,
+    "T": 19983,
+    "C": 258
+  },
+  "campaign_recall_type_distribution": {
+    "V": 7230,
+    "E": 737,
+    "T": 93,
+    "C": 30
+  },
+  "recall_type_meanings": {
+    "V": "vehicle",
+    "E": "equipment",
+    "T": "tire",
+    "C": "child_restraint"
+  },
+  "source_text_encoding_counts": {
+    "utf-8": 185699
+  },
+  "missing_required_fields_rows": {},
+  "missing_required_fields_events": {
+    "campaign_id": 0,
+    "manufacturer": 0,
+    "component": 0,
+    "summary": 0,
+    "consequence": 0,
+    "remedy": 0
+  },
+  "invalid_or_unparseable_raw_records": 0,
+  "dataset_scope": "U.S. safety recalls, mixed vehicles/equipment/tires/child restraints; not supply-chain transactions",
+  "label_policy": "only official observed positive recall events; no invented negative labels or causal propagation edges",
+  "temporal_limitation": "2026 retrieval snapshot with historical received dates; narrative fields may contain later updates and are not guaranteed as-of historical dates",
+  "raw_zip_sha256": "9a3b56b02d36322ecd0b74e84bc6459ee4cf82cc88c59b2cf86cf1e4c1f09471",
+  "raw_text_sha256": "8234e6772a3151a2d86b1cb588335cd408a5891c59a97eee3f0135ba43a1dffc",
+  "outputs": {
+    "affected_products_2018_2025.jsonl": {
+      "bytes": 16610613,
+      "sha256": "e78f00ed61a833b7bfc835edaf90a3d5e236a0de3607710ca7d6366eecd5ea2b"
+    },
+    "observed_relations_2018_2025.jsonl": {
+      "bytes": 38227764,
+      "sha256": "8dd4750a5e67bf33f904224367a6b8c9f5c241327e6979e759231269210a48cb"
+    },
+    "recall_events_2018_2025.jsonl": {
+      "bytes": 24208555,
+      "sha256": "e08bf697510495d6dea6eb3a72c83ce7214c4cd18cf64ccfc9252b7475cb0fbb"
+    },
+    "recall_fact_edges.jsonl": {
+      "bytes": 70977557,
+      "sha256": "24e8912435486e539f74a2ad745f903a60463d5a44ea51b6413d05ad021d1d1d"
+    },
+    "recall_fact_nodes.jsonl": {
+      "bytes": 23416966,
+      "sha256": "647fe836e295c1718b67cc466903e3222162d4d5210ec3e47d2d8170be086ce9"
+    },
+    "recall_manufacturers_2018_2025.jsonl": {
+      "bytes": 2416100,
+      "sha256": "a0c862dc965413a30b47d6a988c6d793930d104754925cdfe9f4438d4870009e"
+    },
+    "recall_rows_2018_2025.csv": {
+      "bytes": 250982625,
+      "sha256": "9f49a96c29df63522e444e6c6bf19fb5c0560190ea77f58939df4a1b0e66d752"
+    },
+    "recall_rows_2018_2025.jsonl": {
+      "bytes": 463218432,
+      "sha256": "9597f09965362e1598a4a2f4716f6097686a00aae01e33e8493b691c82004d8d"
+    },
+    "vpic_manufacturers_current.jsonl": {
+      "bytes": 8445586,
+      "sha256": "6ade7f4f742a84dcad41cf9973a3e00726cad68fe84b8d40ed63312e8e3a755b"
+    },
+    "vpic_observed_relations_current.jsonl": {
+      "bytes": 6943882,
+      "sha256": "b1e1dc2868e5831f42e602d56c69a44ded9741274a78702e3619656637ef92ff"
+    }
+  }
+}

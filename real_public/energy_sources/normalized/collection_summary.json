@@ -1,0 +1,270 @@
+{
+  "is_synthetic": false,
+  "source": "EIA-860 annual 2018-2025; DOE-417 annual 2018-2023",
+  "entity_count": 67768,
+  "entity_types": {
+    "utility_reporting_entity": 10850,
+    "region_state_code": 59,
+    "plant": 18215,
+    "industry_naics_code": 85,
+    "generator": 38521,
+    "fuel_code": 38
+  },
+  "unique_fact_relation_count": 203171,
+  "relation_types": {
+    "LocatedInState": 28028,
+    "ReportedBy": 64515,
+    "PrimaryPurposeNAICS": 18317,
+    "LocatedAtPlant": 38521,
+    "UsesEnergySource": 46208,
+    "OwnsReportedGenerator": 7582
+  },
+  "annual_record_count": 456017,
+  "annual_table_rows": {
+    "2018": {
+      "utility": 5039,
+      "plant": 10980,
+      "generator": 27947,
+      "ownership": 4631
+    },
+    "2019": {
+      "utility": 5385,
+      "plant": 11833,
+      "generator": 29011,
+      "ownership": 4792
+    },
+    "2020": {
+      "utility": 5663,
+      "plant": 12636,
+      "generator": 30051,
+      "ownership": 4834
+    },
+    "2021": {
+      "utility": 5808,
+      "plant": 13455,
+      "generator": 31237,
+      "ownership": 5131
+    },
+    "2022": {
+      "utility": 5935,
+      "plant": 14239,
+      "generator": 32347,
+      "ownership": 5302
+    },
+    "2023": {
+      "utility": 6193,
+      "plant": 15068,
+      "generator": 33441,
+      "ownership": 5380
+    },
+    "2024": {
+      "utility": 6643,
+      "plant": 16132,
+      "generator": 34857,
+      "ownership": 5496
+    },
+    "2025": {
+      "utility": 6946,
+      "plant": 17349,
+      "generator": 36576,
+      "ownership": 5680
+    }
+  },
+  "official_incident_count": 2006,
+  "incident_counts_by_year": {
+    "2018": 220,
+    "2019": 278,
+    "2020": 383,
+    "2021": 387,
+    "2022": 390,
+    "2023": 316,
+    "unknown": 32
+  },
+  "incident_counts_by_source_year": {
+    "2018": 220,
+    "2019": 278,
+    "2020": 383,
+    "2021": 387,
+    "2022": 390,
+    "2023": 348
+  },
+  "incidents_with_unknown_start_date": 32,
+  "missing_incident_years": [
+    2024,
+    2025
+  ],
+  "firm_risk_gold_label_count": 0,
+  "causal_path_gold_label_count": 0,
+  "generated_record_count": 0,
+  "missing_relation_endpoints": 0,
+  "warnings": [
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 202,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 203,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 204,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 205,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 206,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 207,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 208,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 209,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 210,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 211,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 212,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 213,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 214,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 215,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 216,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 217,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 218,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 219,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 220,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 221,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 222,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 223,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 224,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 225,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 226,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 227,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 228,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 229,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 230,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 231,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 232,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    },
+    {
+      "source": "doe417_2023_Annual_Summary.xls",
+      "row": 233,
+      "reason": "real incident retained with unknown/unparseable reported start date"
+    }
+  ],
+  "notes": [
+    "utility IDs identify reporting entities; not deduplicated ultimate parent firms",
+    "plant/generator nodes are physical assets, not paper product categories",
+    "fuel codes are not a claim to cover all raw materials",
+    "DOE incidents disclose areas, not verified per-firm disruptions",
+    "survey year is not publication/availability time; collected in 2026",
+    "Percent Owned cells preserved unchanged; verify source formatting before unit conversion"
+  ]
+}

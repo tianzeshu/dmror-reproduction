@@ -1,0 +1,205 @@
+{
+  "business enterprise": {
+    "exact_matches": [
+      {
+        "qid": "Q20057897",
+        "label": "business enterprise",
+        "description": "type of enterprise in Czech Republic"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=business+enterprise&language=en&limit=10",
+    "raw_sha256": "93fa7483e24a10bb0b4e437115575e41c30385381e8a4751cbe24d213fb6f11c"
+  },
+  "company": {
+    "exact_matches": [
+      {
+        "qid": "Q783794",
+        "label": "company",
+        "description": "legal entity representing an association of people, whether natural, legal or a mixture of both, with a specific objective"
+      },
+      {
+        "qid": "Q2915810",
+        "label": "Company",
+        "description": "1970 musical comedy by Stephen Sondheim"
+      },
+      {
+        "qid": "Q37533014",
+        "label": "Company",
+        "description": "family name"
+      },
+      {
+        "qid": "Q868598",
+        "label": "Company",
+        "description": "magazine"
+      },
+      {
+        "qid": "Q102538",
+        "label": "company",
+        "description": "military unit size designation"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=company&language=en&limit=10",
+    "raw_sha256": "8c697d7f1d056ffee1528659a1eb1dcdb186e4d12466c1066f555da2cd40fd5a"
+  },
+  "manufactured good": {
+    "exact_matches": [
+      {
+        "qid": "Q1836700",
+        "label": "manufactured good",
+        "description": "object produced by industry"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=manufactured+good&language=en&limit=10",
+    "raw_sha256": "7b505a1d75389de1c20b75f9529d2057b6017c6ad307e474bd8fa7bcb988a85b"
+  },
+  "chemical substance": {
+    "exact_matches": [
+      {
+        "qid": "Q79529",
+        "label": "chemical substance",
+        "description": "matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of and characterized by physical properties like density"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=chemical+substance&language=en&limit=10",
+    "raw_sha256": "cf28d9dd2cc94ce6a14261a94a2cebe9e2f0256a0422805079693921cbac55b5"
+  },
+  "chemical element": {
+    "exact_matches": [
+      {
+        "qid": "Q11344",
+        "label": "chemical element",
+        "description": "species of atoms having the same number of protons in the atomic nucleus and the same chemical properties, but not necessarily the same mass, or the same stability (or half-lifetime if they are unstable)"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=chemical+element&language=en&limit=10",
+    "raw_sha256": "acde045d09e17e8c81a0987bf101a7057aba1611182e0f7dcb375638fd55f592"
+  },
+  "material": {
+    "exact_matches": [
+      {
+        "qid": "Q214609",
+        "label": "material",
+        "description": "substance that can occur in different amounts, all with some similar [mixture of some] characteristics, and with which objects can be made"
+      },
+      {
+        "qid": "Q23013724",
+        "label": "Material",
+        "description": "album by Blaqk Audio"
+      },
+      {
+        "qid": "Q110573604",
+        "label": "Material",
+        "description": "podcast"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=material&language=en&limit=10",
+    "raw_sha256": "9aa5195104c62d7a5d9fc890db165561784ad5f30219621b2e9a6f1e656e051a"
+  },
+  "industry": {
+    "exact_matches": [
+      {
+        "qid": "Q8148",
+        "label": "industry",
+        "description": "economic sector characterized by large scale automated manufacturing as in industrialization"
+      },
+      {
+        "qid": "Q979263",
+        "label": "Industry",
+        "description": "city in Austin County, Texas, United States"
+      },
+      {
+        "qid": "Q268592",
+        "label": "industry",
+        "description": "group of firms that produce a closely related set of raw materials, goods, or services"
+      },
+      {
+        "qid": "Q129155995",
+        "label": "Industry",
+        "description": "motto of Utah, USA"
+      },
+      {
+        "qid": "Q645143",
+        "label": "industry",
+        "description": "grouping of prehistoric tools based on their characteristics"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=industry&language=en&limit=10",
+    "raw_sha256": "ec05183777670aace4ad7f95f908411ee16c6ffbe3b616226428664dbbda4e75"
+  },
+  "economic sector": {
+    "exact_matches": [
+      {
+        "qid": "Q3958441",
+        "label": "economic sector",
+        "description": "conceptual grouping of economic activities"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=economic+sector&language=en&limit=10",
+    "raw_sha256": "46290962467646d7070d81dfa547fced5a8db059810dba9b9bc8e0fc9362df7b"
+  },
+  "geographic region": {
+    "exact_matches": [],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=geographic+region&language=en&limit=10",
+    "raw_sha256": "03837d9b139940450383198507cb6e4e8107b29f839298d2e3fa3a4b4fe1822a"
+  },
+  "country": {
+    "exact_matches": [
+      {
+        "qid": "Q6256",
+        "label": "country",
+        "description": "distinct territorial body or political entity"
+      },
+      {
+        "qid": "Q12629233",
+        "label": "Country",
+        "description": "1985 studio album by Plava trava zaborava"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=country&language=en&limit=10",
+    "raw_sha256": "ba7aab9ec8b51e04115971cb9bc7e745cdce2d76a12b255f6e336b7e565733db"
+  },
+  "city": {
+    "exact_matches": [
+      {
+        "qid": "Q515",
+        "label": "city",
+        "description": "large human settlement"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=city&language=en&limit=10",
+    "raw_sha256": "9c94663664be983ad22f1cf528e8639e24c7f813569381573411f7a3ac1e0147"
+  },
+  "administrative territorial entity": {
+    "exact_matches": [
+      {
+        "qid": "Q56061",
+        "label": "administrative territorial entity",
+        "description": "territorial entity for administration purposes, with or without its own local government"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=administrative+territorial+entity&language=en&limit=10",
+    "raw_sha256": "67fce4d8e610b9557f9473b3041d47db779ce89e31501957c1e2a6eb304607f6"
+  },
+  "human settlement": {
+    "exact_matches": [
+      {
+        "qid": "Q486972",
+        "label": "human settlement",
+        "description": "place of any size, in which people permanently live"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=human+settlement&language=en&limit=10",
+    "raw_sha256": "724ea0eade8e84788e0f2f9b9e2348acbea210e843475cc6a07122eaddaea1e7"
+  },
+  "fictional entity": {
+    "exact_matches": [
+      {
+        "qid": "Q14897293",
+        "label": "fictional entity",
+        "description": "entity that only exists in a work of fiction"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=fictional+entity&language=en&limit=10",
+    "raw_sha256": "bca1f3bfbd68864fac8a433a5b669c366df467ffe49b1912554dfd69e21c8aad"
+  }
+}

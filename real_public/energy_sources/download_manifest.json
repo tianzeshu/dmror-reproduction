@@ -1,0 +1,138 @@
+{
+  "source": "US Energy Information Administration, Form EIA-860 annual detailed survey data",
+  "requested_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "is_synthetic": false,
+  "source_policy_url": "https://www.eia.gov/about/copyrights_reuse.php",
+  "scope_note": "Generator, plant and utility facts; not product-specific supply links or risk gold labels.",
+  "downloads": [
+    {
+      "source_url": "https://www.eia.gov/electricity/data/eia860/",
+      "response_url": "https://www.eia.gov/electricity/data/eia860/",
+      "fetched_at_utc": "2026-10-05T11:38:46.487887+00:00",
+      "status_code": 200,
+      "size_bytes": 67574,
+      "sha256": "e7f4763315f9eebfe2b78cd01a3a6912f90f56fb60ba0616d9e5c727c0c953c2",
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "etag": null,
+      "relative_path": "raw/eia860_index.html"
+    },
+    {
+      "source_url": "https://www.eia.gov/about/copyrights_reuse.php",
+      "response_url": "https://www.eia.gov/about/copyrights_reuse.php",
+      "fetched_at_utc": "2026-10-05T11:38:47.712717+00:00",
+      "status_code": 200,
+      "size_bytes": 52512,
+      "sha256": "7f25492108c0654a2c4b89b7ec1593dcfa84ea934eb8a333fdc49b99fd5883af",
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "etag": null,
+      "relative_path": "raw/eia_reuse_policy.html"
+    },
+    {
+      "source_url": "https://www.eia.gov/electricity/data/eia860/xls/eia8602025.zip",
+      "response_url": "https://www.eia.gov/electricity/data/eia860/xls/eia8602025.zip",
+      "fetched_at_utc": "2026-10-05T11:38:48.733762+00:00",
+      "status_code": 200,
+      "size_bytes": 23622347,
+      "sha256": "2b27929d26cc1da9ad6a530da1cac6718cd8496098ee560c4d47cfffd96d08ba",
+      "content_type": "application/x-zip-compressed",
+      "last_modified": "Thu, 10 Sep 2026 16:20:14 GMT",
+      "etag": "\"0337a424041dd1:0\"",
+      "relative_path": "raw/eia8602025.zip"
+    },
+    {
+      "source_url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602024.zip",
+      "response_url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602024.zip",
+      "fetched_at_utc": "2026-10-05T11:38:48.733964+00:00",
+      "status_code": 200,
+      "size_bytes": 22100342,
+      "sha256": "0aaae04812cd4ab87a3e346bdf93848a3cc15053fd4dc2a4cf82d2aeac95f12b",
+      "content_type": "application/x-zip-compressed",
+      "last_modified": "Tue, 09 Sep 2025 17:19:30 GMT",
+      "etag": "\"03dd4e6ad21dc1:0\"",
+      "relative_path": "raw/eia8602024.zip"
+    },
+    {
+      "source_url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602023.zip",
+      "response_url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602023.zip",
+      "fetched_at_utc": "2026-10-05T11:39:30.813471+00:00",
+      "status_code": 200,
+      "size_bytes": 21237983,
+      "sha256": "1447e23e608bea1523961542a90eb93ea86715067a37f211282541461049b46f",
+      "content_type": "application/x-zip-compressed",
+      "last_modified": "Fri, 20 Sep 2024 18:36:09 GMT",
+      "etag": "\"8072d0f58bbdb1:0\"",
+      "relative_path": "raw/eia8602023.zip"
+    },
+    {
+      "source_url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602022.zip",
+      "response_url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602022.zip",
+      "fetched_at_utc": "2026-10-05T11:39:39.302145+00:00",
+      "status_code": 200,
+      "size_bytes": 20646976,
+      "sha256": "a6f6b00f480ccfb7436804f5cb9984f27c3e0c20cfcbe9b4ed057285b5a68980",
+      "content_type": "application/x-zip-compressed",
+      "last_modified": "Tue, 19 Sep 2023 18:46:33 GMT",
+      "etag": "\"80a259c29ebd91:0\"",
+      "relative_path": "raw/eia8602022.zip"
+    },
+    {
+      "source_url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602021.zip",
+      "response_url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602021.zip",
+      "fetched_at_utc": "2026-10-05T11:40:23.887840+00:00",
+      "status_code": 200,
+      "size_bytes": 20114180,
+      "sha256": "ac35e582335ed5f82c1177361d6e8e82cff083ae85a5ec668815d21e0aef3ee5",
+      "content_type": "application/x-zip-compressed",
+      "last_modified": "Wed, 21 Sep 2022 21:31:05 GMT",
+      "etag": "\"80725d741ced81:0\"",
+      "relative_path": "raw/eia8602021.zip"
+    },
+    {
+      "source_url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602020.zip",
+      "response_url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602020.zip",
+      "fetched_at_utc": "2026-10-05T11:40:39.411388+00:00",
+      "status_code": 200,
+      "size_bytes": 19670508,
+      "sha256": "ce519fd0b02c74b8c4231dc023bf07f922ae5f2a018fcaf88914502f61aa89ea",
+      "content_type": "application/x-zip-compressed",
+      "last_modified": "Thu, 09 Sep 2021 16:04:48 GMT",
+      "etag": "\"090d46994a5d71:0\"",
+      "relative_path": "raw/eia8602020.zip"
+    },
+    {
+      "source_url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602019.zip",
+      "response_url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602019.zip",
+      "fetched_at_utc": "2026-10-05T11:41:22.138808+00:00",
+      "status_code": 200,
+      "size_bytes": 18767416,
+      "sha256": "6fe0d37858359c50772fbcb1a6cfca0a3fbf442423ddf4e0d33df929caa1ea7b",
+      "content_type": "application/x-zip-compressed",
+      "last_modified": "Tue, 15 Sep 2020 17:22:01 GMT",
+      "etag": "\"8024b9848bd61:0\"",
+      "relative_path": "raw/eia8602019.zip"
+    },
+    {
+      "source_url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602018.zip",
+      "response_url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602018.zip",
+      "fetched_at_utc": "2026-10-05T11:41:22.420603+00:00",
+      "status_code": 200,
+      "size_bytes": 18295827,
+      "sha256": "46864f69f190da9a0d1096964984219d7728b4c626c3bc8a48767507632b18df",
+      "content_type": "application/x-zip-compressed",
+      "last_modified": "Thu, 07 Nov 2019 17:03:20 GMT",
+      "etag": "\"03c8d418d95d51:0\"",
+      "relative_path": "raw/eia8602018.zip"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+source_dataset,entity_count,fact_relation_count,source_record_count,official_event_count,historical_period,firm_risk_gold_labels,is_synthetic,scope
+NHTSA-Recall-2018-2025,32917,88959,185699,8090,2018--2025 report received date,0,False,safety recalls; mixed vehicles/equipment/tires/child restraints
+EIA860-2018-2025+DOE417-2018-2023,67768,203171,456017,2006,EIA 2018--2025; DOE 2018--2023,0,False,"reporting entities, physical plants and generators, reported electric disturbances"
+Wikidata-Industrial-20261005,6524,24032,24166,0,2026-10-05 current snapshot,0,False,current industrial entity/type/ownership/manufacture/location assertions; domains overlap

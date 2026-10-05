@@ -1,0 +1,18 @@
+{
+  "artifact_type": "real_public_data_collection",
+  "mode": "source_collection_and_validation",
+  "created_at_utc": "2026-10-05T12:10:11.006506+00:00",
+  "version": "v1.2.0",
+  "collection_date": "2026-10-05",
+  "sources": [
+    "NHTSA-Recall-2018-2025",
+    "EIA860-2018-2025+DOE417-2018-2023",
+    "Wikidata-Industrial-20261005"
+  ],
+  "data_origin": "Actually downloaded public government/CC0 records",
+  "is_synthetic": false,
+  "raw_and_normalized_provenance": "public_file_manifest.json and each source download/validation manifest",
+  "experimental_results": "None on this new data; prior synthetic experiments remain historical",
+  "original_manuscript": "Not modified and not redistributed",
+  "readiness": "TRAINING_READINESS.json"
+}

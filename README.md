@@ -1,10 +1,26 @@
-# DM-ROR：代码、冻结数据与实测结果
+# DM-ROR：模型代码与真实公开来源数据
 
-根据 DM-ROR 方法和框架图实现的研究工程：双记忆、时间注意力、门控融合、节点韧性阈值、关系缓冲、残余过载传播及路径搜索。提供训练、评估、消融、预测和绘图代码。
+DM-ROR 研究工程实现双记忆、时间注意力、门控融合、韧性阈值、关系缓冲及残余过载传播。现新增**实际从公开网络来源下载的真实记录**，采集脚本、下载时间、URL、原始文件摘要及逐条证据核验均可查。
 
-**原稿 SC-Auto、SC-Semi、SC-Energy 的原始数据及 Table 1–5 实验记录尚未找回。** 本工程新增按用户提供的 Table 1 逐项计数构建的三套完整规模合成数据，名称为 `SC-*-Synthetic`；同时保留历史 SIM 和 ICKG-Weak 数据。所有报告区分数据来源和版本，不能当作原稿真实数据实验的数值复现。
+## 真实数据交付（2026-10-05）
 
-## Table 1 完整规模数据
+完整真实数据和模型代码位于 [v1.2.0 Release](https://github.com/tianzeshu/dmror-reproduction/releases/tag/v1.2.0)，分卷合并方式见 Release 说明。完整包包含官方原始 ZIP/XLS/API JSON，且未混入历史模拟数据、旧实验结果或新闻缓存。[真实数据说明](docs/REAL_PUBLIC_DATA.md)、[实际统计 CSV](real_public/DATASET_STATISTICS_REAL.csv) 和 [来源清单](real_public/SOURCE_CATALOG.json) 给出统计口径和出处。
+
+| 来源 | 实际采集结果 | 覆盖 |
+|---|---|---|
+| NHTSA 安全召回 | 185,699 来源行；8,090 召回 campaign；32,917 图节点、88,959 事实边 | 收件日期 2018–2025 |
+| NHTSA vPIC | 10,000 登记制造商 ID；部分登记库 | 2026 当前快照 |
+| EIA-860 | 456,017 年度来源行；67,768 实体、203,171 事实边 | 年度调查 2018–2025 |
+| DOE-417 | 2,006 电力事故；32 条开始日期缺失并保留 | 年度文件 2018–2023 |
+| Wikidata | 6,524 实体；24,032 事实边；有类型证据的企业 1,183 个 | 2026 当前快照 |
+
+Git 中 [real_public/](real_public/) 保存采集/处理代码、实际统计、来源和证据核验元数据。真实来源的归一化 JSONL/CSV gzip 及原始文件均在 [v1.2.0 Release](https://github.com/tianzeshu/dmror-reproduction/releases/tag/v1.2.0)：可下载小型归一化数据包或完整工程分卷。Git 子集可在仓库根运行 `python scripts/verify_real_git.py` 核验代码与元数据；完整原始文件及解压摘要校验在 Release 根运行 `python verify_real_public_delivery.py --root .`。完整包中的 gzip 可用 `gzip.open` 流式读取，详见 [Git 与 Release 范围](real_public/README_GIT_SUBSET.md)。
+
+这些是新采集的真实来源，不是找回的原稿 SC-Auto/SC-Semi/SC-Energy。召回关系、发电资产关系及知识库关系不能冒称供应依赖，事件不能自动充当企业供应中断标签；未观测记录保持未知。原表数量需按实际数据重新统计。真实供应中断金标、覆盖充分的负例、韧性/库存缓冲及历史可见时间仍缺失，见 [训练条件](real_public/TRAINING_READINESS.json)。本次没有生成真实数据 `dataset.npz` 或新的风险预测成绩，旧模拟实验数值不能用于真实来源。
+
+模型安装/训练接口与证据标注规范见 [方法对应](docs/METHOD_MAPPING.md) 和 [人工标注指南](docs/ANNOTATION_GUIDE.md)。以下历史数据及成绩保留原来源标记。
+
+## 历史 v1.1.0：Table 1 规模模拟数据
 
 完整规模代码、数据及 **60 次实际训练输出** 位于 [v1.1.0 Release](https://github.com/tianzeshu/dmror-reproduction/releases/tag/v1.1.0)。[中文实验报告](reports/table_scale/experiment_report_zh.md) 和 [逐种子数据](reports/table_scale/per_seed.csv) 对应 3 个数据集 × 4 个方法 × 5 个种子；代码测试 73 项全部通过。数据和实验分别有独立验收报告。
 

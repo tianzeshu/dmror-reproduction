@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "official_raw_download_hashes_checked": {
+    "raw/FLAT_RCL_POST_2010.zip": "9a3b56b02d36322ecd0b74e84bc6459ee4cf82cc88c59b2cf86cf1e4c1f09471",
+    "raw/RCL.txt": "3438cc7e4131efa401dfe6437dbe035607e092c129155dfb411d459d58802203",
+    "raw/data_gov_recall_metadata.html": "23fdab5868fcc8c35056b21c5ba9cd1db9fb050a203c8e127c04ceded5be7df2",
+    "raw/api_use_policy.html": "63b87e6466dd8c761f3cf9e279b8f48c87032d9bbf4346440b4de956b7a64fa2"
+  },
+  "selected_rows_checked_against_original_byte_offsets_and_all_29_fields": 185699,
+  "selected_rows_complete_for_official_date_filter": true,
+  "events_checked_against_actual_source_text": 8090,
+  "fact_nodes": 32917,
+  "fact_edges_all_supporting_records_checked": 88959,
+  "relation_counts": {
+    "listed_manufacturer_for_recalled_product": 22593,
+    "identifies_component_descriptor": 9839,
+    "recalls_listed_product": 48437,
+    "filed_official_recall": 8090
+  },
+  "vpic_manufacturers_checked_against_official_page_results": 10000,
+  "synthetic_events": 0,
+  "generated_summaries": 0,
+  "invented_negatives": 0,
+  "supply_or_causal_propagation_edges": 0,
+  "scope": "official positive safety-recall facts; not a labelled supply-chain interruption benchmark"
+}

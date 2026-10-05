@@ -1,0 +1,615 @@
+{
+  "automotive industry": {
+    "term": "automotive industry",
+    "chosen_qid": "Q190117",
+    "results": [
+      {
+        "qid": "Q190117",
+        "label": "automotive industry",
+        "description": "range of organizations associated with motor vehicles, such as automobiles, trucks and motorcycles"
+      },
+      {
+        "qid": "Q23916071",
+        "label": "Automotive industry",
+        "description": "chapter published in 2010"
+      },
+      {
+        "qid": "Q114465",
+        "label": "automotive industry in China",
+        "description": "aspect of history"
+      },
+      {
+        "qid": "Q2995270",
+        "label": "automotive industry in the United States",
+        "description": "began in the 1890s and, as a result of the size of the domestic market and the use of mass production"
+      },
+      {
+        "qid": "Q3084706",
+        "label": "automotive industry in the Soviet Union",
+        "description": "overview of the automotive industry in the Soviet Union"
+      },
+      {
+        "qid": "Q4056338",
+        "label": "automotive industry in the United Kingdom",
+        "description": "overview of the automotive industry in the United Kingdom"
+      },
+      {
+        "qid": "Q3788541",
+        "label": "automotive industry in Germany",
+        "description": "overview of the automotive industry in Germany"
+      },
+      {
+        "qid": "Q4826739",
+        "label": "automotive industry in Mexico",
+        "description": "overview of the automotive industry in Mexico"
+      },
+      {
+        "qid": "Q17078975",
+        "label": "automotive industry in Sweden",
+        "description": null
+      },
+      {
+        "qid": "Q4826736",
+        "label": "automotive industry in Italy",
+        "description": "automobile industry of Italy"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=automotive+industry&language=en&limit=10",
+    "raw_sha256": "399d0b333bc05afb18c20f83ef0cd79a80b8e511d1c3c1cd61f4542e7522fc3e",
+    "status": 200
+  },
+  "automobile manufacturer": {
+    "term": "automobile manufacturer",
+    "chosen_qid": "Q786820",
+    "results": [
+      {
+        "qid": "Q786820",
+        "label": "automobile manufacturer",
+        "description": "company that makes automobiles"
+      },
+      {
+        "qid": "Q59493136",
+        "label": "Automobile Manufacturers Association Collection (NAID 778)",
+        "description": "collection in the National Archives and Records Administration's holdings"
+      },
+      {
+        "qid": "Q4826674",
+        "label": "Automobile Manufacturers Association",
+        "description": "organization"
+      },
+      {
+        "qid": "Q127220506",
+        "label": "Automobile manufacturers and brands of China",
+        "description": null
+      },
+      {
+        "qid": "Q17653413",
+        "label": "Automobile manufacturer Ford posts unexpected profits",
+        "description": "Wikinews article"
+      },
+      {
+        "qid": "Q17653426",
+        "label": "Automobile manufacturer Toyota triples annual loss prediction",
+        "description": "Wikinews article"
+      },
+      {
+        "qid": "Q56581489",
+        "label": "Automobile manufacturers’ strategic choice in applying green practices: joint application of evolutionary game theory and fuzzy rule-based approach",
+        "description": null
+      },
+      {
+        "qid": "Q129700155",
+        "label": "Automobile manufacturers, electric vehicles and the price of oil",
+        "description": "scholarly article published in August 2018"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=automobile+manufacturer&language=en&limit=10",
+    "raw_sha256": "70e714c93be830dceec48d9ece644169050aea94d6bab40fb2a63550b5750379",
+    "status": 200
+  },
+  "semiconductor industry": {
+    "term": "semiconductor industry",
+    "chosen_qid": "Q2986369",
+    "results": [
+      {
+        "qid": "Q2986369",
+        "label": "semiconductor industry",
+        "description": "companies engaged in the design and fabrication of semiconductor devices"
+      },
+      {
+        "qid": "Q7449384",
+        "label": "Semiconductor Industry Association",
+        "description": "trade association"
+      },
+      {
+        "qid": "Q111460071",
+        "label": "semiconductor industry in China",
+        "description": "Chinese chip factories"
+      },
+      {
+        "qid": "Q104870843",
+        "label": "semiconductor industry in Taiwan",
+        "description": "overview of the Taiwanese semiconductor industry"
+      },
+      {
+        "qid": "Q133480659",
+        "label": "semiconductor industry in Japan",
+        "description": "type of industry in Japan"
+      },
+      {
+        "qid": "Q124936849",
+        "label": "semiconductor industry in South Korea",
+        "description": "type of industry in South Korea"
+      },
+      {
+        "qid": "Q136675960",
+        "label": "Semiconductor industry in the US",
+        "description": "type of industry in the United States"
+      },
+      {
+        "qid": "Q26377565",
+        "label": "Semiconductor Industry - A Hazard Surveillance Perspective",
+        "description": "publication published in 1989"
+      },
+      {
+        "qid": "Q51602894",
+        "label": "Semiconductor industry: chipping in.",
+        "description": "scientific article published in October 2004"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=semiconductor+industry&language=en&limit=10",
+    "raw_sha256": "2eeddada0f5c6413e9837fd99dc036ae599d4b9b732b99d9db8fb31ddb59395e",
+    "status": 200
+  },
+  "semiconductor manufacturer": {
+    "term": "semiconductor manufacturer",
+    "chosen_qid": null,
+    "results": [
+      {
+        "qid": "Q1389311",
+        "label": "integrated device manufacturer",
+        "description": "type of company which designs, manufactures, and sells its own integrated circuits"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=semiconductor+manufacturer&language=en&limit=10",
+    "raw_sha256": "85d885da3280438bd34ab2a7201d57cadb12d5c72e3a370aec2855361e84351a",
+    "status": 200
+  },
+  "energy industry": {
+    "term": "energy industry",
+    "chosen_qid": "Q2151621",
+    "results": [
+      {
+        "qid": "Q2151621",
+        "label": "energy industry",
+        "description": "industries involved in producing, selling, and distributing energy (in all forms, e.g. petroleum, natural gas, coal, peat, firewood, nuclear energy, solar energy, hydroelectric energy, wind energy, geothermal energy)"
+      },
+      {
+        "qid": "Q104710372",
+        "label": "Energy industry, general",
+        "description": "subject category of the 20th Century Press Archives"
+      },
+      {
+        "qid": "Q5377059",
+        "label": "energy in Africa",
+        "description": "aspect in a geographic region"
+      },
+      {
+        "qid": "Q4531920",
+        "label": "energy industry in Tanzania",
+        "description": null
+      },
+      {
+        "qid": "Q114449550",
+        "label": "Energy Industry Grapples With Fallout From Suez Canal Blockage",
+        "description": "Wall Street Journal article (March 25, 2021)"
+      },
+      {
+        "qid": "Q128531203",
+        "label": "Energy industry of the Republic of Buryatia: current state and prerequisites for further development",
+        "description": "scholarly article"
+      },
+      {
+        "qid": "Q119793382",
+        "label": "Energy Industry Cooperation of SCO Member States:Trend and Problems",
+        "description": null
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=energy+industry&language=en&limit=10",
+    "raw_sha256": "9f9b53fac97fdf8416fe63c22c7cc36c6c2f0589191ece745fa5ad90ddb91848",
+    "status": 200
+  },
+  "oil and gas industry": {
+    "term": "oil and gas industry",
+    "chosen_qid": null,
+    "results": [
+      {
+        "qid": "Q862571",
+        "label": "petroleum industry",
+        "description": "activities linked to handling oil products"
+      },
+      {
+        "qid": "Q4318141",
+        "label": "petroleum industry in Canada",
+        "description": "Canadian petroleum industry"
+      },
+      {
+        "qid": "Q65203943",
+        "label": "Oil and Gas Industry Workers' Union",
+        "description": "Ukrainian oil and gas trade union"
+      },
+      {
+        "qid": "Q110639850",
+        "label": "Oil and gas industry in Bolivia",
+        "description": null
+      },
+      {
+        "qid": "Q28173381",
+        "label": "oil and gas industry in India",
+        "description": null
+      },
+      {
+        "qid": "Q20746271",
+        "label": "Oil and gas industry in Burma",
+        "description": null
+      },
+      {
+        "qid": "Q7081380",
+        "label": "Oil and gas industry in the United Kingdom",
+        "description": null
+      },
+      {
+        "qid": "Q7081379",
+        "label": "Oil and gas industry in New Zealand",
+        "description": null
+      },
+      {
+        "qid": "Q12553387",
+        "label": "oil and gas industry of Mangystau Region",
+        "description": null
+      },
+      {
+        "qid": "Q17069136",
+        "label": "Oil and Gas Industry Complex, Isfahan",
+        "description": "village/company town in Isfahan, Iran"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=oil+and+gas+industry&language=en&limit=10",
+    "raw_sha256": "7957f916d6db8bce3d344bffa91aa3b14fa18b2cf005e4ef9bd404f62702377b",
+    "status": 200
+  },
+  "electric power industry": {
+    "term": "electric power industry",
+    "chosen_qid": "Q2316331",
+    "results": [
+      {
+        "qid": "Q2316331",
+        "label": "electric power industry",
+        "description": "industry that provides the production and delivery of electric energy"
+      },
+      {
+        "qid": "Q104710655",
+        "label": "Electric power industry",
+        "description": "subject category of the 20th Century Press Archives"
+      },
+      {
+        "qid": "Q141304142",
+        "label": "Electric Power Industry Reform Act of 2001",
+        "description": "2001 law restructuring the Philippine electric power industry"
+      },
+      {
+        "qid": "Q51921274",
+        "label": "Electric Power Industry in Japan",
+        "description": null
+      },
+      {
+        "qid": "Q129755022",
+        "label": "ELECTRIC POWER INDUSTRY OF A REGION: MATHEMATICAL MODELING OF ENVIRONMENTAL AND ECONOMIC ASSESSMENT OF DEVELOPMENT EFFICIENCY",
+        "description": "scholarly article published on 8 December 2023"
+      },
+      {
+        "qid": "Q127534696",
+        "label": "Electric Power Industry: Operational and Public Policy Challenges and Opportunities",
+        "description": "scholarly article"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=electric+power+industry&language=en&limit=10",
+    "raw_sha256": "141a6f6ab9c506192a489063fe28a4b309f58b55c41e525a3705183821391a3b",
+    "status": 200
+  },
+  "silicon": {
+    "term": "silicon",
+    "chosen_qid": "Q3483874",
+    "results": [
+      {
+        "qid": "Q3483874",
+        "label": "Silicon",
+        "description": "scientific journal"
+      },
+      {
+        "qid": "Q670",
+        "label": "silicon",
+        "description": "chemical element with symbol Si and atomic number 14"
+      },
+      {
+        "qid": "Q623459",
+        "label": "Silicon Graphics",
+        "description": "former American company"
+      },
+      {
+        "qid": "Q163820",
+        "label": "Silicon Valley",
+        "description": "region of Northern California in the United States"
+      },
+      {
+        "qid": "Q1355",
+        "label": "Bengaluru",
+        "description": "capital city of Karnataka state in India"
+      },
+      {
+        "qid": "Q15956708",
+        "label": "Silicon Valley",
+        "description": "2014–2019 American television series"
+      },
+      {
+        "qid": "Q138331695",
+        "label": "Silicon",
+        "description": "1983 computer game by Aackosoft"
+      },
+      {
+        "qid": "Q412356",
+        "label": "silicon carbide",
+        "description": "chemical compound"
+      },
+      {
+        "qid": "Q116269",
+        "label": "silicon dioxide",
+        "description": "chemical compound"
+      },
+      {
+        "qid": "Q115129",
+        "label": "Silicon Knights",
+        "description": "video game developer"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=silicon&language=en&limit=10",
+    "raw_sha256": "cd1ff52b53c43806bd994aaf3a60de3a0206f2a5b9fc7ef745985ef4eeaffe1c",
+    "status": 200
+  },
+  "copper": {
+    "term": "copper",
+    "chosen_qid": "Q753",
+    "results": [
+      {
+        "qid": "Q753",
+        "label": "copper",
+        "description": "chemical element with symbol Cu and atomic number 29"
+      },
+      {
+        "qid": "Q26736230",
+        "label": "Copper",
+        "description": "family name"
+      },
+      {
+        "qid": "Q258719",
+        "label": "Lycaena",
+        "description": "genus of insects"
+      },
+      {
+        "qid": "Q355406",
+        "label": "Paulus Potter",
+        "description": "Dutch painter (1625-1654)"
+      },
+      {
+        "qid": "Q39782",
+        "label": "brass",
+        "description": "alloy of copper and zinc"
+      },
+      {
+        "qid": "Q723",
+        "label": "Rookie Blue",
+        "description": "Canadian police drama television series"
+      },
+      {
+        "qid": "Q49300924",
+        "label": "Copper Lake",
+        "description": "lake in Snohomish County, Washington, United States"
+      },
+      {
+        "qid": "Q130253",
+        "label": "Chalcolithic",
+        "description": "Eneolithic prehistoric period between the Neolithic and the Bronze Age"
+      },
+      {
+        "qid": "Q135058439",
+        "label": "COPPER",
+        "description": "video game developed by Ferry Games"
+      },
+      {
+        "qid": "Q2722041",
+        "label": "copper",
+        "description": "reddish brown color"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=copper&language=en&limit=10",
+    "raw_sha256": "445e55ddc08ff572a420e9aed58c68e17801aaca426ee39d435d008ab240c44b",
+    "status": 200
+  },
+  "lithium": {
+    "term": "lithium",
+    "chosen_qid": "Q1130059",
+    "results": [
+      {
+        "qid": "Q1130059",
+        "label": "Lithium",
+        "description": "song by Nirvana"
+      },
+      {
+        "qid": "Q568",
+        "label": "lithium",
+        "description": "chemical element with symbol Li and atomic number 3"
+      },
+      {
+        "qid": "Q11721835",
+        "label": "Lithium (genus)",
+        "description": "genus of aphid wasps"
+      },
+      {
+        "qid": "Q2822895",
+        "label": "lithium-ion battery",
+        "description": "rechargeable battery type"
+      },
+      {
+        "qid": "Q899079",
+        "label": "lithium battery",
+        "description": "any battery chemistry based on lithium"
+      },
+      {
+        "qid": "Q135073320",
+        "label": "Lithium",
+        "description": "2025 video game developed by Blue Pulsar kolektiv, Filip Hauer, Gabriela Štvrtňová, Michal Žák, Vojtěch Košař and Veronika Petrova"
+      },
+      {
+        "qid": "Q152763",
+        "label": "lithium",
+        "description": "pharmaceutical preparation of the element lithium, used primarily as a psychiatric medication for mood disorders"
+      },
+      {
+        "qid": "Q66760324",
+        "label": "lithium cation",
+        "description": "metal ion"
+      },
+      {
+        "qid": "Q1981940",
+        "label": "Lithium",
+        "description": "2007 song by Evanescence"
+      },
+      {
+        "qid": "Q3256552",
+        "label": "Lithium",
+        "description": "French indie rock label"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=lithium&language=en&limit=10",
+    "raw_sha256": "15ecf1180e86005be244a5e1c9733f062c791fee7a4b275a37928933e3a37134",
+    "status": 200
+  },
+  "steel": {
+    "term": "steel",
+    "chosen_qid": "Q11427",
+    "results": [
+      {
+        "qid": "Q11427",
+        "label": "steel",
+        "description": "alloy made by combining iron and other elements"
+      },
+      {
+        "qid": "Q16883818",
+        "label": "Steel",
+        "description": "family name"
+      },
+      {
+        "qid": "Q48790108",
+        "label": "Steel",
+        "description": "1989 video game"
+      },
+      {
+        "qid": "Q21484688",
+        "label": "Steele",
+        "description": "family name"
+      },
+      {
+        "qid": "Q1342",
+        "label": "Pittsburgh",
+        "description": "city and county seat in Allegheny County, Pennsylvania, United States"
+      },
+      {
+        "qid": "Q7605703",
+        "label": "Steel River",
+        "description": "river in Ontario, Canada"
+      },
+      {
+        "qid": "Q187986",
+        "label": "rainbow trout",
+        "description": "fresh-water species of fish"
+      },
+      {
+        "qid": "Q28230572",
+        "label": "Steel",
+        "description": "lieu-dit in Pontiac, Quebec, Canada"
+      },
+      {
+        "qid": "Q141248018",
+        "label": "Steel",
+        "description": "Serbian musical group"
+      },
+      {
+        "qid": "Q1409712",
+        "label": "fire striker",
+        "description": "piece of carbon steel from which sparks are struck by the sharp edge of flint, chert or similar rock"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=steel&language=en&limit=10",
+    "raw_sha256": "e7abc82e9cedfb2a677f0cec69ef77e5221ed7470c2c0ed1254432ea0433637f",
+    "status": 200
+  },
+  "aluminium": {
+    "term": "aluminium",
+    "chosen_qid": "Q663",
+    "results": [
+      {
+        "qid": "Q663",
+        "label": "aluminium",
+        "description": "metallic chemical element of silvery appearance with symbol Al and atomic number 13"
+      },
+      {
+        "qid": "Q105978800",
+        "label": "Aluminium",
+        "description": "2021 song by SCH"
+      },
+      {
+        "qid": "Q124098987",
+        "label": "Aluminium",
+        "description": null
+      },
+      {
+        "qid": "Q135020075",
+        "label": "Aluminium",
+        "description": "video game developed by Roman Shuvalov"
+      },
+      {
+        "qid": "Q447725",
+        "label": "aluminium alloy",
+        "description": "alloy in which aluminium is the predominant metal"
+      },
+      {
+        "qid": "Q3612663",
+        "label": "aluminium (native)",
+        "description": "mineral (as opposed to the chemical element)"
+      },
+      {
+        "qid": "Q17310244",
+        "label": "Aluminium",
+        "description": "aluminum industry trade fair"
+      },
+      {
+        "qid": "Q177342",
+        "label": "aluminium oxide",
+        "description": "chemical compound"
+      },
+      {
+        "qid": "Q11685531",
+        "label": "aluminium",
+        "description": "material consisting of aluminum"
+      },
+      {
+        "qid": "Q4737370",
+        "label": "Aluminium",
+        "description": "album by Richard Russell"
+      }
+    ],
+    "source_url": "https://www.wikidata.org/w/api.php?format=json&maxlag=5&action=wbsearchentities&search=aluminium&language=en&limit=10",
+    "raw_sha256": "a2b26914705c3afa2cd3859e58b45e705f31c28976a6b819e72809dacedf1499",
+    "status": 200
+  }
+}

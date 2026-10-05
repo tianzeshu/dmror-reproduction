@@ -1,0 +1,1043 @@
+{
+  "status": "passed",
+  "scope": "Independent raw spreadsheet cell-to-projection audit; no source modified",
+  "eia_source_rows_by_year_and_table": {
+    "2018": {
+      "utility": 5039,
+      "plant": 10980,
+      "generator": 27947,
+      "ownership": 4631
+    },
+    "2019": {
+      "utility": 5385,
+      "plant": 11833,
+      "generator": 29011,
+      "ownership": 4792
+    },
+    "2020": {
+      "utility": 5663,
+      "plant": 12636,
+      "generator": 30051,
+      "ownership": 4834
+    },
+    "2021": {
+      "utility": 5808,
+      "plant": 13455,
+      "generator": 31237,
+      "ownership": 5131
+    },
+    "2022": {
+      "utility": 5935,
+      "plant": 14239,
+      "generator": 32347,
+      "ownership": 5302
+    },
+    "2023": {
+      "utility": 6193,
+      "plant": 15068,
+      "generator": 33441,
+      "ownership": 5380
+    },
+    "2024": {
+      "utility": 6643,
+      "plant": 16132,
+      "generator": 34857,
+      "ownership": 5496
+    },
+    "2025": {
+      "utility": 6946,
+      "plant": 17349,
+      "generator": 36576,
+      "ownership": 5680
+    }
+  },
+  "eia_total_projected_rows": 456017,
+  "eia_projected_cells_exactly_checked": 7185754,
+  "eia_nonblank_rows_without_utility_id": [],
+  "source_supported_entities": 67768,
+  "entity_types": {
+    "utility_reporting_entity": 10850,
+    "region_state_code": 59,
+    "plant": 18215,
+    "industry_naics_code": 85,
+    "generator": 38521,
+    "fuel_code": 38
+  },
+  "source_supported_relations": 203171,
+  "relation_types": {
+    "LocatedInState": 28028,
+    "ReportedBy": 64515,
+    "PrimaryPurposeNAICS": 18317,
+    "LocatedAtPlant": 38521,
+    "UsesEnergySource": 46208,
+    "OwnsReportedGenerator": 7582
+  },
+  "doe_source_rows_by_year": {
+    "2018": 220,
+    "2019": 278,
+    "2020": 383,
+    "2021": 387,
+    "2022": 390,
+    "2023": 348
+  },
+  "doe_incidents": 2006,
+  "doe_unknown_start_dates": 32,
+  "doe_unknown_start_date_source_rows": [
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        202
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        203
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        204
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        205
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        206
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        207
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        208
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        209
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        210
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        211
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        212
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        213
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        214
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        215
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        216
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        217
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        218
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        219
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        220
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        221
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        222
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        223
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        224
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        225
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        226
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        227
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        228
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        229
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        230
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        231
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        232
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    },
+    {
+      "source": [
+        "raw/doe417_2023_Annual_Summary.xls",
+        "Sheet1",
+        233
+      ],
+      "raw_date_cell": "",
+      "raw_event_month": "August"
+    }
+  ],
+  "doe_unknown_numeric_cells_preserved": {
+    "Demand Loss (MW)": 583,
+    "Number of Customers Affected": 253
+  },
+  "boundary_rows_by_year_table_sheet": [
+    {
+      "year": 2018,
+      "kind": "utility",
+      "member": "1___Utility_Y2018.xlsx",
+      "sheet": "Utility",
+      "header_row": 2,
+      "source_rows": 5039,
+      "first_source_row": 3,
+      "last_source_row": 5041,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2018,
+      "kind": "plant",
+      "member": "2___Plant_Y2018.xlsx",
+      "sheet": "Plant",
+      "header_row": 2,
+      "source_rows": 10980,
+      "first_source_row": 3,
+      "last_source_row": 10982,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2018,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2018.xlsx",
+      "sheet": "Operable",
+      "header_row": 2,
+      "source_rows": 22119,
+      "first_source_row": 3,
+      "last_source_row": 22121,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2018,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2018.xlsx",
+      "sheet": "Proposed",
+      "header_row": 2,
+      "source_rows": 1471,
+      "first_source_row": 3,
+      "last_source_row": 1473,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2018,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2018.xlsx",
+      "sheet": "Retired and Canceled",
+      "header_row": 2,
+      "source_rows": 4357,
+      "first_source_row": 3,
+      "last_source_row": 4359,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2018,
+      "kind": "ownership",
+      "member": "4___Owner_Y2018.xlsx",
+      "sheet": "Ownership",
+      "header_row": 2,
+      "source_rows": 4631,
+      "first_source_row": 3,
+      "last_source_row": 4633,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2019,
+      "kind": "utility",
+      "member": "1___Utility_Y2019.xlsx",
+      "sheet": "Utility",
+      "header_row": 2,
+      "source_rows": 5385,
+      "first_source_row": 3,
+      "last_source_row": 5387,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2019,
+      "kind": "plant",
+      "member": "2___Plant_Y2019.xlsx",
+      "sheet": "Plant",
+      "header_row": 2,
+      "source_rows": 11833,
+      "first_source_row": 3,
+      "last_source_row": 11835,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2019,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2019.xlsx",
+      "sheet": "Operable",
+      "header_row": 2,
+      "source_rows": 22731,
+      "first_source_row": 3,
+      "last_source_row": 22733,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2019,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2019.xlsx",
+      "sheet": "Proposed",
+      "header_row": 2,
+      "source_rows": 1651,
+      "first_source_row": 3,
+      "last_source_row": 1653,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2019,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2019.xlsx",
+      "sheet": "Retired and Canceled",
+      "header_row": 2,
+      "source_rows": 4629,
+      "first_source_row": 3,
+      "last_source_row": 4631,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2019,
+      "kind": "ownership",
+      "member": "4___Owner_Y2019.xlsx",
+      "sheet": "Ownership",
+      "header_row": 2,
+      "source_rows": 4792,
+      "first_source_row": 3,
+      "last_source_row": 4794,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2020,
+      "kind": "utility",
+      "member": "1___Utility_Y2020.xlsx",
+      "sheet": "Utility",
+      "header_row": 2,
+      "source_rows": 5663,
+      "first_source_row": 3,
+      "last_source_row": 5665,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2020,
+      "kind": "plant",
+      "member": "2___Plant_Y2020.xlsx",
+      "sheet": "Plant",
+      "header_row": 2,
+      "source_rows": 12636,
+      "first_source_row": 3,
+      "last_source_row": 12638,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2020,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2020.xlsx",
+      "sheet": "Operable",
+      "header_row": 2,
+      "source_rows": 23418,
+      "first_source_row": 3,
+      "last_source_row": 23420,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2020,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2020.xlsx",
+      "sheet": "Proposed",
+      "header_row": 2,
+      "source_rows": 1806,
+      "first_source_row": 3,
+      "last_source_row": 1808,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2020,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2020.xlsx",
+      "sheet": "Retired and Canceled",
+      "header_row": 2,
+      "source_rows": 4827,
+      "first_source_row": 3,
+      "last_source_row": 4829,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2020,
+      "kind": "ownership",
+      "member": "4___Owner_Y2020.xlsx",
+      "sheet": "Ownership",
+      "header_row": 2,
+      "source_rows": 4834,
+      "first_source_row": 3,
+      "last_source_row": 4836,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2021,
+      "kind": "utility",
+      "member": "1___Utility_Y2021.xlsx",
+      "sheet": "Utility",
+      "header_row": 2,
+      "source_rows": 5808,
+      "first_source_row": 3,
+      "last_source_row": 5810,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2021,
+      "kind": "plant",
+      "member": "2___Plant_Y2021.xlsx",
+      "sheet": "Plant",
+      "header_row": 2,
+      "source_rows": 13455,
+      "first_source_row": 3,
+      "last_source_row": 13457,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2021,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2021.xlsx",
+      "sheet": "Operable",
+      "header_row": 2,
+      "source_rows": 24646,
+      "first_source_row": 3,
+      "last_source_row": 24648,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2021,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2021.xlsx",
+      "sheet": "Proposed",
+      "header_row": 2,
+      "source_rows": 1843,
+      "first_source_row": 3,
+      "last_source_row": 1845,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2021,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2021.xlsx",
+      "sheet": "Retired and Canceled",
+      "header_row": 2,
+      "source_rows": 4748,
+      "first_source_row": 3,
+      "last_source_row": 4751,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2021,
+      "kind": "ownership",
+      "member": "4___Owner_Y2021.xlsx",
+      "sheet": "Ownership",
+      "header_row": 2,
+      "source_rows": 5131,
+      "first_source_row": 3,
+      "last_source_row": 5133,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2022,
+      "kind": "utility",
+      "member": "1___Utility_Y2022.xlsx",
+      "sheet": "Utility",
+      "header_row": 2,
+      "source_rows": 5935,
+      "first_source_row": 3,
+      "last_source_row": 5937,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2022,
+      "kind": "plant",
+      "member": "2___Plant_Y2022.xlsx",
+      "sheet": "Plant",
+      "header_row": 2,
+      "source_rows": 14239,
+      "first_source_row": 3,
+      "last_source_row": 14241,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2022,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2022.xlsx",
+      "sheet": "Operable",
+      "header_row": 2,
+      "source_rows": 25379,
+      "first_source_row": 3,
+      "last_source_row": 25381,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2022,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2022.xlsx",
+      "sheet": "Proposed",
+      "header_row": 2,
+      "source_rows": 2024,
+      "first_source_row": 3,
+      "last_source_row": 2026,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2022,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2022.xlsx",
+      "sheet": "Retired and Canceled",
+      "header_row": 2,
+      "source_rows": 4944,
+      "first_source_row": 3,
+      "last_source_row": 4946,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2022,
+      "kind": "ownership",
+      "member": "4___Owner_Y2022.xlsx",
+      "sheet": "Ownership",
+      "header_row": 2,
+      "source_rows": 5302,
+      "first_source_row": 3,
+      "last_source_row": 5304,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2023,
+      "kind": "utility",
+      "member": "1___Utility_Y2023.xlsx",
+      "sheet": "Utility",
+      "header_row": 2,
+      "source_rows": 6193,
+      "first_source_row": 3,
+      "last_source_row": 6195,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2023,
+      "kind": "plant",
+      "member": "2___Plant_Y2023.xlsx",
+      "sheet": "Plant",
+      "header_row": 2,
+      "source_rows": 15068,
+      "first_source_row": 3,
+      "last_source_row": 15070,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2023,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2023.xlsx",
+      "sheet": "Operable",
+      "header_row": 2,
+      "source_rows": 26011,
+      "first_source_row": 3,
+      "last_source_row": 26013,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2023,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2023.xlsx",
+      "sheet": "Proposed",
+      "header_row": 2,
+      "source_rows": 2179,
+      "first_source_row": 3,
+      "last_source_row": 2181,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2023,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2023.xlsx",
+      "sheet": "Retired and Canceled",
+      "header_row": 2,
+      "source_rows": 5251,
+      "first_source_row": 3,
+      "last_source_row": 5253,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2023,
+      "kind": "ownership",
+      "member": "4___Owner_Y2023.xlsx",
+      "sheet": "Ownership",
+      "header_row": 2,
+      "source_rows": 5380,
+      "first_source_row": 3,
+      "last_source_row": 5382,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2024,
+      "kind": "utility",
+      "member": "1___Utility_Y2024.xlsx",
+      "sheet": "Utility",
+      "header_row": 2,
+      "source_rows": 6643,
+      "first_source_row": 3,
+      "last_source_row": 6645,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2024,
+      "kind": "plant",
+      "member": "2___Plant_Y2024.xlsx",
+      "sheet": "Plant",
+      "header_row": 2,
+      "source_rows": 16132,
+      "first_source_row": 3,
+      "last_source_row": 16134,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2024,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2024.xlsx",
+      "sheet": "Operable",
+      "header_row": 2,
+      "source_rows": 26856,
+      "first_source_row": 3,
+      "last_source_row": 26858,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2024,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2024.xlsx",
+      "sheet": "Proposed",
+      "header_row": 2,
+      "source_rows": 2409,
+      "first_source_row": 3,
+      "last_source_row": 2411,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2024,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2024.xlsx",
+      "sheet": "Retired and Canceled",
+      "header_row": 2,
+      "source_rows": 5592,
+      "first_source_row": 3,
+      "last_source_row": 5594,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2024,
+      "kind": "ownership",
+      "member": "4___Owner_Y2024.xlsx",
+      "sheet": "Ownership",
+      "header_row": 2,
+      "source_rows": 5496,
+      "first_source_row": 3,
+      "last_source_row": 5498,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2025,
+      "kind": "utility",
+      "member": "1___Utility_Y2025.xlsx",
+      "sheet": "Utility",
+      "header_row": 2,
+      "source_rows": 6946,
+      "first_source_row": 3,
+      "last_source_row": 6948,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2025,
+      "kind": "plant",
+      "member": "2___Plant_Y2025.xlsx",
+      "sheet": "Plant",
+      "header_row": 2,
+      "source_rows": 17349,
+      "first_source_row": 3,
+      "last_source_row": 17351,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2025,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2025.xlsx",
+      "sheet": "Operable",
+      "header_row": 2,
+      "source_rows": 27919,
+      "first_source_row": 3,
+      "last_source_row": 27921,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2025,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2025.xlsx",
+      "sheet": "Proposed",
+      "header_row": 2,
+      "source_rows": 2851,
+      "first_source_row": 3,
+      "last_source_row": 2853,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2025,
+      "kind": "generator",
+      "member": "3_1_Generator_Y2025.xlsx",
+      "sheet": "Retired and Canceled",
+      "header_row": 2,
+      "source_rows": 5806,
+      "first_source_row": 3,
+      "last_source_row": 5808,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2025,
+      "kind": "ownership",
+      "member": "4___Owner_Y2025.xlsx",
+      "sheet": "Ownership",
+      "header_row": 2,
+      "source_rows": 5680,
+      "first_source_row": 3,
+      "last_source_row": 5682,
+      "first_projection_present": true,
+      "last_projection_present": true
+    },
+    {
+      "year": 2018,
+      "kind": "doe417_incidents",
+      "file": "doe417_2018_Annual_Summary.xls",
+      "sheet": "Sheet1",
+      "source_rows": 220,
+      "first_source_row": 3,
+      "last_source_row": 222
+    },
+    {
+      "year": 2019,
+      "kind": "doe417_incidents",
+      "file": "doe417_2019_Annual_Summary.xls",
+      "sheet": "Sheet1",
+      "source_rows": 278,
+      "first_source_row": 3,
+      "last_source_row": 280
+    },
+    {
+      "year": 2020,
+      "kind": "doe417_incidents",
+      "file": "doe417_2020_Annual_Summary.xls",
+      "sheet": "Sheet1",
+      "source_rows": 383,
+      "first_source_row": 3,
+      "last_source_row": 385
+    },
+    {
+      "year": 2021,
+      "kind": "doe417_incidents",
+      "file": "doe417_2021_Annual_Summary.xls",
+      "sheet": "Sheet1",
+      "source_rows": 387,
+      "first_source_row": 3,
+      "last_source_row": 389
+    },
+    {
+      "year": 2022,
+      "kind": "doe417_incidents",
+      "file": "doe417_2022_Annual_Summary.xls",
+      "sheet": "Sheet1",
+      "source_rows": 390,
+      "first_source_row": 3,
+      "last_source_row": 392
+    },
+    {
+      "year": 2023,
+      "kind": "doe417_incidents",
+      "file": "doe417_2023_Annual_Summary.xls",
+      "sheet": "Sheet1",
+      "source_rows": 348,
+      "first_source_row": 3,
+      "last_source_row": 350
+    }
+  ],
+  "raw_material_sha256": {
+    "raw\\eia8602018.zip": "46864f69f190da9a0d1096964984219d7728b4c626c3bc8a48767507632b18df",
+    "raw\\eia8602019.zip": "6fe0d37858359c50772fbcb1a6cfca0a3fbf442423ddf4e0d33df929caa1ea7b",
+    "raw\\eia8602020.zip": "ce519fd0b02c74b8c4231dc023bf07f922ae5f2a018fcaf88914502f61aa89ea",
+    "raw\\eia8602021.zip": "ac35e582335ed5f82c1177361d6e8e82cff083ae85a5ec668815d21e0aef3ee5",
+    "raw\\eia8602022.zip": "a6f6b00f480ccfb7436804f5cb9984f27c3e0c20cfcbe9b4ed057285b5a68980",
+    "raw\\eia8602023.zip": "1447e23e608bea1523961542a90eb93ea86715067a37f211282541461049b46f",
+    "raw\\eia8602024.zip": "0aaae04812cd4ab87a3e346bdf93848a3cc15053fd4dc2a4cf82d2aeac95f12b",
+    "raw\\eia8602025.zip": "2b27929d26cc1da9ad6a530da1cac6718cd8496098ee560c4d47cfffd96d08ba",
+    "raw\\doe417_2018_Annual_Summary.xls": "5f63f8c0265e3d42e6b124a0b5cc4e768a4f8d1eb8e5522225b514c7b865c196",
+    "raw\\doe417_2019_Annual_Summary.xls": "29a57d832afa1997ff135c0e81be8c1d2c2956c3a506b073ab95dd449951af9d",
+    "raw\\doe417_2020_Annual_Summary.xls": "7d8c80566593e4df74a97afe963d8a93daede220b53d3ba8a824b63a48ee0d6a",
+    "raw\\doe417_2021_Annual_Summary.xls": "32d74fd9886159ad58a0c5521171d7b35d3b4f40a121286a153ab79b68906a1f",
+    "raw\\doe417_2022_Annual_Summary.xls": "5eb3b3ca666e3d3c990986164ca312aaeb3086f68327cf8ba34dc9f01cba8bf7",
+    "raw\\doe417_2023_Annual_Summary.xls": "712806caf47d45d11aa7099b21a597bbd69b070b78e3a09defc37984e38e9369"
+  },
+  "output_sha256": {
+    "annual_observations.jsonl": "595671eefae6a00c26311f1f6871c0530e3d95042b81ea2ecda84fc53d179629",
+    "collection_summary.json": "be9f438b9c8c62f7732921c520c8829cc5e3b601658d7c12c01125209bfb1805",
+    "entities.jsonl": "be5603be9707055db85c31ddfc934c43cc809e6e9da760f6357ac601738a8fcd",
+    "relations.jsonl": "3906d3e7b775da4dc42925f1fc0972455a00195109e5b37e1b1301f341e4d071",
+    "risk_events.jsonl": "b42743f751bd22e1600b1d1c1fdc1fec3f1444ce77c69255c96d830f5fe79284"
+  },
+  "errors": {},
+  "error_examples": {},
+  "semantic_limits": [
+    "Utilities are reported identifiers, not deduplicated parent companies.",
+    "Plant and generator records include reported/planned/retired assets; they are not paper product categories.",
+    "Fuel and NAICS codes are observed categories; they do not establish paper raw-material/product supply transactions.",
+    "DOE incident rows are area-level reports; firm attribution, per-firm interruption labels and causal paths remain absent.",
+    "Survey year is not verified publication or historical ingestion time."
+  ]
+}

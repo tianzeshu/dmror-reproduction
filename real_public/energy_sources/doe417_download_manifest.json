@@ -1,0 +1,93 @@
+{
+  "source": "US DOE-417 public annual electric emergency incidents and disturbances",
+  "archive_index": "https://doe417.pnnl.gov/",
+  "archive_link_evidence": "../additional_source_review/doe417_index-DtrryTHD.js",
+  "listed_years_downloaded": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "missing_requested_years": [
+    2024,
+    2025
+  ],
+  "is_synthetic": false,
+  "downloads": [
+    {
+      "source_url": "https://doe417.pnnl.gov/summaries/2018_Annual_Summary.xls",
+      "response_url": "https://doe417.pnnl.gov/summaries/2018_Annual_Summary.xls",
+      "fetched_at_utc": "2026-10-05T11:41:45.567294+00:00",
+      "status_code": 200,
+      "size_bytes": 86212,
+      "sha256": "5f63f8c0265e3d42e6b124a0b5cc4e768a4f8d1eb8e5522225b514c7b865c196",
+      "content_type": "application/vnd.ms-excel",
+      "last_modified": "Mon, 24 Aug 2026 15:12:27 GMT",
+      "etag": "\"33480336\"",
+      "relative_path": "raw/doe417_2018_Annual_Summary.xls"
+    },
+    {
+      "source_url": "https://doe417.pnnl.gov/summaries/2019_Annual_Summary.xls",
+      "response_url": "https://doe417.pnnl.gov/summaries/2019_Annual_Summary.xls",
+      "fetched_at_utc": "2026-10-05T11:41:45.567478+00:00",
+      "status_code": 200,
+      "size_bytes": 96452,
+      "sha256": "29a57d832afa1997ff135c0e81be8c1d2c2956c3a506b073ab95dd449951af9d",
+      "content_type": "application/vnd.ms-excel",
+      "last_modified": "Mon, 24 Aug 2026 15:12:27 GMT",
+      "etag": "\"33480336\"",
+      "relative_path": "raw/doe417_2019_Annual_Summary.xls"
+    },
+    {
+      "source_url": "https://doe417.pnnl.gov/summaries/2020_Annual_Summary.xls",
+      "response_url": "https://doe417.pnnl.gov/summaries/2020_Annual_Summary.xls",
+      "fetched_at_utc": "2026-10-05T11:41:46.744122+00:00",
+      "status_code": 200,
+      "size_bytes": 120004,
+      "sha256": "7d8c80566593e4df74a97afe963d8a93daede220b53d3ba8a824b63a48ee0d6a",
+      "content_type": "application/vnd.ms-excel",
+      "last_modified": "Mon, 24 Aug 2026 15:12:27 GMT",
+      "etag": "\"33480336\"",
+      "relative_path": "raw/doe417_2020_Annual_Summary.xls"
+    },
+    {
+      "source_url": "https://doe417.pnnl.gov/summaries/2021_Annual_Summary.xls",
+      "response_url": "https://doe417.pnnl.gov/summaries/2021_Annual_Summary.xls",
+      "fetched_at_utc": "2026-10-05T11:41:46.971526+00:00",
+      "status_code": 200,
+      "size_bytes": 133828,
+      "sha256": "32d74fd9886159ad58a0c5521171d7b35d3b4f40a121286a153ab79b68906a1f",
+      "content_type": "application/vnd.ms-excel",
+      "last_modified": "Mon, 24 Aug 2026 15:12:27 GMT",
+      "etag": "\"33480336\"",
+      "relative_path": "raw/doe417_2021_Annual_Summary.xls"
+    },
+    {
+      "source_url": "https://doe417.pnnl.gov/summaries/2022_Annual_Summary.xls",
+      "response_url": "https://doe417.pnnl.gov/summaries/2022_Annual_Summary.xls",
+      "fetched_at_utc": "2026-10-05T11:41:48.112818+00:00",
+      "status_code": 200,
+      "size_bytes": 134340,
+      "sha256": "5eb3b3ca666e3d3c990986164ca312aaeb3086f68327cf8ba34dc9f01cba8bf7",
+      "content_type": "application/vnd.ms-excel",
+      "last_modified": "Mon, 24 Aug 2026 15:12:27 GMT",
+      "etag": "\"33480336\"",
+      "relative_path": "raw/doe417_2022_Annual_Summary.xls"
+    },
+    {
+      "source_url": "https://doe417.pnnl.gov/summaries/2023_Annual_Summary.xls",
+      "response_url": "https://doe417.pnnl.gov/summaries/2023_Annual_Summary.xls",
+      "fetched_at_utc": "2026-10-05T11:41:48.887726+00:00",
+      "status_code": 200,
+      "size_bytes": 119296,
+      "sha256": "712806caf47d45d11aa7099b21a597bbd69b070b78e3a09defc37984e38e9369",
+      "content_type": "application/vnd.ms-excel",
+      "last_modified": "Mon, 24 Aug 2026 15:12:27 GMT",
+      "etag": "\"33480336\"",
+      "relative_path": "raw/doe417_2023_Annual_Summary.xls"
+    }
+  ],
+  "scope_note": "Incident reports, not causal propagation paths; absence of report is not a verified negative."
+}

@@ -1,0 +1,177 @@
+{
+  "collection_date": "2026-10-05",
+  "is_synthetic": false,
+  "creator": "tianzeshu research collection pipeline",
+  "statistics": [
+    {
+      "source_dataset": "NHTSA-Recall-2018-2025",
+      "entity_count": 32917,
+      "fact_relation_count": 88959,
+      "source_record_count": 185699,
+      "official_event_count": 8090,
+      "historical_period": "2018--2025 report received date",
+      "firm_risk_gold_labels": 0,
+      "is_synthetic": false,
+      "scope": "safety recalls; mixed vehicles/equipment/tires/child restraints"
+    },
+    {
+      "source_dataset": "EIA860-2018-2025+DOE417-2018-2023",
+      "entity_count": 67768,
+      "fact_relation_count": 203171,
+      "source_record_count": 456017,
+      "official_event_count": 2006,
+      "historical_period": "EIA 2018--2025; DOE 2018--2023",
+      "firm_risk_gold_labels": 0,
+      "is_synthetic": false,
+      "scope": "reporting entities, physical plants and generators, reported electric disturbances"
+    },
+    {
+      "source_dataset": "Wikidata-Industrial-20261005",
+      "entity_count": 6524,
+      "fact_relation_count": 24032,
+      "source_record_count": 24166,
+      "official_event_count": 0,
+      "historical_period": "2026-10-05 current snapshot",
+      "firm_risk_gold_labels": 0,
+      "is_synthetic": false,
+      "scope": "current industrial entity/type/ownership/manufacture/location assertions; domains overlap"
+    }
+  ],
+  "sources": [
+    {
+      "name": "NHTSA official recalls",
+      "provider": "U.S. Department of Transportation, NHTSA",
+      "url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+      "bulk_url": "https://static.nhtsa.gov/odi/ffdd/rcl/FLAT_RCL_POST_2010.zip",
+      "license_basis_url": "https://catalog.data.gov/dataset/nhtsas-office-of-defects-investigation-odi-recalls-nhtsa-api-6e97f",
+      "rights": "US public-domain government data per saved official catalogue metadata",
+      "coverage": "Complete recall received-date filter 2018--2025",
+      "directory": "nhtsa_sources"
+    },
+    {
+      "name": "NHTSA vPIC manufacturer registry",
+      "provider": "U.S. Department of Transportation, NHTSA",
+      "url": "https://vpic.nhtsa.dot.gov/api/",
+      "license_basis_url": "https://catalog.data.gov/dataset/nhtsa-product-information-catalog-and-vehicle-listing-vpic-vehicle-api-json",
+      "rights": "Official catalogue states actual data may be freely used by the public; formal catalogue license is unknown-license, not an identified SPDX license. ODI recall public-domain metadata is not applied to this registry.",
+      "formal_license": "unspecified (Data.gov unknown-license)",
+      "coverage": "Registry pages 1--100 only, current 2026 snapshot; 10,000 manufacturer IDs",
+      "directory": "nhtsa_sources"
+    },
+    {
+      "name": "EIA-860 detailed annual survey data",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/electricity/data/eia860/",
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "license_basis_url": "https://www.eia.gov/about/copyrights_reuse.php",
+      "rights": "EIA government information products in public domain; acknowledge original source",
+      "directory": "energy_sources"
+    },
+    {
+      "name": "DOE-417 annual disturbance reports",
+      "provider": "U.S. Department of Energy",
+      "url": "https://doe417.pnnl.gov/",
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "not_collected_years": [
+        2024,
+        2025
+      ],
+      "rights": "Published US government report tables; retain source attribution",
+      "directory": "energy_sources"
+    },
+    {
+      "name": "Wikidata industrial snapshot",
+      "provider": "Wikidata community / Wikimedia Foundation",
+      "url": "https://www.wikidata.org/wiki/Wikidata:Data_access",
+      "license": "CC0-1.0",
+      "directory": "graph_sources",
+      "strict_type_counts": {
+        "firm": 1183,
+        "product": 114,
+        "material": 106,
+        "industry": 169,
+        "region": 1323,
+        "unclassified": 3629
+      },
+      "domain_candidate_counts": {
+        "Auto": {
+          "node_records": 2967,
+          "strict_type_counts": {
+            "firm": 259,
+            "product": 111,
+            "material": 32,
+            "industry": 63,
+            "region": 670,
+            "unclassified": 1832
+          },
+          "domain_membership": "selector candidate or one-hop relation to candidate; domains may overlap"
+        },
+        "Semi": {
+          "node_records": 860,
+          "strict_type_counts": {
+            "firm": 120,
+            "product": 1,
+            "material": 24,
+            "industry": 30,
+            "region": 173,
+            "unclassified": 512
+          },
+          "domain_membership": "selector candidate or one-hop relation to candidate; domains may overlap"
+        },
+        "Energy": {
+          "node_records": 3097,
+          "strict_type_counts": {
+            "firm": 815,
+            "product": 2,
+            "material": 43,
+            "industry": 120,
+            "region": 720,
+            "unclassified": 1397
+          },
+          "domain_membership": "selector candidate or one-hop relation to candidate; domains may overlap"
+        }
+      },
+      "candidate_and_taxonomy_caps": "Auto selector capped at 1500; one-hop enrichment and type lookup bounded; missing targets explicit"
+    }
+  ],
+  "candidate_sources_not_downloaded": [
+    {
+      "name": "ETO Semiconductor Supply Chain Dataset",
+      "url": "https://www.eto.tech/dataset-docs/chipexplorer/index.html",
+      "terms_url": "https://www.eto.tech/tou/index.html",
+      "status": "not_automatically_collected",
+      "reason": "Terms disallow automated/semi-automated extraction; CC-BY-NC and third-party rights also apply. Static snapshot has no historical risk labels."
+    },
+    {
+      "name": "IC-SPLC public repository candidate",
+      "url": "https://data.mendeley.com/datasets/txh3rrsh89/1",
+      "status": "not_downloaded_or_verified",
+      "reason": "Web fetch timeout and public metadata API returned HTTP403; no access control bypass"
+    }
+  ],
+  "excluded_local_material": {
+    "source": "previous ICKG/news recovery",
+    "status": "not_in_this_real_public_collection",
+    "reasons": [
+      "Third-party news licensing and source-permalink checks unresolved",
+      "Relation candidates are not reviewed gold",
+      "Earlier mixed embedding cache contains synthetic templates and is not reused"
+    ]
+  }
+}

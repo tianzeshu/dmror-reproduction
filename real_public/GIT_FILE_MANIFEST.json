@@ -1,0 +1,346 @@
+{
+  "format": "real_public_git_code_metadata_v2",
+  "snapshot": "2026-10-05",
+  "source_families": [
+    "energy",
+    "graph",
+    "nhtsa"
+  ],
+  "distribution": "code_and_metadata_only",
+  "raw_included": false,
+  "normalized_data_included": false,
+  "complete_and_normalized_data_release": "https://github.com/tianzeshu/dmror-reproduction/releases/tag/v1.2.0",
+  "manifest_excludes_self": true,
+  "files": [
+    {
+      "path": "collect_doe417.py",
+      "encoding": "identity",
+      "stored_bytes": 1295,
+      "stored_sha256": "37edf4b1cc3022e966a1f3a21289785a9576300b419aa8f6a71f550de7786491"
+    },
+    {
+      "path": "collect_public_energy.py",
+      "encoding": "identity",
+      "stored_bytes": 3668,
+      "stored_sha256": "30484dbcc735e751b2456ab184fcd0c935af20f097f51217e1a62dff4b49c176"
+    },
+    {
+      "path": "DATASET_STATISTICS_REAL.csv",
+      "encoding": "identity",
+      "stored_bytes": 660,
+      "stored_sha256": "48c5ebb2678245a38196cf75cf14e3c5e01ecf67f6d2150824f24dfada655a3d"
+    },
+    {
+      "path": "energy_sources/doe417_download_manifest.json",
+      "encoding": "identity",
+      "stored_bytes": 4043,
+      "stored_sha256": "78cffbd5819d2f2474ca46c12d86eefb5e8ca909b4d96f05feefd0900f5c4db9"
+    },
+    {
+      "path": "energy_sources/download_manifest.json",
+      "encoding": "identity",
+      "stored_bytes": 6308,
+      "stored_sha256": "cba9846f0f03eb93570f56a9206f1829d65bfd4c692ed79a844be15e5e75965e"
+    },
+    {
+      "path": "energy_sources/energy_qa.py",
+      "encoding": "identity",
+      "stored_bytes": 18329,
+      "stored_sha256": "d049d48e6ff0d86491121c13660be8bcad9c4a03edb48a1b24d261699e15be80"
+    },
+    {
+      "path": "energy_sources/evidence_verification.json",
+      "encoding": "identity",
+      "stored_bytes": 27978,
+      "stored_sha256": "96c1220e2f9cb96b73bcb58a64a9c134e3e85c95ff9d1ec0594836fabb4ef5ce"
+    },
+    {
+      "path": "energy_sources/normalized/collection_summary.json",
+      "encoding": "identity",
+      "stored_bytes": 8234,
+      "stored_sha256": "be9f438b9c8c62f7732921c520c8829cc5e3b601658d7c12c01125209bfb1805"
+    },
+    {
+      "path": "graph_sources/collect_wikidata.py",
+      "encoding": "identity",
+      "stored_bytes": 14218,
+      "stored_sha256": "8503e7f3f7254602e8e3671186cfdb362e62c9a9a875fac02cee8ca08de1cb9d"
+    },
+    {
+      "path": "graph_sources/collection_summary.json",
+      "encoding": "identity",
+      "stored_bytes": 4806,
+      "stored_sha256": "44a0bdccee05508773f8d02c05e4eba617637e851dfabde03c4b29aaa94bc639"
+    },
+    {
+      "path": "graph_sources/export_checkpoint.py",
+      "encoding": "identity",
+      "stored_bytes": 4554,
+      "stored_sha256": "32487c85e51ca01898955b12f65571018973bd1353acdc133b1e457dca6c3a9e"
+    },
+    {
+      "path": "graph_sources/file_manifest.json",
+      "encoding": "identity",
+      "stored_bytes": 172640,
+      "stored_sha256": "cace512c5b0e30c00dfac0e0397174011029f0f6bd669f18e2218fa84a14039c"
+    },
+    {
+      "path": "graph_sources/finalize_manifest.py",
+      "encoding": "identity",
+      "stored_bytes": 1755,
+      "stored_sha256": "fa2ac029c7db076736a3c405532c20740c6fee001392a7d2e3ac8148fec930fe"
+    },
+    {
+      "path": "graph_sources/LICENSE_CODE",
+      "encoding": "identity",
+      "stored_bytes": 1066,
+      "stored_sha256": "5aaf424b0c3b5af965846462c89a4cc129540047c816ba75be7727ddf6d16a2e"
+    },
+    {
+      "path": "graph_sources/LICENSE_DATA.md",
+      "encoding": "identity",
+      "stored_bytes": 663,
+      "stored_sha256": "a0c2b10a2410074e3e2affcff2dfeab6f7c8162139dc6773f76e79cd56ca01ab"
+    },
+    {
+      "path": "graph_sources/normalize_wikidata.py",
+      "encoding": "identity",
+      "stored_bytes": 16246,
+      "stored_sha256": "857e45578a79d0cca7c221e1bcd9a6f7db36d1a89f85ddd28411c47658767584"
+    },
+    {
+      "path": "graph_sources/normalized/integrity_negative_test.json",
+      "encoding": "identity",
+      "stored_bytes": 212,
+      "stored_sha256": "723aaa8727344cbffe08193e25c85b1e58d7f6aa001d9eea744b977928b9d036"
+    },
+    {
+      "path": "graph_sources/normalized/integrity_report.json",
+      "encoding": "identity",
+      "stored_bytes": 180720,
+      "stored_sha256": "4e2c5b54d4f0ca21825abef687ee54e5fa3bb4dd47b9cc1ddcdf6eddf2e4e846"
+    },
+    {
+      "path": "graph_sources/normalized/summary.json",
+      "encoding": "identity",
+      "stored_bytes": 6036,
+      "stored_sha256": "d5e604bb789ceb70b59f780ce202c72a399a101756e099696fa2aefa3aa1a050"
+    },
+    {
+      "path": "graph_sources/README_ZH.md",
+      "encoding": "identity",
+      "stored_bytes": 7897,
+      "stored_sha256": "9130898789ac67f04c8043ab5b619362b3afbc87841811c1375c26fb210d880e"
+    },
+    {
+      "path": "graph_sources/repair_gzip_cache.py",
+      "encoding": "identity",
+      "stored_bytes": 1154,
+      "stored_sha256": "3d53ac10e545390b1dddb010dd145dd72f69cc88a33db00ac0ba0844109af5d3"
+    },
+    {
+      "path": "graph_sources/request_manifest.json",
+      "encoding": "identity",
+      "stored_bytes": 162241,
+      "stored_sha256": "910673b3692b000f0f2c5df6b04118fbe3c88b33b37bc7873804409c2b60e6bf"
+    },
+    {
+      "path": "graph_sources/resolve_types.py",
+      "encoding": "identity",
+      "stored_bytes": 1131,
+      "stored_sha256": "06f00e604350af3a2d3d0489fcf526bf477faf2073e0fb7abbe665d2bba73ddd"
+    },
+    {
+      "path": "graph_sources/search_resolution.json",
+      "encoding": "identity",
+      "stored_bytes": 20364,
+      "stored_sha256": "5f389ce9531a409feb98f2e1dbb94f12ef9b4f30f85d2b1fbf6d63856ab1eb94"
+    },
+    {
+      "path": "graph_sources/select_auto_query.json",
+      "encoding": "identity",
+      "stored_bytes": 329,
+      "stored_sha256": "a23a00369bb0cf2896b8b4188d8185cf638fb457f8ea0f09b1590f45a38026a3"
+    },
+    {
+      "path": "graph_sources/select_energy_query.json",
+      "encoding": "identity",
+      "stored_bytes": 280,
+      "stored_sha256": "e59638de27e812deb07827303b9b67c36d6c0a3ff4031b56465129cc22593b76"
+    },
+    {
+      "path": "graph_sources/select_semi_query.json",
+      "encoding": "identity",
+      "stored_bytes": 268,
+      "stored_sha256": "2a04a4d8adeb223b83b53621ab2f450e1ab71df18de03687193eee6bc2bf8e8d"
+    },
+    {
+      "path": "graph_sources/selectors.json",
+      "encoding": "identity",
+      "stored_bytes": 1894,
+      "stored_sha256": "d169d4ba7d520ef779e944fe60d4599d087479d336b300a561c6c0228a96318a"
+    },
+    {
+      "path": "graph_sources/taxonomy_collection_summary.json",
+      "encoding": "identity",
+      "stored_bytes": 7574,
+      "stored_sha256": "8d370f0db2b432c1f3fef72b90637d4477f5ce163124c5b1625dbd424e276e2b"
+    },
+    {
+      "path": "graph_sources/type_root_searches.json",
+      "encoding": "identity",
+      "stored_bytes": 8082,
+      "stored_sha256": "1580962ea1524e05ac74c318e4b4b320075602a1850c6051d786c67fb95f16e8"
+    },
+    {
+      "path": "graph_sources/verify_real_graph.py",
+      "encoding": "identity",
+      "stored_bytes": 6926,
+      "stored_sha256": "28e7c212ba4040cf89a1554b6d76b3e94f584d90298f0132d23cad10b72841c6"
+    },
+    {
+      "path": "MATERIAL_PASSPORT.json",
+      "encoding": "identity",
+      "stored_bytes": 762,
+      "stored_sha256": "a8cc860cf6f1f46047711ee5cbc60d90a4c92edc94b20c8de0665f9e461c6206"
+    },
+    {
+      "path": "materialize_real_public_data.py",
+      "encoding": "identity",
+      "stored_bytes": 2538,
+      "stored_sha256": "3677d68283dbff06f6a3311be7cd632b882b6204e78b69a7c879d98874bed749"
+    },
+    {
+      "path": "nhtsa_sources/acquire_nhtsa.py",
+      "encoding": "identity",
+      "stored_bytes": 4851,
+      "stored_sha256": "fed80af18a91776a19ccadbb3042581783c04830f943be46883cfddd6e9a8148"
+    },
+    {
+      "path": "nhtsa_sources/acquire_vpic.py",
+      "encoding": "identity",
+      "stored_bytes": 7454,
+      "stored_sha256": "f372bd4b939345f6c227dde999c946461c8826be8e75fcb66c9216df4e5b3499"
+    },
+    {
+      "path": "nhtsa_sources/archive_manifest.json",
+      "encoding": "identity",
+      "stored_bytes": 458,
+      "stored_sha256": "24c967352c860ff37af0d7668632a4f8d6353ffe047e11e4013173c95018fc21"
+    },
+    {
+      "path": "nhtsa_sources/build_nhtsa_fact_graph.py",
+      "encoding": "identity",
+      "stored_bytes": 4929,
+      "stored_sha256": "e440558e1c1b14bead93b8bad9023a8b735a0fd26998611863eb8ffc09bb4450"
+    },
+    {
+      "path": "nhtsa_sources/collection_summary.json",
+      "encoding": "identity",
+      "stored_bytes": 4247,
+      "stored_sha256": "d898941cd07a961e41c0586e9a280cc1b0012dcc46e403fba0f392d284299f9e"
+    },
+    {
+      "path": "nhtsa_sources/download_manifest.json",
+      "encoding": "identity",
+      "stored_bytes": 6452,
+      "stored_sha256": "bb59b58f568af267d4d48a72bd3f81f0caf330c8415db39080a7b1b2aba749da"
+    },
+    {
+      "path": "nhtsa_sources/evidence_verification.json",
+      "encoding": "identity",
+      "stored_bytes": 1261,
+      "stored_sha256": "8cddfca0b136a61a1e25c1a1dd236e02ca2aa7773964af932f5a0d3689353a00"
+    },
+    {
+      "path": "nhtsa_sources/invalid_raw_records.json",
+      "encoding": "identity",
+      "stored_bytes": 2,
+      "stored_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "nhtsa_sources/normalize_nhtsa.py",
+      "encoding": "identity",
+      "stored_bytes": 13334,
+      "stored_sha256": "426a13c55f9777905c10af694cf9138b75db9c3442078cd0bead96ac7ff3c13a"
+    },
+    {
+      "path": "nhtsa_sources/README_ZH.md",
+      "encoding": "identity",
+      "stored_bytes": 4953,
+      "stored_sha256": "fe822f04886ba78135101351cbebf43a81ca76cacd9835700c24ce9833da718b"
+    },
+    {
+      "path": "nhtsa_sources/recall_fact_graph_summary.json",
+      "encoding": "identity",
+      "stored_bytes": 1600,
+      "stored_sha256": "3eb639b849093dc437df383be2c9bd5a7c79cfd277bae8a21126e97d96be634a"
+    },
+    {
+      "path": "nhtsa_sources/verify_nhtsa_evidence.py",
+      "encoding": "identity",
+      "stored_bytes": 7021,
+      "stored_sha256": "94264152d7d7dea9764b0794876d19b02fb6468afacfda4d931ea83d7b76fc2c"
+    },
+    {
+      "path": "nhtsa_sources/vpic_collection_manifest.json",
+      "encoding": "identity",
+      "stored_bytes": 120133,
+      "stored_sha256": "65af17be33e2abc0a4a2d41104edb0ab74fb9295904e53f58f719d2cefb99e67"
+    },
+    {
+      "path": "normalize_public_energy.py",
+      "encoding": "identity",
+      "stored_bytes": 13381,
+      "stored_sha256": "19b1c6ae61e5d19d96c75bac3a5be64c2692661fb434b2d276420478d06eff67"
+    },
+    {
+      "path": "README.md",
+      "encoding": "identity",
+      "stored_bytes": 6334,
+      "stored_sha256": "dc926636282db5afa8adaabb46feb1c7dc9e8838298bf338638b1396c27f48a5"
+    },
+    {
+      "path": "README_DELIVERY_TOOLS.md",
+      "encoding": "identity",
+      "stored_bytes": 2087,
+      "stored_sha256": "5362c2b267a132fbc568f427bad44e8e98a650910f332a1b19aad9f68e7d96b5"
+    },
+    {
+      "path": "README_GIT_SUBSET.md",
+      "encoding": "identity",
+      "stored_bytes": 1083,
+      "stored_sha256": "18479a91e3a86427cfe1ece97b8d31a8e4b85340c89a2f3b5940e709892e1da5"
+    },
+    {
+      "path": "README_ZH.md",
+      "encoding": "identity",
+      "stored_bytes": 6334,
+      "stored_sha256": "dc926636282db5afa8adaabb46feb1c7dc9e8838298bf338638b1396c27f48a5"
+    },
+    {
+      "path": "requirements.txt",
+      "encoding": "identity",
+      "stored_bytes": 48,
+      "stored_sha256": "265f49d119888e403622b6d45962895bf5d37d3a2bf5c31e7c741725f15c1096"
+    },
+    {
+      "path": "SOURCE_CATALOG.json",
+      "encoding": "identity",
+      "stored_bytes": 6789,
+      "stored_sha256": "60509d8a978c9beb5a34e4c01d06eeb7655926806396e4628e172b02294d085e"
+    },
+    {
+      "path": "TRAINING_READINESS.json",
+      "encoding": "identity",
+      "stored_bytes": 1119,
+      "stored_sha256": "610957362db9f52a95b3a650a2816d97e8b34376d63e59855923d7a2438893d9"
+    },
+    {
+      "path": "verify_real_public_delivery.py",
+      "encoding": "identity",
+      "stored_bytes": 4300,
+      "stored_sha256": "f00496fcf59c0c6b07f92dbb9e61e13a3b521705de54c6e7347a53adef2fa847"
+    }
+  ]
+}

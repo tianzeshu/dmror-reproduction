@@ -1,0 +1,110 @@
+{
+  "sources": [
+    {
+      "source_agency": "NHTSA, U.S. Department of Transportation",
+      "requested_url": "https://static.nhtsa.gov/odi/ffdd/rcl/FLAT_RCL_POST_2010.zip",
+      "final_url": "https://static.nhtsa.gov/odi/ffdd/rcl/FLAT_RCL_POST_2010.zip",
+      "retrieved_started_utc": "2026-10-05T11:36:24.760915+00:00",
+      "retrieved_completed_utc": "2026-10-05T11:36:43.471041+00:00",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/octet-stream",
+        "x-amz-replication-status": "REPLICA",
+        "Last-Modified": "Mon, 05 Oct 2026 07:04:13 GMT",
+        "ETag": "\"37922fc2a045b26f2ce5ab34a9cbff0d\"",
+        "x-amz-version-id": "ZjeumUTSRqYY6VZsQWgTlG1JyflVR0mk",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "max-age=70415",
+        "Date": "Mon, 05 Oct 2026 11:36:27 GMT",
+        "Transfer-Encoding": "chunked",
+        "Connection": "Transfer-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+      },
+      "local_file": "raw/FLAT_RCL_POST_2010.zip",
+      "bytes": 14889874,
+      "sha256": "9a3b56b02d36322ecd0b74e84bc6459ee4cf82cc88c59b2cf86cf1e4c1f09471"
+    },
+    {
+      "source_agency": "NHTSA, U.S. Department of Transportation",
+      "requested_url": "https://static.nhtsa.gov/odi/ffdd/rcl/RCL.txt",
+      "final_url": "https://static.nhtsa.gov/odi/ffdd/rcl/RCL.txt",
+      "retrieved_started_utc": "2026-10-05T11:36:43.482242+00:00",
+      "retrieved_completed_utc": "2026-10-05T11:36:44.381613+00:00",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/octet-stream",
+        "x-amz-replication-status": "REPLICA",
+        "Last-Modified": "Mon, 05 Oct 2026 07:04:13 GMT",
+        "ETag": "\"1ad36e9e4dc261d687eff179ee160749\"",
+        "x-amz-version-id": "w3xBNiizfC3WmbvtBr6ABUXSxjG8orma",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "max-age=79981",
+        "Date": "Mon, 05 Oct 2026 11:36:45 GMT",
+        "Content-Length": "3053",
+        "Connection": "close",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+      },
+      "local_file": "raw/RCL.txt",
+      "bytes": 3053,
+      "sha256": "3438cc7e4131efa401dfe6437dbe035607e092c129155dfb411d459d58802203"
+    },
+    {
+      "source_agency": "NHTSA, U.S. Department of Transportation",
+      "requested_url": "https://catalog.data.gov/dataset/nhtsas-office-of-defects-investigation-odi-recalls-nhtsa-api-6e97f",
+      "final_url": "https://catalog.data.gov/dataset/nhtsas-office-of-defects-investigation-odi-recalls-nhtsa-api-6e97f",
+      "retrieved_started_utc": "2026-10-05T11:36:46.042660+00:00",
+      "retrieved_completed_utc": "2026-10-05T11:36:48.708263+00:00",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "137556",
+        "Connection": "close",
+        "Date": "Mon, 05 Oct 2026 11:36:48 GMT",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Cache-Control": "public, max-age=3600, must-revalidate",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self' https://*.googletagmanager.com https://buttons.github.io https://unpkg.com 'unsafe-hashes' 'sha256-osjxnKEPL/pQJbFk1dKsF7PYFmTyMWGmVSiL9inhxJY=' 'sha256-A1KDZ6CTgI16YJ4cUNyyCFExM5+Sv4ApvahuZIQRXPA=' https://static.zdassets.com https://ekr.zdassets.com 'sha256-Ff1SFMp5PHyy62W49sHzg1RI9yL6Y9xoqXeGrJP8TUI=' https://gsa-solutionshelp.zendesk.com 'nonce-5O-f4U0rWtibpjYuxLZWYDL1w1yfq131'; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' https://s3-us-gov-west-1.amazonaws.com https://raw.githubusercontent.com data: https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://api.github.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://static.zdassets.com https://ekr.zdassets.com https://gsa-solutionshelp.zendesk.com https://gov-bam.nr-data.net https://*.ingest.de.sentry.io; frame-src https://www.googletagmanager.com; style-src-attr 'self' 'unsafe-hashes' 'sha256-kELgoK46JmGjLd8UHfzN0qJToDgIB+yMtRHG8PtGL7s='; style-src 'self' https://cdnjs.cloudflare.com; style-src-elem 'self' https://cdnjs.cloudflare.com https://unpkg.com 'unsafe-inline'",
+        "Permissions-Policy": "browsing-topics=()",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Vcap-Request-Id": "70b8b4f1-63f5-4e82-6bce-cbccfbb3d170",
+        "Vary": "Accept-Encoding,Accept-Encoding",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 bffc40ec768368fd0723bc70673c873c.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "MRS53-P5",
+        "X-Amz-Cf-Id": "sPhi49a1h_SqpoZc037wANOC8yy-WJ5YSNHABgN2fMOXlXVMS5qbWw=="
+      },
+      "local_file": "raw/data_gov_recall_metadata.html",
+      "bytes": 137556,
+      "sha256": "23fdab5868fcc8c35056b21c5ba9cd1db9fb050a203c8e127c04ceded5be7df2"
+    },
+    {
+      "source_agency": "NHTSA, U.S. Department of Transportation",
+      "requested_url": "https://api.nhtsa.gov/",
+      "final_url": "https://api.nhtsa.gov/",
+      "retrieved_started_utc": "2026-10-05T11:36:48.709807+00:00",
+      "retrieved_completed_utc": "2026-10-05T11:36:49.760734+00:00",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "text/html",
+        "x-amzn-RequestId": "f587534e-f38d-4d91-887e-e1828ba026a5",
+        "x-amz-apigw-id": "ExKJtFdpIAMFc5g=",
+        "X-Amzn-Trace-Id": "Root=1-6ac38a3d-34b6baac0ba3b3d35880f033",
+        "Vary": "Accept-Encoding",
+        "Date": "Mon, 05 Oct 2026 11:36:50 GMT",
+        "Content-Length": "2693",
+        "Connection": "close",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+      },
+      "local_file": "raw/api_use_policy.html",
+      "bytes": 2693,
+      "sha256": "63b87e6466dd8c761f3cf9e279b8f48c87032d9bbf4346440b4de956b7a64fa2"
+    }
+  ]
+}

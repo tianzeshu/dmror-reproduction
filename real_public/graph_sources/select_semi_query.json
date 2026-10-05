@@ -1,0 +1,5 @@
+{
+  "query": "SELECT DISTINCT ?item WHERE { { VALUES ?industry { wd:Q2986369 } ?item wdt:P452 ?industry . } } ORDER BY ?item LIMIT 1500",
+  "scope": "domain candidate with explicit industry/instance assertions; organization type must be checked",
+  "limit": 1500
+}
