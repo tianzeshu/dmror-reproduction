@@ -12,7 +12,8 @@ import torch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from dmror.metrics import binary_metrics, tune_threshold
+from dmror.metrics import binary_metrics, path_metrics, ranking_metrics, threshold_scope_metrics, tune_threshold
+from dmror.paths import beam_search_paths
 from dmror.train import sha256, validate_dataset
 
 
@@ -20,6 +21,7 @@ def audit(protocol_path, results, output):
     protocol_path, results = Path(protocol_path), Path(results)
     protocol = json.loads(protocol_path.read_text(encoding="utf-8"))
     protocol_hash = sha256(protocol_path)
+    implementation_hashes = {file.name: sha256(file) for file in sorted((ROOT / "dmror").glob("*.py"))}
     data_cache, records, errors = {}, [], []
     for job in protocol["jobs"]:
         run = results / job["name"]
@@ -37,6 +39,8 @@ def audit(protocol_path, results, output):
                         separators=(",", ":"), allow_nan=False).encode("utf-8")).hexdigest()
             if config["configuration_sha256"] != digest or config.get("protocol_sha256") != protocol_hash:
                 raise ValueError("Configuration/protocol digest mismatch")
+            if config.get("implementation_sha256") != implementation_hashes:
+                raise ValueError("Saved implementation differs from the frozen delivered training source")
             for key, value in {**protocol["common"], **job["parameters"]}.items():
                 if config.get(key) != value:
                     raise ValueError(f"Frozen parameter mismatch: {key}")
@@ -48,9 +52,10 @@ def audit(protocol_path, results, output):
                             "resilience", "signals", "delta", "confidence", "signal_mask", "source_mask")}
                 indices = validate_dataset(data)
                 # Keep only evaluation labels after schema/temporal checks.
-                data_cache[job["dataset"]] = (sha256(dataset), data["labels"], data["edge_labels"], indices)
+                data_cache[job["dataset"]] = (sha256(dataset), data["labels"], data["edge_labels"], indices,
+                                              data["src"], data["dst"], data["source_mask"])
                 del data
-            data_hash, labels, edge_labels, indices = data_cache[job["dataset"]]
+            data_hash, labels, edge_labels, indices, src, dst, sources = data_cache[job["dataset"]]
             if config["dataset_sha256"] != data_hash:
                 raise ValueError("Dataset digest mismatch")
             checkpoint = torch.load(run / "checkpoint.pt", map_location="cpu", weights_only=False)
@@ -74,6 +79,14 @@ def audit(protocol_path, results, output):
                 node_threshold = tune_threshold(labels[val], predictions["validation_node_prob"])
                 edge_threshold = tune_threshold(edge_labels[val], predictions["validation_edge_prob"], "positive_f1")
                 for split_name, split_indices in (("validation", val), ("test", test)):
+                    for score_kind, expected_shape in (("node_prob", labels[split_indices].shape),
+                                                       ("edge_prob", edge_labels[split_indices].shape),
+                                                       ("edge_score", edge_labels[split_indices].shape)):
+                        values = predictions[split_name + "_" + score_kind]
+                        if values.shape != expected_shape or not np.isfinite(values).all() or (values < 0).any():
+                            raise ValueError(f"Invalid saved {split_name}_{score_kind} shape or values")
+                        if score_kind.endswith("prob") and (values > 1).any():
+                            raise ValueError("Saved probability exceeds one")
                     for kind, y, threshold in (("node", labels[split_indices], node_threshold),
                                                 ("edge", edge_labels[split_indices], edge_threshold)):
                         recomputed = binary_metrics(y, predictions[split_name + "_" + kind + "_prob"], threshold)
@@ -83,6 +96,16 @@ def audit(protocol_path, results, output):
                                 assert saved is None
                             else:
                                 assert np.isclose(value, saved, rtol=1e-12, atol=1e-12), (split_name, kind, key)
+                    scope = ranking_metrics(labels[split_indices], predictions[split_name + "_node_prob"], config["top_k"])
+                    scope.update(threshold_scope_metrics(labels[split_indices], predictions[split_name + "_node_prob"], node_threshold))
+                    for key, value in scope.items():
+                        saved = result[split_name]["scope"][key]
+                        assert value == saved, (split_name, "scope", key)
+                    paths = path_metrics(src, dst, edge_labels[split_indices],
+                                    predictions[split_name + "_edge_score"], sources[split_indices], beam_search_paths,
+                                    predictions[split_name + "_node_prob"], config["beam_width"],
+                                    config["max_hops"], config["path_top_k"])
+                    assert paths == result[split_name]["path"], (split_name, "path")
             records.append({"run": job["name"], "status": "verified", "configuration_sha256": digest,
                             "dataset_sha256": data_hash, "checkpoint_sha256": sha256(run / "checkpoint.pt"),
                             "predictions_sha256": sha256(run / "predictions.npz"),
@@ -93,9 +116,10 @@ def audit(protocol_path, results, output):
             errors.append({"run": job["name"], "error_type": type(error).__name__, "error": str(error)})
     audit_result = {"status": "passed" if not errors else "failed", "protocol_sha256": protocol_hash,
                     "expected_runs": len(protocol["jobs"]), "verified_runs": len(records),
-                    "checks": ["complete trained artifacts", "data/configuration/protocol SHA256",
+                    "checks": ["complete trained artifacts", "data/configuration/protocol/implementation SHA256",
                                "checkpoint identity and finite weights", "validation-only checkpoint and thresholds",
-                               "ordered target-purged temporal splits", "metrics recomputed from saved predictions"],
+                               "finite, correctly shaped nonnegative predictions and bounded probabilities",
+                               "ordered target-purged temporal splits", "node/edge/scope/path metrics recomputed from saved predictions"],
                     "runs": records, "errors": errors}
     Path(output).write_text(json.dumps(audit_result, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({key: audit_result[key] for key in ("status", "expected_runs", "verified_runs", "errors")}, ensure_ascii=False))

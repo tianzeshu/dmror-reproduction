@@ -98,3 +98,25 @@ python -m dmror.predict --run-dir results/my_first_run/SIM-Auto/full/seed_17 --d
 尚未找到原稿 SC-Auto、SC-Semi、SC-Energy 对应的原始数据工程；交付的三个 SIM 数据集不是这三套原始数据。ICKG 资料中没有实测韧性属性、真实中断、因果传播路径或真实受影响集合，相关输入保留缺失 mask，路径真值为未知。因此这些结果可以说明当前实现的运行和上述任务表现，不能直接当作原稿全部数值的复现，也不能把报道预测准确率等同于真实供应链中断预测准确率。完整限制见 `DATA_CONTRACT.md` 和 `RESEARCH_GAPS.md`。
 
 五个种子的均值和标准差描述训练随机性；数据图和时段固定、30 天预测窗口重叠，种子标准差不是总体置信区间。
+# 按 Table 1 规模运行
+
+完整规模数据位于 `data/table_scale/SC-Auto-Synthetic`、`SC-Semi-Synthetic`、`SC-Energy-Synthetic`。总节点数为 8,164、6,184、7,318；其余表格计数逐项一致。数据及文本均为明确标记的合成记录，原始真实 SC 数据尚未找回。
+
+```bash
+python scripts/verify_table_scale.py --data-root data/table_scale --output reports/table_scale/data_validation.json
+python -m dmror.train --dataset data/table_scale/SC-Auto-Synthetic/dataset.npz --output results/table_scale/my_run --mode full --seed 17 --hidden 128 --batch-size 1 --lr 0.0003 --epochs 60 --device cuda:0
+```
+
+已有数据可直接验收和训练。从头重建时必须选择新目录，例如 `python -m dmror.build_table_scale --all --output data/rebuilt/table_scale`，生成器不会覆盖已存在的 `dataset.npz`。无 CUDA 的环境将 `--device cuda:0` 改成 `--device cpu`。
+
+固定比较协议为 3 个数据集 × 完整模型和 3 个工程基线 × 5 个种子，共 60 次独立运行。正式结果使用 `results/table_scale`，数据摘要、配置、源码摘要、逐样本概率、权重和日志保存在每个运行目录。若复跑，复制协议并把 JSON 中的 `output` 改为新的结果目录，然后执行：
+
+```bash
+python scripts/run_parallel.py --protocol protocols/my_table_scale.json --devices cuda:0 --slots-per-device 1
+python scripts/verify_table_scale_runs.py --protocol protocols/my_table_scale.json --results results/my_table_scale --output reports/my_table_scale_validation.json
+```
+
+`--slots-per-device` 默认 1；本机已使用 3 个并发任务，但应按实际可用显存和系统内存选择。多任务的运行时间包含资源竞争。单任务短程实测采用 RTX 5090 Laptop GPU、K=5、D=64、H=128、batch size=1，峰值 CUDA allocated 约 1.74 GiB，完整运行的数值见各自结果文件。
+
+正式报告工具 `scripts/report_table_scale.py` 只接受完整的 60 次规定运行，拒绝混入短程 pilot、旧 SIM 或不同输入摘要的结果。规模、生成规则、有限标签与未知标签的区别见 `DATASET_TABLE1_SCALE.md`。
+

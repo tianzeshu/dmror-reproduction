@@ -1,8 +1,8 @@
 # 公开发布范围与重建边界
 
-公开日期：2026-10-05。仓库：`tianzeshu/dmror-reproduction`。完整实验输出下载：[v1.0.0 Release](https://github.com/tianzeshu/dmror-reproduction/releases/tag/v1.0.0)。
+公开日期：2026-10-05。仓库：`tianzeshu/dmror-reproduction`。Table 1 完整规模合成数据及 60 次新实验输出：[v1.1.0 Release](https://github.com/tianzeshu/dmror-reproduction/releases/tag/v1.1.0)。历史小型 SIM/ICKG 实验输出：[v1.0.0 Release](https://github.com/tianzeshu/dmror-reproduction/releases/tag/v1.0.0)。
 
-## 完整工程下载与合并
+## 历史 v1.0.0 工程下载与合并
 
 完整工程以五个无损分卷发布：下载 `DMROR_Public_Delivery_20261005.zip.part01` 至 `.part05` 和 `DMROR_Public_Delivery_20261005.parts.sha256`，将五个分卷放在同一目录。使用仓库脚本合并并逐分卷核验（只需 Python 标准库）：
 

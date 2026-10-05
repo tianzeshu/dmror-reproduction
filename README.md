@@ -6,6 +6,10 @@
 
 ## Table 1 完整规模数据
 
+完整规模代码、数据及 **60 次实际训练输出** 位于 [v1.1.0 Release](https://github.com/tianzeshu/dmror-reproduction/releases/tag/v1.1.0)。[中文实验报告](reports/table_scale/experiment_report_zh.md) 和 [逐种子数据](reports/table_scale/per_seed.csv) 对应 3 个数据集 × 4 个方法 × 5 个种子；代码测试 73 项全部通过。数据和实验分别有独立验收报告。
+
+仅需数据时下载 `DMROR_Table1_Scale_Datasets_20261005.zip`。完整工程另含全部权重、预测、配置和日志，以 `DMROR_Table1_Scale_Delivery_20261005.zip.partXX` 分卷发布；下载全部分卷及 `table_scale_parts.json`、`assemble_table_scale.py` 到同一目录，运行 `python assemble_table_scale.py` 合并并校验 SHA-256，再解压。历史 v1.0.0 下的小型 SIM 实验另列于下方。
+
 | 数据集 | 企业 | 产品 | 材料 | 行业 | 地域 | 总节点 | 关系 | 文本 | 风险信号 | 带标签实例 | 时间 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | SC-Auto-Synthetic | 6,482 | 1,126 | 438 | 76 | 42 | 8,164 | 58,734 | 124,680 | 38,912 | 8,426 | 2018–2025 |
@@ -82,6 +86,8 @@ python scripts/verify_delivery.py --frozen-source provenance/frozen_training_sou
 | [方法对应说明](docs/METHOD_MAPPING.md) | 公式、框架与具体工程实现 |
 | [数据规范](docs/DATA_CONTRACT.md) | 张量、时间边界、弱标签及缺失观测 |
 | [公开版重建条件](docs/REBUILD_DATA.md) | 合成数据与合法原文重建流程 |
+| [Table 1 完整规模构建](docs/DATASET_TABLE1_SCALE.md) | 新三套数据的统计定义、生成和验收 |
+| [新规模实测实验报告](reports/table_scale/experiment_report_zh.md) | 60 次新训练的五种子结果、配置与局限 |
 | [人工标注指南](docs/ANNOTATION_GUIDE.md) | 真实标签导入及未知标签处理 |
 | [研究缺口](docs/RESEARCH_GAPS.md) | 原稿结论缺失的证据和基线 |
 | [代码验收](docs/HANDOFF_CHECKS.md) | 严格验证内容及历史限制 |

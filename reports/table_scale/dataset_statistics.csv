@@ -1,0 +1,4 @@
+﻿dataset,firms,products,materials,industries,regions,relations,texts,risk_signals,risk_labels,nodes,time_span,data_kind,is_real_world
+SC-Auto-Synthetic,6482,1126,438,76,42,58734,124680,38912,8426,8164,2018--2025,synthetic,False
+SC-Semi-Synthetic,4935,842,316,54,37,46218,96440,31705,6913,6184,2018--2025,synthetic,False
+SC-Energy-Synthetic,5714,973,512,68,51,52906,108375,34286,7584,7318,2018--2025,synthetic,False
