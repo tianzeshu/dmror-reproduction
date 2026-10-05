@@ -2,6 +2,16 @@
 
 公开日期：2026-10-05。仓库：`tianzeshu/dmror-reproduction`。完整实验输出下载：[v1.0.0 Release](https://github.com/tianzeshu/dmror-reproduction/releases/tag/v1.0.0)。
 
+## 完整工程下载与合并
+
+完整工程以五个无损分卷发布：下载 `DMROR_Public_Delivery_20261005.zip.part01` 至 `.part05` 和 `DMROR_Public_Delivery_20261005.parts.sha256`，将五个分卷放在同一目录。使用仓库脚本合并并逐分卷核验（只需 Python 标准库）：
+
+```bash
+python scripts/assemble_release.py --parts-dir /path/to/downloads --output-dir /path/to/downloads
+```
+
+脚本固定了五个分卷的 SHA-256，不会覆盖不同内容的已有文件；已有正确 ZIP 仅校验。恢复后的文件名仍为 `DMROR_Public_Delivery_20261005.zip`，完整 SHA-256 为 `3cb88e7e65bc519a547af2ec7ec95c58834cce711de0f83fe53538c726a6ca78`。解压后再执行工程命令。
+
 ## 公开内容
 
 - DM-ROR 代码、脚本、测试、方法说明、协议、原训练源码快照。

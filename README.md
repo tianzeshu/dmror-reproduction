@@ -6,7 +6,16 @@
 
 ## 获取工程和完整实验输出
 
-Git 仓库包含代码、四套冻结 `dataset.npz`、数值 LLM 特征缓存、训练协议、报告、图和预测示例。全部 **260 次正式实验及 64 次验证搜索** 的权重、逐样本预测、配置、训练历史和日志位于 [v1.0.0 Release](https://github.com/tianzeshu/dmror-reproduction/releases/tag/v1.0.0) 的 `DMROR_Public_Delivery_20261005.zip`；解压到独立目录后运行下方严格验收命令。
+Git 仓库包含代码、四套冻结 `dataset.npz`、数值 LLM 特征缓存、训练协议、报告、图和预测示例。全部 **260 次正式实验及 64 次验证搜索** 的权重、逐样本预测、配置、训练历史和日志位于 [v1.0.0 Release](https://github.com/tianzeshu/dmror-reproduction/releases/tag/v1.0.0) 的五个 ZIP 分卷；合并后解压到独立目录，运行下方严格验收命令。
+
+完整工程以五个无损分卷发布：下载 `DMROR_Public_Delivery_20261005.zip.part01` 至 `.part05` 和 `DMROR_Public_Delivery_20261005.parts.sha256`，将五个分卷放在同一目录。使用仓库脚本合并并逐分卷核验（只需 Python 标准库）：
+
+```bash
+python scripts/assemble_release.py --parts-dir /path/to/downloads --output-dir /path/to/downloads
+```
+
+脚本固定了五个分卷的 SHA-256，不会覆盖不同内容的已有文件；已有正确 ZIP 仅校验。恢复后的文件名仍为 `DMROR_Public_Delivery_20261005.zip`，完整 SHA-256 为 `3cb88e7e65bc519a547af2ec7ec95c58834cce711de0f83fe53538c726a6ca78`。解压后再执行工程命令。
+
 
 公开版不包含新闻正文/证据片段、8B 模型权重、未发表论文全文、数据库历史或设备文件目录。来源 URL、日期、文档和片段 ID 保留于 `data/source_metadata/`，表格核查摘要位于 `recovery/`。冻结 NPZ 可直接训练和评估；从新闻原文完整重建 ICKG 需要另行取得合法来源文件，详见 [公开范围](docs/PUBLIC_RELEASE.md) 和 [重建条件](docs/REBUILD_DATA.md)。
 
