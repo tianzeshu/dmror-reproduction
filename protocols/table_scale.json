@@ -1,0 +1,514 @@
+{
+  "stage": "table_scale_synthetic_fixed_protocol",
+  "purpose": "Actual new experiments on explicitly synthetic datasets matching Table 1 counts. Fixed paper-compatible H=128 K=5 LR=3e-4; no hyperparameter-search or manuscript numerical replication claim. Training seeds measure optimizer variability for a single fixed generated dataset per domain.",
+  "output": "results/table_scale",
+  "common": {
+    "epochs": 60,
+    "patience": 12,
+    "min_delta": 1e-05,
+    "threads": 2,
+    "batch_size": 1,
+    "hidden": 128,
+    "layers": 2,
+    "lr": 0.0003,
+    "dropout": 0.1,
+    "time_decay": 0.05,
+    "beta_penalty": 1.0,
+    "lambda_align": 0.05,
+    "lambda_path": 0.1,
+    "temperature": 0.1,
+    "beam_width": 10,
+    "max_hops": 4,
+    "path_top_k": 5,
+    "top_k": 20
+  },
+  "jobs": [
+    {
+      "name": "SC-Auto-Synthetic/full/seed_17",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 17
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/full/seed_29",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 29
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/full/seed_43",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 43
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/full/seed_71",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 71
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/full/seed_101",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 101
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/full/seed_17",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 17
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/full/seed_29",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 29
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/full/seed_43",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 43
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/full/seed_71",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 71
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/full/seed_101",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 101
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/full/seed_17",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 17
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/full/seed_29",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 29
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/full/seed_43",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 43
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/full/seed_71",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 71
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/full/seed_101",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 101
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/text_mlp/seed_17",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 17
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/text_mlp/seed_29",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 29
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/text_mlp/seed_43",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 43
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/text_mlp/seed_71",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 71
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/text_mlp/seed_101",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 101
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/text_mlp/seed_17",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 17
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/text_mlp/seed_29",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 29
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/text_mlp/seed_43",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 43
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/text_mlp/seed_71",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 71
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/text_mlp/seed_101",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 101
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/text_mlp/seed_17",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 17
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/text_mlp/seed_29",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 29
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/text_mlp/seed_43",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 43
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/text_mlp/seed_71",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 71
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/text_mlp/seed_101",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 101
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/graph_only/seed_17",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 17
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/graph_only/seed_29",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 29
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/graph_only/seed_43",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 43
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/graph_only/seed_71",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 71
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/graph_only/seed_101",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 101
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/graph_only/seed_17",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 17
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/graph_only/seed_29",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 29
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/graph_only/seed_43",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 43
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/graph_only/seed_71",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 71
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/graph_only/seed_101",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 101
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/graph_only/seed_17",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 17
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/graph_only/seed_29",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 29
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/graph_only/seed_43",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 43
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/graph_only/seed_71",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 71
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/graph_only/seed_101",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 101
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/concat/seed_17",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 17
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/concat/seed_29",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 29
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/concat/seed_43",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 43
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/concat/seed_71",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 71
+      }
+    },
+    {
+      "name": "SC-Auto-Synthetic/concat/seed_101",
+      "dataset": "data/table_scale/SC-Auto-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 101
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/concat/seed_17",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 17
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/concat/seed_29",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 29
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/concat/seed_43",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 43
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/concat/seed_71",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 71
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic/concat/seed_101",
+      "dataset": "data/table_scale/SC-Semi-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 101
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/concat/seed_17",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 17
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/concat/seed_29",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 29
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/concat/seed_43",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 43
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/concat/seed_71",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 71
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic/concat/seed_101",
+      "dataset": "data/table_scale/SC-Energy-Synthetic/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 101
+      }
+    }
+  ],
+  "integrity": {
+    "data": "synthetic; not recovered original SC datasets",
+    "selection": "validation AUPRC selects checkpoint; validation macro-F1 node and positive-F1 edge thresholds",
+    "temporal": "ordered split with purged target-overlap boundaries",
+    "ranking": "known labelled nodes only; explicit K=20 per time, capped by known count",
+    "baselines": "engineering baselines, not implementations of every Table 2 named external method"
+  }
+}

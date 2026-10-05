@@ -249,6 +249,9 @@ def train(args):
     device = torch.device(args.device)
     if device.type == "cuda" and not torch.cuda.is_available():
         raise RuntimeError("CUDA requested but unavailable; explicitly select --device cpu")
+    if device.type == "cuda":
+        torch.cuda.set_device(device)
+        torch.cuda.reset_peak_memory_stats(device)
     with np.load(dataset_path, allow_pickle=False) as archive:
         data = {k: archive[k].copy() for k in archive.files}
     train_idx, val_idx, test_idx = validate_dataset(data)
@@ -284,9 +287,12 @@ def train(args):
     config["parameter_count"] = sum(p.numel() for p in model.parameters())
     config["baseline_path_policy"] = ("untrained heuristic p(source)*p(destination)*dependency; not causal propagation"
                                       if args.mode in BASELINES else "trained DM-ROR propagation intensity")
+    config["configuration_sha256"] = hashlib.sha256(json.dumps(config, ensure_ascii=False,
+            sort_keys=True, separators=(",", ":"), allow_nan=False).encode("utf-8")).hexdigest()
     write_json(output / "config.json", config)
     best_score, best_epoch, stale, history = -float("inf"), 0, 0, []
     for epoch in range(1, args.epochs + 1):
+        epoch_started = time.perf_counter()
         model.train()
         order = np.random.permutation(train_idx)
         losses_epoch = []
@@ -307,7 +313,8 @@ def train(args):
         if score is None:
             raise ValueError("Validation split has no positive node labels; cannot select by AUPRC")
         row = {"epoch": epoch, "train_loss": float(np.mean(losses_epoch)),
-               "validation_auprc": score, "validation_auc": validation_metric["auc"]}
+               "validation_auprc": score, "validation_auc": validation_metric["auc"],
+               "runtime_seconds": time.perf_counter() - epoch_started}
         history.append(row)
         if score > best_score + args.min_delta:
             best_score, best_epoch, stale = score, epoch, 0
@@ -333,6 +340,7 @@ def train(args):
                "validation": evaluate_split(data, val_idx, val_prediction, node_threshold, edge_threshold, args),
                "test": evaluate_split(data, test_idx, test_prediction, node_threshold, edge_threshold, args),
                "runtime_seconds": time.perf_counter() - started,
+               "cuda_peak_allocated_bytes": torch.cuda.max_memory_allocated(device) if device.type == "cuda" else None,
                "scientific_scope": "Metrics inherit the dataset provenance: simulated labels demonstrate implementation only; weak public labels do not establish causal propagation."}
     arrays = {"validation_indices": val_idx, "test_indices": test_idx,
               "validation_labels": data["labels"][val_idx], "test_labels": data["labels"][test_idx],
@@ -375,6 +383,8 @@ def parser():
     p.add_argument("--max-hops", type=int, default=4)
     p.add_argument("--path-top-k", type=int, default=5)
     p.add_argument("--overwrite", action="store_true")
+    p.add_argument("--protocol-sha256", default=None,
+                   help="Frozen dispatch protocol digest, recorded in config and checkpoint")
     return p
 
 

@@ -2,9 +2,26 @@
 
 根据 DM-ROR 方法和框架图实现的研究工程：双记忆、时间注意力、门控融合、节点韧性阈值、关系缓冲、残余过载传播及路径搜索。提供训练、评估、消融、预测和绘图代码。
 
-**原稿 SC-Auto、SC-Semi、SC-Energy 的原始数据及 Table 1–5 实验记录尚未找回。** 本工程包含三个明确命名的合成 SIM 数据集和一个工业文本弱标签 ICKG-Weak 数据集；报告全部来自本工程实际执行的实验，不能当作原稿表格的数值复现。
+**原稿 SC-Auto、SC-Semi、SC-Energy 的原始数据及 Table 1–5 实验记录尚未找回。** 本工程新增按用户提供的 Table 1 逐项计数构建的三套完整规模合成数据，名称为 `SC-*-Synthetic`；同时保留历史 SIM 和 ICKG-Weak 数据。所有报告区分数据来源和版本，不能当作原稿真实数据实验的数值复现。
 
-## 获取工程和完整实验输出
+## Table 1 完整规模数据
+
+| 数据集 | 企业 | 产品 | 材料 | 行业 | 地域 | 总节点 | 关系 | 文本 | 风险信号 | 带标签实例 | 时间 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| SC-Auto-Synthetic | 6,482 | 1,126 | 438 | 76 | 42 | 8,164 | 58,734 | 124,680 | 38,912 | 8,426 | 2018–2025 |
+| SC-Semi-Synthetic | 4,935 | 842 | 316 | 54 | 37 | 6,184 | 46,218 | 96,440 | 31,705 | 6,913 | 2018–2025 |
+| SC-Energy-Synthetic | 5,714 | 973 | 512 | 68 | 51 | 7,318 | 52,906 | 108,375 | 34,286 | 7,584 | 2018–2025 |
+
+`data/table_scale/` 保存实体、关系、原创合成文本、信号、标注和可训练的 NPZ。`#Risk Labels` 按带已知 0/1 标签的实例总数统计，未标注实例为 `-1`。这三套数据按表格规模构建，属于合成数据；数量一致不代表找回了原始真实供应链数据。规则与计数口径见 [构建说明](docs/DATASET_TABLE1_SCALE.md)。
+
+```bash
+python scripts/verify_table_scale.py --data-root data/table_scale --output reports/table_scale/data_validation.json
+python -m dmror.train --dataset data/table_scale/SC-Auto-Synthetic/dataset.npz --output results/table_scale/my_run --mode full --seed 17 --epochs 60 --hidden 128 --batch-size 1 --lr 0.0003 --device cuda:0
+```
+
+如需从头重建，使用新的目录，例如 `python -m dmror.build_table_scale --all --output data/rebuilt/table_scale`；生成器拒绝覆盖已有数据。无 CUDA 的环境使用 `--device cpu`。大图会比下方历史小型验证数据需要更多训练时间与内存。新规模实验使用独立输出目录，旧 SIM 报告保持原数据与原文件摘要。
+
+## 获取历史 v1.0.0 工程和实验输出
 
 Git 仓库包含代码、四套冻结 `dataset.npz`、数值 LLM 特征缓存、训练协议、报告、图和预测示例。全部 **260 次正式实验及 64 次验证搜索** 的权重、逐样本预测、配置、训练历史和日志位于 [v1.0.0 Release](https://github.com/tianzeshu/dmror-reproduction/releases/tag/v1.0.0) 的五个 ZIP 分卷；合并后解压到独立目录，运行下方严格验收命令。
 
@@ -19,7 +36,7 @@ python scripts/assemble_release.py --parts-dir /path/to/downloads --output-dir /
 
 公开版不包含新闻正文/证据片段、8B 模型权重、未发表论文全文、数据库历史或设备文件目录。来源 URL、日期、文档和片段 ID 保留于 `data/source_metadata/`，表格核查摘要位于 `recovery/`。冻结 NPZ 可直接训练和评估；从新闻原文完整重建 ICKG 需要另行取得合法来源文件，详见 [公开范围](docs/PUBLIC_RELEASE.md) 和 [重建条件](docs/REBUILD_DATA.md)。
 
-## 数据集
+## 历史验证数据集
 
 | 数据集 | 节点 | 边 | 查询次数 | 标签含义 |
 |---|---:|---:|---:|---|

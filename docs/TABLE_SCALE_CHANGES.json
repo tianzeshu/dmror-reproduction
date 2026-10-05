@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-05",
+  "version": "v1.1.0",
+  "historical_main_commit": "392b3956f2510c1639efc164bb8f84e492af31a3",
+  "purpose": "Construct explicit synthetic datasets matching every requested Table 1 count and execute separate measured experiments.",
+  "data_identity": "SC-Auto-Synthetic, SC-Semi-Synthetic, SC-Energy-Synthetic; not recovered original SC data.",
+  "changes": [
+    {
+      "file": "dmror/build_table_scale.py",
+      "description": "Fixed-count typed supply graphs, original synthetic documents and linked signals, independent stochastic cascade labels and train-ready NPZ. Generation settings and limitations recorded in metadata."
+    },
+    {
+      "file": "dmror/model.py",
+      "description": "Project nodes once per relation instead of materializing the same H-by-H relation matrix per edge. Forward and parameter/input gradients are tested against the original expression."
+    },
+    {
+      "files": ["dmror/paths.py", "dmror/metrics.py"],
+      "description": "Reuse one adjacency per query day across path sources without changing candidate ranking or the evaluation definition."
+    },
+    {
+      "file": "dmror/train.py",
+      "description": "Record configuration digest, epoch timing and CUDA peak memory in new runs. Existing temporal validation and checkpoint/threshold selection rules remain the experiment protocol."
+    },
+    {
+      "file": "scripts/run_parallel.py",
+      "description": "Allow a fixed number of concurrent worker processes per GPU via an explicit CLI option."
+    },
+    {
+      "files": ["scripts/verify_table_scale.py", "scripts/verify_table_scale_runs.py"],
+      "description": "Independent raw-record/data audits and separate experiment artifact/metric verification for the new dataset version."
+    }
+  ],
+  "historical_results_policy": "Never relabel or aggregate v1.0.0 SIM/ICKG results as full-scale SC-Synthetic runs. The earlier frozen training source and historical Release remain available."
+}

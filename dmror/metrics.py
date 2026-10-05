@@ -170,6 +170,7 @@ def path_metrics(src, dst, edge_labels, edge_scores, source_mask, beam_search,
                 "path_recall": None, "path_f1": None}
     values, details = [], []
     source_hits, evaluable_sources = 0, 0
+    from .paths import beam_search_paths, prepare_adjacency
     for day in range(len(edge_labels)):
         truth_labels = edge_labels[day]
         sources = np.flatnonzero(np.asarray(source_mask)[day])
@@ -178,19 +179,26 @@ def path_metrics(src, dst, edge_labels, edge_scores, source_mask, beam_search,
         truth, truncated = _true_paths(src, dst, truth_labels, sources, max_hops)
         predictions = set()
         source_details = []
+        labelled_scores = np.where(truth_labels >= 0, edge_scores[day], 0.0)
+        prepared = (prepare_adjacency(src, dst, labelled_scores,
+                                      None if node_scores is None else node_scores[day], 0.0)
+                    if beam_search is beam_search_paths else None)
+        truth_by_source = {}
+        for path in truth:
+            truth_by_source.setdefault(path[0], set()).add(path)
         for source in sources:
             # Do not count paths through unknown edges as false positives:
             # evaluate both truth and prediction on the same labelled subgraph.
-            labelled_scores = np.where(truth_labels >= 0, edge_scores[day], 0.0)
+            cache_args = {"prepared_adjacency": prepared} if prepared is not None else {}
             paths = beam_search(src, dst, labelled_scores, int(source),
                                 beam_width=beam_width, max_hops=max_hops, top_k=top_k,
                                 node_prob=None if node_scores is None else node_scores[day],
-                                min_node_prob=0.0)
+                                min_node_prob=0.0, **cache_args)
             if isinstance(paths, dict):
                 paths = paths.get("paths", [])
             predicted_for_source = {_extract_nodes(p) for p in paths if len(_extract_nodes(p)) > 1}
             predictions.update(predicted_for_source)
-            true_for_source = {path for path in truth if path[0] == int(source)}
+            true_for_source = truth_by_source.get(int(source), set())
             evaluable = bool(true_for_source)
             hit = bool(true_for_source & predicted_for_source)
             if evaluable:

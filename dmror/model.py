@@ -68,7 +68,11 @@ class HeterogeneousLayer(nn.Module):
             group = dst * self.num_relations + edge_type
             degree = h.new_zeros(n * self.num_relations)
             degree.index_add_(0, group, weights)
-            message = torch.bmm(h[src].unsqueeze(1), self.relation_weight[edge_type]).squeeze(1)
+            # Project each node once per relation. Materializing W_r for every
+            # edge would require E*H*H values (3.6 GiB at 58k edges and H=128),
+            # although the equation needs only the selected source projection.
+            projected = torch.einsum("nh,rhk->rnk", h, self.relation_weight)
+            message = projected[edge_type, src]
             message = message * (weights / degree[group].clamp_min(1e-12)).unsqueeze(-1)
             aggregate.index_add_(0, dst, message)
             active_relations = (degree.reshape(n, self.num_relations) > 0).sum(-1)

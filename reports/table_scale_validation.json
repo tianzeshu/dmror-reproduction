@@ -1,0 +1,445 @@
+{
+  "status": "passed",
+  "scope": "Actual JSONL/NPZ audit of Table 1 scale synthetic engineering datasets",
+  "is_original_sc_recovery": false,
+  "datasets": [
+    {
+      "name": "SC-Auto-Synthetic",
+      "status": "passed",
+      "data_kind": "synthetic",
+      "is_original_sc_recovery": false,
+      "expected": {
+        "entities": [
+          6482,
+          1126,
+          438,
+          76,
+          42
+        ],
+        "relations": 58734,
+        "texts": 124680,
+        "signals": 38912,
+        "labels": 8426,
+        "queries": 96
+      },
+      "actual_record_counts": {
+        "entities": 8164,
+        "relations": 58734,
+        "texts": 124680,
+        "signals": 38912,
+        "labels": 8426,
+        "queries": 96
+      },
+      "source_summary": {
+        "entity_types": {
+          "firm": 6482,
+          "product": 1126,
+          "material": 438,
+          "industry": 76,
+          "region": 42
+        },
+        "graph_entities": 8164,
+        "text_entities": 8164,
+        "signal_entities": 8021,
+        "label_entities": 8164,
+        "label_entity_types": {
+          "firm": 6677,
+          "product": 1171,
+          "material": 458,
+          "region": 43,
+          "industry": 77
+        },
+        "signal_entity_types_covered": {
+          "firm": 6445,
+          "product": 1059,
+          "material": 432,
+          "industry": 58,
+          "region": 27
+        },
+        "source_kind": {
+          "original_synthetic_template": 124680
+        },
+        "label_kind": {
+          "independent_delayed_discrete_cascade": 8426
+        },
+        "label_values": {
+          "0": 8297,
+          "1": 129
+        },
+        "signal_risk_kind": {
+          "capacity_warning": 7763,
+          "delivery_delay": 7854,
+          "inventory_shortage": 7780,
+          "transport_constraint": 7662,
+          "production_interruption": 7853
+        }
+      },
+      "npz": {
+        "nodes": 8164,
+        "edges": 58734,
+        "snapshots": 96,
+        "retrieval_size": 5,
+        "signal_dim": 64,
+        "known_node_labels": 8426,
+        "unknown_node_labels": 775318,
+        "positive_node_labels": 129,
+        "negative_node_labels": 8297,
+        "known_edge_labels": 5638464,
+        "unknown_edge_labels": 0,
+        "observed_source_instances": 570,
+        "retrieved_signal_instances": 39273,
+        "simulation": {
+          "shock_records": 570,
+          "initial_failed_instances": 542,
+          "causal_event_records": 12126,
+          "full_positive_node_instances": 12435,
+          "full_negative_node_instances": 771309
+        },
+        "splits": {
+          "-1": 2,
+          "0": 56,
+          "1": 18,
+          "2": 20
+        },
+        "query_start_day": 17532,
+        "query_end_day": 20423
+      },
+      "error_counts": {},
+      "error_examples": {},
+      "files": {
+        "dataset.npz": {
+          "bytes": 18255240,
+          "sha256": "f426c25a29dc6b317438bb55c484590a1875782f82054d2bdd5f2bbe37be5d8f"
+        },
+        "entities.jsonl": {
+          "bytes": 776232,
+          "sha256": "8eb699ea2696f56a4f0b02cb68790ab526a811b3e2f20f19f25ccb3c70386a88"
+        },
+        "metadata.json": {
+          "bytes": 6638,
+          "sha256": "26aeea9ef9e16db88c1866e2fd7a1bfee2364d837a71ac60fcd93a37cb95e1bc"
+        },
+        "queries.jsonl": {
+          "bytes": 8440,
+          "sha256": "c95ce6189da1e1322d02f75d353c3aa3f56b6c468672b3c85de88a011015c760"
+        },
+        "relations.jsonl": {
+          "bytes": 13169510,
+          "sha256": "ce27b8758c919b17060dbe68f217fa63b37529491ee911d79474abd85137bd12"
+        },
+        "risk_labels.jsonl": {
+          "bytes": 1429269,
+          "sha256": "86418dfc7ad7e82cd4a604c38d2db99ab877d2357bd1d78749573cb5c0cb28b5"
+        },
+        "signals.jsonl": {
+          "bytes": 7666411,
+          "sha256": "f09840c67eaac718e326041a7d5291b2f4af9a730992543b97cf720a5b87aca8"
+        },
+        "simulation_events.jsonl": {
+          "bytes": 980701,
+          "sha256": "12449597aed45c92eb0bb8ef6847fee772b8db606e8217d781ea4a305877b5c1"
+        },
+        "simulation_shocks.jsonl": {
+          "bytes": 55550,
+          "sha256": "dfd3ee7c07908ea41701d686cf28605b0f88e82d012cc7e43359965769f83671"
+        },
+        "texts.jsonl": {
+          "bytes": 43598395,
+          "sha256": "657350eb7148fdeca997777c2227f6d844aec289a7283e0ea5c314f3402525fd"
+        }
+      }
+    },
+    {
+      "name": "SC-Semi-Synthetic",
+      "status": "passed",
+      "data_kind": "synthetic",
+      "is_original_sc_recovery": false,
+      "expected": {
+        "entities": [
+          4935,
+          842,
+          316,
+          54,
+          37
+        ],
+        "relations": 46218,
+        "texts": 96440,
+        "signals": 31705,
+        "labels": 6913,
+        "queries": 96
+      },
+      "actual_record_counts": {
+        "entities": 6184,
+        "relations": 46218,
+        "texts": 96440,
+        "signals": 31705,
+        "labels": 6913,
+        "queries": 96
+      },
+      "source_summary": {
+        "entity_types": {
+          "firm": 4935,
+          "product": 842,
+          "material": 316,
+          "industry": 54,
+          "region": 37
+        },
+        "graph_entities": 6184,
+        "text_entities": 6184,
+        "signal_entities": 6096,
+        "label_entities": 6184,
+        "label_entity_types": {
+          "firm": 5512,
+          "product": 928,
+          "material": 373,
+          "region": 43,
+          "industry": 57
+        },
+        "signal_entity_types_covered": {
+          "firm": 4919,
+          "product": 798,
+          "material": 312,
+          "industry": 41,
+          "region": 26
+        },
+        "source_kind": {
+          "original_synthetic_template": 96440
+        },
+        "label_kind": {
+          "independent_delayed_discrete_cascade": 6913
+        },
+        "label_values": {
+          "0": 6633,
+          "1": 280
+        },
+        "signal_risk_kind": {
+          "delivery_delay": 6285,
+          "transport_constraint": 6310,
+          "production_interruption": 6267,
+          "capacity_warning": 6406,
+          "inventory_shortage": 6437
+        }
+      },
+      "npz": {
+        "nodes": 6184,
+        "edges": 46218,
+        "snapshots": 96,
+        "retrieval_size": 5,
+        "signal_dim": 64,
+        "known_node_labels": 6913,
+        "unknown_node_labels": 586751,
+        "positive_node_labels": 280,
+        "negative_node_labels": 6633,
+        "known_edge_labels": 4436928,
+        "unknown_edge_labels": 0,
+        "observed_source_instances": 570,
+        "retrieved_signal_instances": 32033,
+        "simulation": {
+          "shock_records": 570,
+          "initial_failed_instances": 569,
+          "causal_event_records": 25020,
+          "full_positive_node_instances": 24376,
+          "full_negative_node_instances": 569288
+        },
+        "splits": {
+          "-1": 2,
+          "0": 56,
+          "1": 18,
+          "2": 20
+        },
+        "query_start_day": 17532,
+        "query_end_day": 20423
+      },
+      "error_counts": {},
+      "error_examples": {},
+      "files": {
+        "dataset.npz": {
+          "bytes": 13987268,
+          "sha256": "2dbfdb3d1bdf599eac95b0218e26fd20af52b0a2bbac455752078cfb2d5e5459"
+        },
+        "entities.jsonl": {
+          "bytes": 587236,
+          "sha256": "5340812271e31975195d060207f4511b283af9f018590115ced85e88e8c0e024"
+        },
+        "metadata.json": {
+          "bytes": 6685,
+          "sha256": "4e351b3a34ab9547a442de6f1cc9946051aa5f6d4678555195348bfd32f0841d"
+        },
+        "queries.jsonl": {
+          "bytes": 8440,
+          "sha256": "c95ce6189da1e1322d02f75d353c3aa3f56b6c468672b3c85de88a011015c760"
+        },
+        "relations.jsonl": {
+          "bytes": 10357486,
+          "sha256": "3425346a1349b2aa9cd796ecf383cec9aa02122f79d29fe9d88c276f1f32a001"
+        },
+        "risk_labels.jsonl": {
+          "bytes": 1172153,
+          "sha256": "09936669970bf08631548c7ddebc7b5f610f81903d56560d6c1cc35efc50d9ba"
+        },
+        "signals.jsonl": {
+          "bytes": 6240240,
+          "sha256": "e5fb7b9814ebdbb70b00d92e5fb2e54f28cae85012cc21bb676fffd1d9cfba82"
+        },
+        "simulation_events.jsonl": {
+          "bytes": 2023233,
+          "sha256": "dccbc58d3a23311425fed5ad42f12c6c2fd7a9dd4417492931fa12d2adc514d0"
+        },
+        "simulation_shocks.jsonl": {
+          "bytes": 55463,
+          "sha256": "d5c1b672af7b7186795f6adb0fb9f779b81e14d14ada4bfbbb12fd56bc116074"
+        },
+        "texts.jsonl": {
+          "bytes": 33863000,
+          "sha256": "44631c71fc1f014d850307aee0cbb549c75636984b7ef33810e5e03fc63666ac"
+        }
+      }
+    },
+    {
+      "name": "SC-Energy-Synthetic",
+      "status": "passed",
+      "data_kind": "synthetic",
+      "is_original_sc_recovery": false,
+      "expected": {
+        "entities": [
+          5714,
+          973,
+          512,
+          68,
+          51
+        ],
+        "relations": 52906,
+        "texts": 108375,
+        "signals": 34286,
+        "labels": 7584,
+        "queries": 96
+      },
+      "actual_record_counts": {
+        "entities": 7318,
+        "relations": 52906,
+        "texts": 108375,
+        "signals": 34286,
+        "labels": 7584,
+        "queries": 96
+      },
+      "source_summary": {
+        "entity_types": {
+          "firm": 5714,
+          "product": 973,
+          "material": 512,
+          "industry": 68,
+          "region": 51
+        },
+        "graph_entities": 7318,
+        "text_entities": 7318,
+        "signal_entities": 7196,
+        "label_entities": 7318,
+        "label_entity_types": {
+          "firm": 5920,
+          "product": 1011,
+          "material": 531,
+          "region": 52,
+          "industry": 70
+        },
+        "signal_entity_types_covered": {
+          "firm": 5691,
+          "product": 909,
+          "material": 508,
+          "industry": 51,
+          "region": 37
+        },
+        "source_kind": {
+          "original_synthetic_template": 108375
+        },
+        "label_kind": {
+          "independent_delayed_discrete_cascade": 7584
+        },
+        "label_values": {
+          "0": 7507,
+          "1": 77
+        },
+        "signal_risk_kind": {
+          "transport_constraint": 6853,
+          "production_interruption": 6922,
+          "delivery_delay": 6816,
+          "capacity_warning": 6837,
+          "inventory_shortage": 6858
+        }
+      },
+      "npz": {
+        "nodes": 7318,
+        "edges": 52906,
+        "snapshots": 96,
+        "retrieval_size": 5,
+        "signal_dim": 64,
+        "known_node_labels": 7584,
+        "unknown_node_labels": 694944,
+        "positive_node_labels": 77,
+        "negative_node_labels": 7507,
+        "known_edge_labels": 5078976,
+        "unknown_edge_labels": 0,
+        "observed_source_instances": 570,
+        "retrieved_signal_instances": 34632,
+        "simulation": {
+          "shock_records": 570,
+          "initial_failed_instances": 491,
+          "causal_event_records": 6826,
+          "full_positive_node_instances": 7197,
+          "full_negative_node_instances": 695331
+        },
+        "splits": {
+          "-1": 2,
+          "0": 56,
+          "1": 18,
+          "2": 20
+        },
+        "query_start_day": 17532,
+        "query_end_day": 20423
+      },
+      "error_counts": {},
+      "error_examples": {},
+      "files": {
+        "dataset.npz": {
+          "bytes": 16082551,
+          "sha256": "149059321d8d8c41d54e4be28c4d743abc1e587c93d2c96d0c0daeedc4749300"
+        },
+        "entities.jsonl": {
+          "bytes": 710990,
+          "sha256": "01191a4b08798c991efc3f208a2940166583029b83f34a3db22ca4c85f0d6340"
+        },
+        "metadata.json": {
+          "bytes": 6536,
+          "sha256": "952a60daca48c4b630431cb495b4949c55ab20053688aea8e532579a705b1441"
+        },
+        "queries.jsonl": {
+          "bytes": 8440,
+          "sha256": "c95ce6189da1e1322d02f75d353c3aa3f56b6c468672b3c85de88a011015c760"
+        },
+        "relations.jsonl": {
+          "bytes": 11860253,
+          "sha256": "14267ba5dbee0d695b700abe3e84e3eb6dfb72087126553839ff33465b3bc46e"
+        },
+        "risk_labels.jsonl": {
+          "bytes": 1286227,
+          "sha256": "be258b66d7a961ac489b43e80b5db1266fede83b0c232338ff77a5a136a7cd88"
+        },
+        "signals.jsonl": {
+          "bytes": 6752175,
+          "sha256": "20c42a0f348c43b5a547dec4599c74fe8535bcf2f658e7b62f5fb059e9888339"
+        },
+        "simulation_events.jsonl": {
+          "bytes": 551883,
+          "sha256": "be165dc0781229217054a8da02816259558a2ca46b9f469a886f588b14c1e1dd"
+        },
+        "simulation_shocks.jsonl": {
+          "bytes": 55498,
+          "sha256": "eb70ae6bc89e3ac874bfb8b0e7a9d7f17f9477cfa0da98015cf18c757e6db7d6"
+        },
+        "texts.jsonl": {
+          "bytes": 37978356,
+          "sha256": "5b57f4969acfe8bd627579897d77498880bc06a38e40e08b2ce538d82864c2d5"
+        }
+      }
+    }
+  ]
+}

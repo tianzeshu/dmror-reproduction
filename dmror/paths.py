@@ -9,19 +9,10 @@ import torch
 from torch import Tensor
 
 
-def beam_search_paths(src: Tensor, dst: Tensor, edge_score: Tensor, source: int,
-                      beam_width: int = 10, max_hops: int = 4, top_k: int = 5,
-                      node_prob: Optional[Tensor] = None, min_node_prob: float = 0.0,
-                      min_hops: int = 1) -> list[dict]:
-    """Rank candidate paths by sum(log(pi)); no repeated node in any path.
-
-    Return nodes, edge_ids, score and log_score. Scores above one are legal.
-    Candidates of different lengths use the paper's unnormalized product, so
-    short/long preference depends on pi's scale; no length penalty is invented.
-    Moving detached scores to CPU is inference-only and does not affect training.
-    """
-    if beam_width < 1 or max_hops < 1 or top_k < 1 or min_hops < 1 or min_hops > max_hops:
-        raise ValueError("Invalid beam width, hop count or top_k")
+def prepare_adjacency(src: Tensor, dst: Tensor, edge_score: Tensor,
+                      node_prob: Optional[Tensor] = None,
+                      min_node_prob: float = 0.0) -> dict:
+    """Prepare one day's graph once for all sources; retain parallel edge IDs."""
     src_cpu = torch.as_tensor(src).detach().cpu().reshape(-1).tolist()
     dst_cpu = torch.as_tensor(dst).detach().cpu().reshape(-1).tolist()
     scores = torch.as_tensor(edge_score).detach().cpu().reshape(-1).tolist()
@@ -35,6 +26,25 @@ def beam_search_paths(src: Tensor, dst: Tensor, edge_score: Tensor, source: int,
         if score == 0 or (probabilities is not None and probabilities[v] < min_node_prob):
             continue
         adjacency.setdefault(u, []).append((v, edge_id, math.log(score)))
+    return adjacency
+
+
+def beam_search_paths(src: Tensor, dst: Tensor, edge_score: Tensor, source: int,
+                      beam_width: int = 10, max_hops: int = 4, top_k: int = 5,
+                      node_prob: Optional[Tensor] = None, min_node_prob: float = 0.0,
+                      min_hops: int = 1, prepared_adjacency: Optional[dict] = None) -> list[dict]:
+    """Rank candidate paths by sum(log(pi)); no repeated node in any path.
+
+    Return nodes, edge_ids, score and log_score. Scores above one are legal.
+    Candidates of different lengths use the paper's unnormalized product, so
+    short/long preference depends on pi's scale; no length penalty is invented.
+    Moving detached scores to CPU is inference-only and does not affect training.
+    A prepared adjacency must match this day's scores and node filter.
+    """
+    if beam_width < 1 or max_hops < 1 or top_k < 1 or min_hops < 1 or min_hops > max_hops:
+        raise ValueError("Invalid beam width, hop count or top_k")
+    adjacency = (prepare_adjacency(src, dst, edge_score, node_prob, min_node_prob)
+                 if prepared_adjacency is None else prepared_adjacency)
     # (log_product, nodes_tuple, edge_ids_tuple)
     beam = [(0.0, (int(source),), ())]
     candidates = []
