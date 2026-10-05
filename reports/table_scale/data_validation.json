@@ -56,6 +56,8 @@
           "industry": 58,
           "region": 27
         },
+        "text_min_day": 17532,
+        "text_max_day": 20453,
         "source_kind": {
           "original_synthetic_template": 124680
         },
@@ -202,6 +204,8 @@
           "industry": 41,
           "region": 26
         },
+        "text_min_day": 17532,
+        "text_max_day": 20453,
         "source_kind": {
           "original_synthetic_template": 96440
         },
@@ -348,6 +352,8 @@
           "industry": 51,
           "region": 37
         },
+        "text_min_day": 17532,
+        "text_max_day": 20453,
         "source_kind": {
           "original_synthetic_template": 108375
         },

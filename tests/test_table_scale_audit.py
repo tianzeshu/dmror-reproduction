@@ -77,7 +77,7 @@ def synthetic_fixture(tmp_path):
     memory = np.full(masks.shape, -1, np.int64)
     memory[0, :, 0] = np.arange(6)
     vectors = np.zeros((3, 6, 2, 4), np.float32)
-    vectors[masks] = .25
+    vectors[masks] = np.asarray([audit_module.signed_hash(row["text"], 4) for row in texts])
     delta = np.zeros(masks.shape, np.float32)
     delta[masks] = 30
     confidence = np.zeros(masks.shape, np.float32)
@@ -142,6 +142,12 @@ def test_wrong_entity_memory_is_detected(synthetic_fixture):
     assert "memory_entity_link" in result["error_counts"]
 
 
+def test_retrieved_numeric_features_must_match_referenced_text(synthetic_fixture):
+    change_npz(synthetic_fixture, lambda data: data["signals"].__setitem__((0, 0, 0, 0), 123))
+    result = audit_module.audit_one(synthetic_fixture, SPEC)
+    assert "memory_text_features" in result["error_counts"]
+
+
 def test_text_entity_and_date_are_independently_checked(synthetic_fixture):
     texts = load_records(synthetic_fixture, "texts.jsonl")
     texts[0]["entity_id"] = 999
@@ -176,6 +182,21 @@ def test_exact_instance_count_does_not_replace_full_entity_coverage(synthetic_fi
     result = audit_module.audit_one(synthetic_fixture, SPEC)
     assert result["actual_record_counts"]["labels"] == 6
     assert "label_entity_coverage" in result["error_counts"]
+
+
+def test_unlogged_full_simulator_positive_is_detected(synthetic_fixture):
+    change_npz(synthetic_fixture, lambda data: data["simulation_labels"].__setitem__((2, 2), 1))
+    result = audit_module.audit_one(synthetic_fixture, SPEC)
+    assert "simulation_node_truth" in result["error_counts"]
+
+
+def test_event_log_requires_a_previously_failed_source(synthetic_fixture):
+    event = {"snapshot": 0, "relation_id": 2, "stage": 1, "event_day": day(2018, 2, 1) + 10,
+             "synthetic": True}  # Material node 3 never failed in this fixture.
+    write_records(synthetic_fixture, "simulation_events.jsonl", [event])
+    result = audit_module.audit_one(synthetic_fixture, SPEC)
+    assert "simulation_event_causality" in result["error_counts"]
+    assert "simulation_edge_truth" in result["error_counts"]
 
 
 def test_public_cli_fails_for_missing_full_datasets(tmp_path):

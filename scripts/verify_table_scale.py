@@ -12,6 +12,7 @@ from datetime import date
 import hashlib
 import json
 from pathlib import Path
+import re
 import sys
 
 import numpy as np
@@ -62,6 +63,15 @@ def digest(path):
 
 def integer(value):
     return isinstance(value, int) and not isinstance(value, bool)
+
+
+def signed_hash(text, dimension):
+    """Recompute the disclosed deterministic text feature contract."""
+    vector = np.zeros(dimension, np.float32)
+    for token in re.findall(r"\w+|[\u4e00-\u9fff]", text.lower()):
+        token_hash = hashlib.sha256(token.encode("utf-8")).digest()
+        vector[int.from_bytes(token_hash[:4], "little") % dimension] += 1 if token_hash[4] & 1 else -1
+    return vector / max(float(np.linalg.norm(vector)), 1.0)
 
 
 def records(path, audit):
@@ -164,6 +174,9 @@ def check_records(values, specification, audit):
         audit.require(isinstance(record.get("text"), str) and bool(record["text"].strip()), "text_content", f"text {index}")
         audit.require(record.get("source_kind") == "original_synthetic_template", "text_source", f"text {index}")
     audit.require(text_entities == set(range(n)), "text_entity_coverage", f"covered {len(text_entities)} / {n}")
+    text_days = [record.get("timestamp_day") for record in texts if integer(record.get("timestamp_day"))]
+    if specification["queries"] == 96 and text_days:
+        audit.require(min(text_days) == START_DAY and max(text_days) == END_DAY, "text_time_span", "Texts must actually cover 2018-01-01 through 2025-12-31")
 
     signal_entities = set()
     for index, record in enumerate(signals):
@@ -220,6 +233,7 @@ def check_records(values, specification, audit):
     return {"entity_types": dict(counts), "graph_entities": len(endpoints), "text_entities": len(text_entities),
             "signal_entities": len(signal_entities), "label_entities": len(labeled_entities), "label_entity_types": dict(labeled_types),
             "signal_entity_types_covered": dict(Counter(entities[i]["entity_type"] for i in signal_entities)),
+            "text_min_day": min(text_days) if text_days else None, "text_max_day": max(text_days) if text_days else None,
             "source_kind": dict(Counter(r.get("source_kind") for r in texts)),
             "label_kind": dict(Counter(r.get("label_kind") for r in labels)), "label_values": dict(Counter(r.get("label") for r in labels)),
             "signal_risk_kind": dict(Counter(r.get("risk_kind") for r in signals))}
@@ -294,6 +308,11 @@ def check_npz(path, values, audit):
     mask = data["signal_mask"].astype(bool)
     index = data["memory_indices"]
     audit.require(np.isin(data["signal_mask"], [0, 1]).all(), "npz_mask", "signal_mask")
+    audit.require((~data["source_mask"].astype(bool) | mask.any(-1)).all(), "observed_source_memory", "Observed sources must have pre-query retrieved evidence")
+    source_rows, source_nodes = np.where(data["source_mask"].astype(bool))
+    audit.require(np.isin(data["node_type"][source_nodes], [0, 2]).all(), "observed_source_types", "Observed sources must be firm/material warnings")
+    if "path_source_mask" in data:
+        audit.require(np.array_equal(data["path_source_mask"], data["source_mask"]), "observed_path_sources", "Path extractor must receive the same observed sources")
     audit.require((index[~mask] == -1).all(), "memory_inactive_index", "Inactive slots must be -1")
     audit.require((data["delta"][~mask] == 0).all() and (data["confidence"][~mask] == 0).all()
                   and (data["signals"][~mask] == 0).all(), "memory_inactive_values", "Inactive slots must contain zero vectors/ages/confidence")
@@ -311,6 +330,8 @@ def check_npz(path, values, audit):
         audit.require(np.array_equal(signal_entities[selected], ni), "memory_entity_link", "Retrieved signal belongs to another node")
         audit.require(np.allclose(data["delta"][mask], ages), "memory_delta", "Stored age differs from actual timestamp")
         audit.require(np.allclose(data["confidence"][mask], signal_confidence[selected], atol=1e-6), "memory_confidence", "Stored confidence differs from source signal")
+        vectors = np.asarray([signed_hash(values["texts"][record["text_id"]]["text"], data["signals"].shape[-1]) for record in values["signals"]])
+        audit.require(np.allclose(data["signals"][mask], vectors[selected], atol=1e-6, rtol=1e-6), "memory_text_features", "Retrieved vector does not equal the referenced synthetic text hash")
         for row in index.reshape(-1, memory_shape[-1]):
             active = row[row >= 0]
             if len(active) > 1:

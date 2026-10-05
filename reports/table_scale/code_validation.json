@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-05",
+  "status": "passed",
+  "command": "python -m pytest -q",
+  "passed_tests": 73,
+  "runtime_seconds": 15.40,
+  "data_version": "Table 1 scale synthetic datasets",
+  "test_scope": [
+    "Existing DM-ROR model, losses, training, annotations and cache regressions",
+    "Fixed-count generation, annotation coverage and deterministic small-fixture reconstruction",
+    "Independent data audit corruption checks, including counts, simulation truth and historical retrieval vectors",
+    "Low-memory graph projection forward and backward equivalence",
+    "Cached path adjacency equivalence",
+    "Train-to-artifact audit and intentional saved-prediction corruption rejection"
+  ],
+  "qualification": "Tests and raw-record audits verify engineering consistency. They do not establish recovered original SC data or real supply-chain prediction accuracy."
+}
