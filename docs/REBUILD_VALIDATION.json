@@ -1,0 +1,721 @@
+{
+  "audit_date": "2026-10-02",
+  "purpose": "Fresh raw rebuild plus frozen-cache replay; no 8B model weights required",
+  "status": "passed",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "zlib_runtime": "1.3.1",
+  "cache_npz_sha256": "fcd062e8d781918da2ef5fe96f2015261a7c18925b4b11c45075b90705f062cf",
+  "cache_texts_sha256": "90e3b400b0f81a6ab95e55cfb2731554250d9b1f6a52062a1b6973a45f09cf5d",
+  "datasets": [
+    {
+      "dataset": "SIM-Auto",
+      "delivered_npz_sha256": "4e6d9baa6fb71bba375db77cf9c72ec9b862a37434715b36277dd7265588d017",
+      "rebuilt_npz_sha256": "4e6d9baa6fb71bba375db77cf9c72ec9b862a37434715b36277dd7265588d017",
+      "file_sha256_equal": true,
+      "text_encoder_provenance_equal": true,
+      "arrays": {
+        "node_features": {
+          "shape": [
+            112,
+            8
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "node_type": {
+          "shape": [
+            112
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "src": {
+          "shape": [
+            450
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "dst": {
+          "shape": [
+            450
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "edge_type": {
+          "shape": [
+            450
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "edge_dependency": {
+          "shape": [
+            450
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "edge_features": {
+          "shape": [
+            450,
+            4
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "resilience": {
+          "shape": [
+            84,
+            112,
+            5
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "signals": {
+          "shape": [
+            84,
+            112,
+            5,
+            64
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "signal_mask": {
+          "shape": [
+            84,
+            112,
+            5
+          ],
+          "dtype": "bool",
+          "array_equal": true
+        },
+        "delta": {
+          "shape": [
+            84,
+            112,
+            5
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "confidence": {
+          "shape": [
+            84,
+            112,
+            5
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "memory_indices": {
+          "shape": [
+            84,
+            112,
+            5
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "labels": {
+          "shape": [
+            84,
+            112
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "edge_labels": {
+          "shape": [
+            84,
+            450
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "source_mask": {
+          "shape": [
+            84,
+            112
+          ],
+          "dtype": "bool",
+          "array_equal": true
+        },
+        "split": {
+          "shape": [
+            84
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "prediction_days": {
+          "shape": [
+            84
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "target_days": {
+          "shape": [
+            84
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        }
+      },
+      "cache_application": {
+        "method": "exact_text_then_dataset_memory_indices",
+        "input_dataset_sha256": "f4ab92227f2ed79ab75093f94e0358b7a9d4575631b82e1f93dcc5b2a9987b74",
+        "signal_records": 30,
+        "active_signal_ids": 30,
+        "active_memory_slots": 5374,
+        "unique_cache_rows_referenced": 30,
+        "padding_slots_zeroed": 41666,
+        "cache_texts_sha256": "90e3b400b0f81a6ab95e55cfb2731554250d9b1f6a52062a1b6973a45f09cf5d"
+      }
+    },
+    {
+      "dataset": "SIM-Semi",
+      "delivered_npz_sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da",
+      "rebuilt_npz_sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da",
+      "file_sha256_equal": true,
+      "text_encoder_provenance_equal": true,
+      "arrays": {
+        "node_features": {
+          "shape": [
+            112,
+            8
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "node_type": {
+          "shape": [
+            112
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "src": {
+          "shape": [
+            450
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "dst": {
+          "shape": [
+            450
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "edge_type": {
+          "shape": [
+            450
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "edge_dependency": {
+          "shape": [
+            450
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "edge_features": {
+          "shape": [
+            450,
+            4
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "resilience": {
+          "shape": [
+            84,
+            112,
+            5
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "signals": {
+          "shape": [
+            84,
+            112,
+            5,
+            64
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "signal_mask": {
+          "shape": [
+            84,
+            112,
+            5
+          ],
+          "dtype": "bool",
+          "array_equal": true
+        },
+        "delta": {
+          "shape": [
+            84,
+            112,
+            5
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "confidence": {
+          "shape": [
+            84,
+            112,
+            5
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "memory_indices": {
+          "shape": [
+            84,
+            112,
+            5
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "labels": {
+          "shape": [
+            84,
+            112
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "edge_labels": {
+          "shape": [
+            84,
+            450
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "source_mask": {
+          "shape": [
+            84,
+            112
+          ],
+          "dtype": "bool",
+          "array_equal": true
+        },
+        "split": {
+          "shape": [
+            84
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "prediction_days": {
+          "shape": [
+            84
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "target_days": {
+          "shape": [
+            84
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        }
+      },
+      "cache_application": {
+        "method": "exact_text_then_dataset_memory_indices",
+        "input_dataset_sha256": "435f4713690624aa19064d54b74ed936662af2efb06b69cca92700b9550c13f7",
+        "signal_records": 30,
+        "active_signal_ids": 30,
+        "active_memory_slots": 5451,
+        "unique_cache_rows_referenced": 30,
+        "padding_slots_zeroed": 41589,
+        "cache_texts_sha256": "90e3b400b0f81a6ab95e55cfb2731554250d9b1f6a52062a1b6973a45f09cf5d"
+      }
+    },
+    {
+      "dataset": "SIM-Energy",
+      "delivered_npz_sha256": "2ea23baaa883ac186aaa5b8c96004e77f63a0be974c8180f9bab964e9fcc4676",
+      "rebuilt_npz_sha256": "2ea23baaa883ac186aaa5b8c96004e77f63a0be974c8180f9bab964e9fcc4676",
+      "file_sha256_equal": true,
+      "text_encoder_provenance_equal": true,
+      "arrays": {
+        "node_features": {
+          "shape": [
+            112,
+            8
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "node_type": {
+          "shape": [
+            112
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "src": {
+          "shape": [
+            450
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "dst": {
+          "shape": [
+            450
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "edge_type": {
+          "shape": [
+            450
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "edge_dependency": {
+          "shape": [
+            450
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "edge_features": {
+          "shape": [
+            450,
+            4
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "resilience": {
+          "shape": [
+            84,
+            112,
+            5
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "signals": {
+          "shape": [
+            84,
+            112,
+            5,
+            64
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "signal_mask": {
+          "shape": [
+            84,
+            112,
+            5
+          ],
+          "dtype": "bool",
+          "array_equal": true
+        },
+        "delta": {
+          "shape": [
+            84,
+            112,
+            5
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "confidence": {
+          "shape": [
+            84,
+            112,
+            5
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "memory_indices": {
+          "shape": [
+            84,
+            112,
+            5
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "labels": {
+          "shape": [
+            84,
+            112
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "edge_labels": {
+          "shape": [
+            84,
+            450
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "source_mask": {
+          "shape": [
+            84,
+            112
+          ],
+          "dtype": "bool",
+          "array_equal": true
+        },
+        "split": {
+          "shape": [
+            84
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "prediction_days": {
+          "shape": [
+            84
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "target_days": {
+          "shape": [
+            84
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        }
+      },
+      "cache_application": {
+        "method": "exact_text_then_dataset_memory_indices",
+        "input_dataset_sha256": "ab3a852183977bab65093bc02718dae53f6b216081b3a434b46f25c3dbf76db1",
+        "signal_records": 31,
+        "active_signal_ids": 31,
+        "active_memory_slots": 5433,
+        "unique_cache_rows_referenced": 31,
+        "padding_slots_zeroed": 41607,
+        "cache_texts_sha256": "90e3b400b0f81a6ab95e55cfb2731554250d9b1f6a52062a1b6973a45f09cf5d"
+      }
+    },
+    {
+      "dataset": "ICKG-Weak",
+      "delivered_npz_sha256": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735",
+      "rebuilt_npz_sha256": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735",
+      "file_sha256_equal": true,
+      "text_encoder_provenance_equal": true,
+      "arrays": {
+        "node_features": {
+          "shape": [
+            191,
+            8
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "node_type": {
+          "shape": [
+            191
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "src": {
+          "shape": [
+            197
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "dst": {
+          "shape": [
+            197
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "edge_type": {
+          "shape": [
+            197
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "edge_dependency": {
+          "shape": [
+            197
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "edge_features": {
+          "shape": [
+            197,
+            4
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "resilience": {
+          "shape": [
+            131,
+            191,
+            5
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "resilience_observed_mask": {
+          "shape": [
+            131,
+            191,
+            5
+          ],
+          "dtype": "bool",
+          "array_equal": true
+        },
+        "edge_features_observed_mask": {
+          "shape": [
+            197,
+            4
+          ],
+          "dtype": "bool",
+          "array_equal": true
+        },
+        "edge_dependency_observed_mask": {
+          "shape": [
+            197
+          ],
+          "dtype": "bool",
+          "array_equal": true
+        },
+        "signals": {
+          "shape": [
+            131,
+            191,
+            5,
+            64
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "signal_mask": {
+          "shape": [
+            131,
+            191,
+            5
+          ],
+          "dtype": "bool",
+          "array_equal": true
+        },
+        "delta": {
+          "shape": [
+            131,
+            191,
+            5
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "confidence": {
+          "shape": [
+            131,
+            191,
+            5
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "memory_indices": {
+          "shape": [
+            131,
+            191,
+            5
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "labels": {
+          "shape": [
+            131,
+            191
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "edge_labels": {
+          "shape": [
+            131,
+            197
+          ],
+          "dtype": "float32",
+          "array_equal": true
+        },
+        "source_mask": {
+          "shape": [
+            131,
+            191
+          ],
+          "dtype": "bool",
+          "array_equal": true
+        },
+        "split": {
+          "shape": [
+            131
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "prediction_days": {
+          "shape": [
+            131
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        },
+        "target_days": {
+          "shape": [
+            131
+          ],
+          "dtype": "int64",
+          "array_equal": true
+        }
+      },
+      "cache_application": {
+        "method": "exact_text_then_dataset_memory_indices",
+        "input_dataset_sha256": "459d505f2101eff033920daf418b1f261a25acf83bc8fe0af97902fb575e3e10",
+        "signal_records": 5099,
+        "active_signal_ids": 5099,
+        "active_memory_slots": 11624,
+        "unique_cache_rows_referenced": 3855,
+        "padding_slots_zeroed": 113481,
+        "cache_texts_sha256": "90e3b400b0f81a6ab95e55cfb2731554250d9b1f6a52062a1b6973a45f09cf5d"
+      }
+    }
+  ],
+  "limitations": [
+    "This checks replay equality and schema, not weak-label semantic accuracy or operational causal truth.",
+    "Compression/NumPy changes may alter archive bytes; array comparison remains necessary for diagnosing changed file hashes."
+  ]
+}

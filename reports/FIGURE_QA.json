@@ -1,0 +1,277 @@
+{
+  "date": "2026-10-02",
+  "status": "passed",
+  "figures": [
+    {
+      "stem": "reports/figures/ICKG-Weak_node_comparison",
+      "png_dimensions": [
+        2148,
+        981
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "4a4f76b0b8ebe3d5680d4db68743e35244eeae040cfa9a4bcaa6948b35239ba6",
+      "svg_editable_text_elements": 41,
+      "pdf_extracted_text_chars": 382,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/figures/ICKG-Weak_paper_ablation",
+      "png_dimensions": [
+        2148,
+        819
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "e1bd86541967948e2fa7c35ccb788a269e8931ec257b9715d1304a836539163f",
+      "svg_editable_text_elements": 31,
+      "pdf_extracted_text_chars": 298,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/figures/ICKG-Weak_path_scope",
+      "png_dimensions": [
+        2149,
+        981
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "9fead3f94d684bdc15ae44a1b6316686ff5ee4ed4d165bf55423cdcbc894ddd9",
+      "svg_editable_text_elements": 21,
+      "pdf_extracted_text_chars": 232,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/figures/SIM-Auto_node_comparison",
+      "png_dimensions": [
+        2148,
+        981
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "f438004fe376fad18b98c35b2df6e9836c9340e4a38694993a7cc1c99742d01b",
+      "svg_editable_text_elements": 41,
+      "pdf_extracted_text_chars": 367,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/figures/SIM-Auto_paper_ablation",
+      "png_dimensions": [
+        2148,
+        819
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "5acf98b5582ca0dd0e1393f9d95b8507a69b8a91abe42228ec1421b5fc36bc5f",
+      "svg_editable_text_elements": 31,
+      "pdf_extracted_text_chars": 283,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/figures/SIM-Auto_path_scope",
+      "png_dimensions": [
+        2148,
+        981
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "3b712500f5a93ed64405544c22cfa4dfcb086944bb5a708043d96e78b1a319a0",
+      "svg_editable_text_elements": 41,
+      "pdf_extracted_text_chars": 371,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/figures/SIM-Energy_node_comparison",
+      "png_dimensions": [
+        2148,
+        981
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "89cf284077a59483bc7c9aa08f880faba2c8aa42aa19e125556f382e2612352b",
+      "svg_editable_text_elements": 41,
+      "pdf_extracted_text_chars": 369,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/figures/SIM-Energy_paper_ablation",
+      "png_dimensions": [
+        2148,
+        819
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "19838997d15de714edb1aebbafb3c7826f8f10a93bcace2fbb1a442f44b4af9c",
+      "svg_editable_text_elements": 31,
+      "pdf_extracted_text_chars": 285,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/figures/SIM-Energy_path_scope",
+      "png_dimensions": [
+        2148,
+        981
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "4125d400da683402d1b2b794a4d022e0e1314108d58c224d52df6fec8ec4534f",
+      "svg_editable_text_elements": 41,
+      "pdf_extracted_text_chars": 373,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/figures/SIM-Semi_node_comparison",
+      "png_dimensions": [
+        2148,
+        981
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "552156b6fe9484124118764fd906881a458ffb1c75e2306a81a6e8c3456fe178",
+      "svg_editable_text_elements": 41,
+      "pdf_extracted_text_chars": 367,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/figures/SIM-Semi_paper_ablation",
+      "png_dimensions": [
+        2148,
+        819
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "410641c426e1ed28e32afecf36dac0d9c16957ce1ff4dc41e31f5cd6ed9d40d8",
+      "svg_editable_text_elements": 31,
+      "pdf_extracted_text_chars": 283,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/figures/SIM-Semi_path_scope",
+      "png_dimensions": [
+        2148,
+        981
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "c74bdd2e5f8e73cef5d51fe71a6565a217e8cb8f9dce3e57d5c2f11a783ec031",
+      "svg_editable_text_elements": 41,
+      "pdf_extracted_text_chars": 371,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/supplement/ICKG-Weak_context_structure_strata",
+      "png_dimensions": [
+        2156,
+        1108
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "f083ed65fcccfa47e11b8e10eefc30a5845bff174a05a254c057428db30d4c15",
+      "svg_editable_text_elements": 58,
+      "pdf_extracted_text_chars": 671,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/supplement/SIM-Auto_context_structure_strata",
+      "png_dimensions": [
+        2156,
+        1108
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "4fe50a93feb6dbb814bc5a2da793f73ff026e82d0b740da143c2f18001cb0e43",
+      "svg_editable_text_elements": 53,
+      "pdf_extracted_text_chars": 606,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/supplement/SIM-Energy_context_structure_strata",
+      "png_dimensions": [
+        2156,
+        1108
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "03879b08379e2ce412d79d3820419fe3e757e00e6d479d62178bb975154fd74d",
+      "svg_editable_text_elements": 53,
+      "pdf_extracted_text_chars": 608,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/supplement/SIM-Semi_context_structure_strata",
+      "png_dimensions": [
+        2156,
+        1108
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "02431462ab97940b4e9109cef9752d02bfc02dd5eaa521725d0387e4391a3a10",
+      "svg_editable_text_elements": 59,
+      "pdf_extracted_text_chars": 638,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/supplement/SIM-Semi_simulator_case_seed17",
+      "png_dimensions": [
+        2152,
+        1371
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "e5087e33f0c5687daa38d58f4c98d4f58ee8ba48cb46cff30c975c25c9292600",
+      "svg_editable_text_elements": 80,
+      "pdf_extracted_text_chars": 646,
+      "visually_reviewed": true
+    },
+    {
+      "stem": "reports/training_figures/full_model_training_histories",
+      "png_dimensions": [
+        2160,
+        2460
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "a0286855d3d560e0cc9c7a2c08a23aa43214e44473f7b068643645348514e8f7",
+      "svg_editable_text_elements": 112,
+      "pdf_extracted_text_chars": 590,
+      "visually_reviewed": true
+    }
+  ],
+  "review": "All 18 PNGs inspected with view_image, no clipped labels/legends. SVG editable text and PDF text extraction checked for each export. Actual Source Data retained. Mean/sample SD comparison plots, raw unpadded training histories, missing/unknown strata NA, simulator-only case with visible misses. This QA does not validate manuscript claims or real causal propagation."
+}

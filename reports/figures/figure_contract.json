@@ -1,0 +1,19 @@
+{
+  "conclusion": "Display actual held-out method performance separately for each explicit dataset provenance; no superiority claim is assumed.",
+  "evidence": {
+    "node_comparison": "node ranking and classification",
+    "paper_ablation": "seven architecture removals",
+    "path_scope": "node scope and labelled-edge-induced path recovery"
+  },
+  "archetype": "quantitative grid",
+  "backend": "Python matplotlib",
+  "dimensions": "7.2 inch width; height depends on method count",
+  "statistics": "training-seed mean and sample SD (ddof=1), with seed-level points; SD is undefined for n=1",
+  "exports": [
+    "editable text SVG",
+    "TrueType PDF",
+    "300dpi PNG",
+    "source_data.csv"
+  ],
+  "integrity": "No manuscript benchmark values inserted. Unknown metrics omitted. Simulator truth and weak public labels are not causal validation."
+}

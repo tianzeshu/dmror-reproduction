@@ -1,0 +1,144 @@
+{
+  "stage": "validation_search",
+  "purpose": "Select shared per-dataset training settings by validation AUPRC only; test outputs are not used for selection",
+  "output": "results/validation_search",
+  "common": {
+    "epochs": 50,
+    "patience": 10,
+    "threads": 1,
+    "batch_size": 8,
+    "layers": 2,
+    "seed": 17,
+    "mode": "full"
+  },
+  "jobs": [
+    {
+      "name": "SIM-Auto/config_0",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Auto/config_1",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Auto/config_2",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/config_3",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/config_0",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/config_1",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/config_2",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/config_3",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/config_0",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Energy/config_1",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Energy/config_2",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/config_3",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/config_0",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "ICKG-Weak/config_1",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "ICKG-Weak/config_2",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/config_3",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128
+      }
+    }
+  ]
+}

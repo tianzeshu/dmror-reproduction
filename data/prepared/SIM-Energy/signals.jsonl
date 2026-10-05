@@ -1,0 +1,31 @@
+{"signal_id": 0, "text": "A firm reports no fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 1, "text": "A firm reports moderate fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 2, "text": "A firm reports stable operations and adequate inventory. No disruption was observed.", "source_kind": "simulated_template"}
+{"signal_id": 3, "text": "A firm reports moderate fuel transport disruption. Evidence is confirmed. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 4, "text": "A firm reports minor fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 5, "text": "A product reports minor fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 6, "text": "A product reports stable operations and adequate inventory. No disruption was observed.", "source_kind": "simulated_template"}
+{"signal_id": 7, "text": "A product reports no fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 8, "text": "A material reports minor fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 9, "text": "A material reports stable operations and adequate inventory. No disruption was observed.", "source_kind": "simulated_template"}
+{"signal_id": 10, "text": "A material reports no fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 11, "text": "A industry reports minor fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 12, "text": "A industry reports no fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 13, "text": "A region reports no fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 14, "text": "A firm reports severe fuel transport disruption. Evidence is confirmed. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 15, "text": "A material reports minor fuel transport disruption. Evidence is confirmed. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 16, "text": "A industry reports stable operations and adequate inventory. No disruption was observed.", "source_kind": "simulated_template"}
+{"signal_id": 17, "text": "A region reports stable operations and adequate inventory. No disruption was observed.", "source_kind": "simulated_template"}
+{"signal_id": 18, "text": "A firm reports severe fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 19, "text": "A firm reports minor fuel transport disruption. Evidence is confirmed. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 20, "text": "A product reports moderate fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 21, "text": "A product reports severe fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 22, "text": "A material reports moderate fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 23, "text": "A region reports severe fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 24, "text": "A material reports moderate fuel transport disruption. Evidence is confirmed. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 25, "text": "A industry reports moderate fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 26, "text": "A material reports severe fuel transport disruption. Evidence is confirmed. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 27, "text": "A material reports severe fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 28, "text": "A region reports minor fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 29, "text": "A region reports moderate fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}
+{"signal_id": 30, "text": "A industry reports severe fuel transport disruption. Evidence is uncertain. Delivery and production may be affected.", "source_kind": "simulated_template"}

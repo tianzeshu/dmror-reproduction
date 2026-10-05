@@ -1,0 +1,33 @@
+{
+  "conclusion": "Recorded full-model training losses and validation AP trajectories show the actual training histories and validation-selected checkpoints across five seeds.",
+  "archetype": "quantitative grid",
+  "backend": "Python matplotlib",
+  "panels": "Four datasets, training loss at left and validation AP at right; no test metrics are plotted.",
+  "dimensions_inches": [
+    7.2,
+    8.2
+  ],
+  "png_dpi": 300,
+  "exports": [
+    "PNG",
+    "SVG with editable text",
+    "PDF with embedded TrueType fonts",
+    "CSV Source Data"
+  ],
+  "seeds": [
+    17,
+    29,
+    43,
+    71,
+    101
+  ],
+  "model": "full",
+  "statistics": "Five individual seed trajectories. No averaging, SD, confidence intervals or significance testing are shown.",
+  "integrity": "No smoothing, padding, interpolation or extrapolation. Each curve ends at its actual final epoch; checkpoint markers replay validation AP selection with min_delta.",
+  "scope": "Training diagnostics only. They do not establish robustness, sensitivity, causal propagation or replication of the paper's real-world datasets/results.",
+  "review_risks": [
+    "Training loss includes multiple objectives and should not be compared across different datasets as a common calibrated scale.",
+    "Validation AP is repeatedly used for checkpoint selection, so its peak is not an unbiased test performance estimate.",
+    "Five training seeds quantify optimisation variation, not population uncertainty."
+  ]
+}

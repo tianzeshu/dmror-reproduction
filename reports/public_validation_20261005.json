@@ -1,0 +1,18 @@
+{
+  "public_validation_date": "2026-10-05",
+  "status": "passed",
+  "tests": {
+    "passed": 48,
+    "execution": "pytest -q -p no:cacheprovider",
+    "runtime_seconds": 23.9
+  },
+  "strict_delivery_check": {
+    "formal_runs": 260,
+    "validation_search_runs": 64,
+    "dataset_mode_groups": 52,
+    "errors": 0
+  },
+  "command": "python scripts/verify_delivery.py --frozen-source provenance/frozen_training_source/dmror --output reports/user_delivery_validation.json",
+  "verification_scope": "Executed against the public full_release copy. Original numerical input, result, and frozen source bytes retained; article text not required.",
+  "historical_limitation": "The initial 16 full-model validation searches do not contain implementation fingerprints; original records remain unchanged."
+}

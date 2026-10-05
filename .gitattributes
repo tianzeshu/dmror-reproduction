@@ -1,0 +1,11 @@
+* -text
+*.npz binary
+*.pt binary
+*.png binary
+*.pdf binary
+*.svg -text
+*.json -text
+*.jsonl -text
+*.py -text
+*.csv -text
+*.md -text

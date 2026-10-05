@@ -1,0 +1,41 @@
+{
+  "nodes": 191,
+  "edges": 197,
+  "snapshots": 131,
+  "splits": {
+    "-1": 6,
+    "0": 34,
+    "1": 33,
+    "2": 58
+  },
+  "known_node_labels": 25021,
+  "positive_node_labels": 346,
+  "known_edge_labels": 0,
+  "sha256": "459d505f2101eff033920daf418b1f261a25acf83bc8fe0af97902fb575e3e10",
+  "label_counts_by_split": {
+    "-1": {
+      "snapshots": 6,
+      "positive": 14,
+      "negative": 1132
+    },
+    "0": {
+      "snapshots": 34,
+      "positive": 40,
+      "negative": 6454
+    },
+    "1": {
+      "snapshots": 33,
+      "positive": 64,
+      "negative": 6239
+    },
+    "2": {
+      "snapshots": 58,
+      "positive": 228,
+      "negative": 10850
+    }
+  },
+  "retrieved_signals": 5099,
+  "retrieval_observations": 11624,
+  "label_evidence_records": 936,
+  "rejected_inconsistent_date_links": 0
+}

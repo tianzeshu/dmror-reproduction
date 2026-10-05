@@ -1,0 +1,83 @@
+{
+  "name": "SIM-Semi",
+  "data_kind": "synthetic",
+  "label_kind": "independent_delayed_stochastic_cascade",
+  "is_real_world": false,
+  "seed": 1202,
+  "generator": "dmror.build_simulated",
+  "generator_settings": {
+    "seed": 1202,
+    "buffer": 0.38,
+    "coupling": 1.1,
+    "noise": 0.2,
+    "shock": "wafer production"
+  },
+  "forecast_horizon_days": 30,
+  "query_step_days": 10,
+  "temporal_split": "60/20/20 with purged boundary targets",
+  "text_encoder": {
+    "encoder": "frozen_local_LLM",
+    "model_identifier": "Llama-3-8b-instruct",
+    "model_config_sha256": "61f3de03a16ca8046b05dc777bce72717022bc8522152eee61a69072272ef54b",
+    "weight_files": [
+      {
+        "name": "model-00001-of-00004.safetensors",
+        "bytes": 4976698672,
+        "sha256": "d8cf9c4d0dd972e1a2131bfe656235ee98221679711a3beef6d46dadf0f20b5c"
+      },
+      {
+        "name": "model-00002-of-00004.safetensors",
+        "bytes": 4999802720,
+        "sha256": "8d4782b4a69ef03845159ce1a15e272aadaaf134dc138d68f616098e8531729c"
+      },
+      {
+        "name": "model-00004-of-00004.safetensors",
+        "bytes": 1168138808,
+        "sha256": "67e9ad31c8c32abf3a55ee7fc7217b3ecb35fd3c74d98a5bd233e0e4d6964f46"
+      },
+      {
+        "name": "model-00003-of-00004.safetensors",
+        "bytes": 4915916176,
+        "sha256": "3acdd690e65c24f42a24581b8467af98bd3ca357444580f8012aacd2bd607921"
+      }
+    ],
+    "pooling": "masked mean of evidence segment last hidden states, character offsets identify evidence tokens",
+    "projection_seed": 731,
+    "projection_dim": 64,
+    "original_hidden_dim": 4096,
+    "max_length": 256,
+    "prompt_prefix": "Encode this industrial risk evidence for future supply-chain risk prediction. Evidence: ",
+    "cache_sha256": "fcd062e8d781918da2ef5fe96f2015261a7c18925b4b11c45075b90705f062cf",
+    "torch_version": "2.12.0.dev20260316+cu128",
+    "device": "cuda:0",
+    "unique_evidence_segments": 3936,
+    "limitations": [
+      "Frozen feature extraction rather than end-to-end LLM fine-tuning.",
+      "Signal fields in bundled datasets are rule-extracted or simulated; the separate extractor supports local LLM JSON extraction.",
+      "One evidence unit is encoded per signal; full entity-neighborhood prompts are supported by extract_signals but not encoded in these cached runs."
+    ]
+  },
+  "resilience_source": "simulated_observed_capacity",
+  "path_ground_truth": "simulator_successful_transmission_edges",
+  "scope_ground_truth": "simulator_failed_nodes",
+  "limitations": [
+    "Simulated graphs, texts, capacities and labels are not the paper SC-Auto/SC-Semi/SC-Energy datasets.",
+    "Synthetic evidence cannot establish real supply-chain performance.",
+    "Overlapping 30-day horizons yield correlated snapshots; seed standard deviation is not population confidence."
+  ],
+  "statistics": {
+    "nodes": 112,
+    "edges": 450,
+    "snapshots": 84,
+    "splits": {
+      "-1": 6,
+      "0": 47,
+      "1": 14,
+      "2": 17
+    },
+    "known_node_labels": 9408,
+    "positive_node_labels": 1373,
+    "known_edge_labels": 37800,
+    "sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da"
+  }
+}

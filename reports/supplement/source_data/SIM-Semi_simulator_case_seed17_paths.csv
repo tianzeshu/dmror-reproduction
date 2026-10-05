@@ -1,0 +1,6 @@
+﻿dataset,snapshot_index,source_node,beam_width,max_hops,top_k,rank,nodes,edge_indices,product_intensity,log_product_intensity,all_edges_simulator_positive
+SIM-Semi,67,15,10,2,5,1,15;102,94,0.3011828064918518,-1.2000378680461012,False
+SIM-Semi,67,15,10,2,5,2,15;83,93,0.2633550763130188,-1.3342520573204655,True
+SIM-Semi,67,15,10,2,5,3,15;107,95,0.21718795597553256,-1.5269921437695402,True
+SIM-Semi,67,15,10,2,5,4,15;26,91,0.20672936737537384,-1.5763447450987063,False
+SIM-Semi,67,15,10,2,5,5,15;23,90,0.17788274586200714,-1.726630676861038,False

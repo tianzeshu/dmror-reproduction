@@ -1,0 +1,17 @@
+{
+  "formal_training_source": "provenance/frozen_training_source/dmror",
+  "formal_source_modules": 14,
+  "formal_core_matches_current": true,
+  "post_training_modified_modules": [
+    {
+      "file": "dmror/apply_cache.py",
+      "frozen_sha256": "47430cca8320116ea67c6d25db615d67b3010c22a7be2661c47d9cadad116dae",
+      "current_sha256": "13eec562b27c4e4fa0ee068096ff16b40fbb493c293b611b88051c60d590313c"
+    }
+  ],
+  "reason": "apply_cache canonicalizes NumPy ZIP creator metadata for exact Linux-to-Windows dataset SHA reproduction; training never imports apply_cache. New annotation import module and plotting/integrity tooling were added after formal training.",
+  "added_modules": [
+    "import_annotations.py"
+  ],
+  "validation_search_caveat": "Earliest 16 full-model validation searches have no recorded implementation SHA; original records are preserved and not retroactively edited."
+}

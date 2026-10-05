@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "strict": true,
+  "audit_utc": "2026-10-02T12:48:13.370629+00:00",
+  "protocol": "protocols\\formal.json",
+  "protocol_sha256": "6e112983895fb598d0b88ea2b74be2e9f808d826b648e78c327b64202d0f35ce",
+  "source_directory": "C:\\Users\\tianz\\Documents\\New project\\work\\yuyuntong_reproduction_20261002\\delivery\\provenance\\frozen_training_source\\dmror",
+  "planned_runs": 260,
+  "present_results": 260,
+  "checked_complete_runs": 260,
+  "checked_validation_search_runs": 64,
+  "validation_searches": {
+    "validation_search.json": {
+      "planned": 16,
+      "present": 16
+    },
+    "baseline_validation_search.json": {
+      "planned": 48,
+      "present": 48
+    }
+  },
+  "unfingerprinted_early_validation_runs": [
+    "ICKG-Weak/config_0",
+    "ICKG-Weak/config_1",
+    "ICKG-Weak/config_2",
+    "ICKG-Weak/config_3",
+    "SIM-Auto/config_0",
+    "SIM-Auto/config_1",
+    "SIM-Auto/config_2",
+    "SIM-Auto/config_3",
+    "SIM-Energy/config_0",
+    "SIM-Energy/config_1",
+    "SIM-Energy/config_2",
+    "SIM-Energy/config_3",
+    "SIM-Semi/config_0",
+    "SIM-Semi/config_1",
+    "SIM-Semi/config_2",
+    "SIM-Semi/config_3"
+  ],
+  "present_dataset_mode_groups": 52,
+  "source_fingerprint_maps": 1,
+  "datasets": {
+    "ICKG-Weak": {
+      "sha256": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735",
+      "nodes": 191,
+      "edges": 197,
+      "snapshots": 131,
+      "split_counts": {
+        "train": 34,
+        "validation": 33,
+        "test": 58
+      }
+    },
+    "SIM-Auto": {
+      "sha256": "4e6d9baa6fb71bba375db77cf9c72ec9b862a37434715b36277dd7265588d017",
+      "nodes": 112,
+      "edges": 450,
+      "snapshots": 84,
+      "split_counts": {
+        "train": 47,
+        "validation": 14,
+        "test": 17
+      }
+    },
+    "SIM-Energy": {
+      "sha256": "2ea23baaa883ac186aaa5b8c96004e77f63a0be974c8180f9bab964e9fcc4676",
+      "nodes": 112,
+      "edges": 450,
+      "snapshots": 84,
+      "split_counts": {
+        "train": 47,
+        "validation": 14,
+        "test": 17
+      }
+    },
+    "SIM-Semi": {
+      "sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da",
+      "nodes": 112,
+      "edges": 450,
+      "snapshots": 84,
+      "split_counts": {
+        "train": 47,
+        "validation": 14,
+        "test": 17
+      }
+    }
+  },
+  "documentation": {
+    "markdown_files": 12,
+    "local_links_checked": 10
+  },
+  "errors": [],
+  "pending": [],
+  "warnings": [
+    "The 16 early full-model validation_search runs predate implementation_sha256 logging. Their original source cannot be verified by a saved hash; no fingerprint was invented or backfilled. Actual configuration/data/predictions/history/checkpoints and validation winner selection were checked. Names are recorded in unfingerprinted_early_validation_runs."
+  ],
+  "scope": "Integrity and execution completeness only; not validation of weak-label facts, causal paths, publication claims, or external dependency availability."
+}

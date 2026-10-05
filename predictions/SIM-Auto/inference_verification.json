@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "dataset": "SIM-Auto",
+  "run": "full seed17",
+  "indices_identical": true,
+  "max_absolute_differences": {
+    "node_prob": 3.5762786865234375e-07,
+    "edge_prob": 7.450580596923828e-07,
+    "edge_score": 2.86102294921875e-06
+  },
+  "probability_absolute_tolerance": 1e-06,
+  "raw_intensity_tolerance": {
+    "rtol": 1e-05,
+    "atol": 1e-06
+  },
+  "note": "CPU checkpoint inference versus saved GPU inference, no retraining or inference label selection."
+}

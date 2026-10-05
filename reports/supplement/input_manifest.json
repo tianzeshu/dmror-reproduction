@@ -1,0 +1,980 @@
+{
+  "script": "scripts/plot_supplement.py",
+  "script_sha256": "3e3dcab40437adf53aa09d7f140b0e052bfa7370673f562c7a85344d3169e64d",
+  "expected_paired_seeds": [
+    17,
+    29,
+    43,
+    71,
+    101
+  ],
+  "minimum_support": 20,
+  "minimum_positives": 2,
+  "minimum_negatives": 2,
+  "statistics": "paired seed differences; five-seed mean and sample SD only with all five valid pairs; no p-values",
+  "datasets": [
+    {
+      "dataset": "ICKG-Weak",
+      "file": "data/prepared/ICKG-Weak/dataset.npz",
+      "sha256": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735",
+      "metadata_sha256": "1893ab27604e1988f7a183435c64230482c1da3a5c022a248b6db61cefd41b00",
+      "data_kind": "real_source_weak_labels",
+      "label_kind": "future_30_day_linked_snippet_literal_risk_expression_publication",
+      "text_encoder": {
+        "encoder": "frozen_local_LLM",
+        "model_identifier": "Llama-3-8b-instruct",
+        "model_config_sha256": "61f3de03a16ca8046b05dc777bce72717022bc8522152eee61a69072272ef54b",
+        "weight_files": [
+          {
+            "name": "model-00001-of-00004.safetensors",
+            "bytes": 4976698672,
+            "sha256": "d8cf9c4d0dd972e1a2131bfe656235ee98221679711a3beef6d46dadf0f20b5c"
+          },
+          {
+            "name": "model-00002-of-00004.safetensors",
+            "bytes": 4999802720,
+            "sha256": "8d4782b4a69ef03845159ce1a15e272aadaaf134dc138d68f616098e8531729c"
+          },
+          {
+            "name": "model-00004-of-00004.safetensors",
+            "bytes": 1168138808,
+            "sha256": "67e9ad31c8c32abf3a55ee7fc7217b3ecb35fd3c74d98a5bd233e0e4d6964f46"
+          },
+          {
+            "name": "model-00003-of-00004.safetensors",
+            "bytes": 4915916176,
+            "sha256": "3acdd690e65c24f42a24581b8467af98bd3ca357444580f8012aacd2bd607921"
+          }
+        ],
+        "pooling": "masked mean of evidence segment last hidden states, character offsets identify evidence tokens",
+        "projection_seed": 731,
+        "projection_dim": 64,
+        "original_hidden_dim": 4096,
+        "max_length": 256,
+        "prompt_prefix": "Encode this industrial risk evidence for future supply-chain risk prediction. Evidence: ",
+        "cache_sha256": "fcd062e8d781918da2ef5fe96f2015261a7c18925b4b11c45075b90705f062cf",
+        "torch_version": "2.12.0.dev20260316+cu128",
+        "device": "cuda:0",
+        "unique_evidence_segments": 3936,
+        "limitations": [
+          "Frozen feature extraction rather than end-to-end LLM fine-tuning.",
+          "Signal fields in bundled datasets are rule-extracted or simulated; the separate extractor supports local LLM JSON extraction.",
+          "One evidence unit is encoded per signal; full entity-neighborhood prompts are supported by extract_signals but not encoded in these cached runs."
+        ]
+      },
+      "temporal_cutoffs": {
+        "train": {
+          "snapshots": 34,
+          "prediction_day_min": 18993,
+          "prediction_day_max": 19323,
+          "target_day_min": 19023,
+          "target_day_max": 19353
+        },
+        "validation": {
+          "snapshots": 33,
+          "prediction_day_min": 19363,
+          "prediction_day_max": 19683,
+          "target_day_min": 19393,
+          "target_day_max": 19713
+        },
+        "test": {
+          "snapshots": 58,
+          "prediction_day_min": 19723,
+          "prediction_day_max": 20293,
+          "target_day_min": 19753,
+          "target_day_max": 20323
+        }
+      },
+      "test_indices": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ]
+    },
+    {
+      "dataset": "SIM-Auto",
+      "file": "data/prepared/SIM-Auto/dataset.npz",
+      "sha256": "4e6d9baa6fb71bba375db77cf9c72ec9b862a37434715b36277dd7265588d017",
+      "metadata_sha256": "979db90663f5ed98b38a7654c8190d2927581d7e45d33e84a1cea32d066e718e",
+      "data_kind": "synthetic",
+      "label_kind": "independent_delayed_stochastic_cascade",
+      "text_encoder": {
+        "encoder": "frozen_local_LLM",
+        "model_identifier": "Llama-3-8b-instruct",
+        "model_config_sha256": "61f3de03a16ca8046b05dc777bce72717022bc8522152eee61a69072272ef54b",
+        "weight_files": [
+          {
+            "name": "model-00001-of-00004.safetensors",
+            "bytes": 4976698672,
+            "sha256": "d8cf9c4d0dd972e1a2131bfe656235ee98221679711a3beef6d46dadf0f20b5c"
+          },
+          {
+            "name": "model-00002-of-00004.safetensors",
+            "bytes": 4999802720,
+            "sha256": "8d4782b4a69ef03845159ce1a15e272aadaaf134dc138d68f616098e8531729c"
+          },
+          {
+            "name": "model-00004-of-00004.safetensors",
+            "bytes": 1168138808,
+            "sha256": "67e9ad31c8c32abf3a55ee7fc7217b3ecb35fd3c74d98a5bd233e0e4d6964f46"
+          },
+          {
+            "name": "model-00003-of-00004.safetensors",
+            "bytes": 4915916176,
+            "sha256": "3acdd690e65c24f42a24581b8467af98bd3ca357444580f8012aacd2bd607921"
+          }
+        ],
+        "pooling": "masked mean of evidence segment last hidden states, character offsets identify evidence tokens",
+        "projection_seed": 731,
+        "projection_dim": 64,
+        "original_hidden_dim": 4096,
+        "max_length": 256,
+        "prompt_prefix": "Encode this industrial risk evidence for future supply-chain risk prediction. Evidence: ",
+        "cache_sha256": "fcd062e8d781918da2ef5fe96f2015261a7c18925b4b11c45075b90705f062cf",
+        "torch_version": "2.12.0.dev20260316+cu128",
+        "device": "cuda:0",
+        "unique_evidence_segments": 3936,
+        "limitations": [
+          "Frozen feature extraction rather than end-to-end LLM fine-tuning.",
+          "Signal fields in bundled datasets are rule-extracted or simulated; the separate extractor supports local LLM JSON extraction.",
+          "One evidence unit is encoded per signal; full entity-neighborhood prompts are supported by extract_signals but not encoded in these cached runs."
+        ]
+      },
+      "temporal_cutoffs": {
+        "train": {
+          "snapshots": 47,
+          "prediction_day_min": 100,
+          "prediction_day_max": 560,
+          "target_day_min": 130,
+          "target_day_max": 590
+        },
+        "validation": {
+          "snapshots": 14,
+          "prediction_day_min": 600,
+          "prediction_day_max": 730,
+          "target_day_min": 630,
+          "target_day_max": 760
+        },
+        "test": {
+          "snapshots": 17,
+          "prediction_day_min": 770,
+          "prediction_day_max": 930,
+          "target_day_min": 800,
+          "target_day_max": 960
+        }
+      },
+      "test_indices": [
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "dataset": "SIM-Energy",
+      "file": "data/prepared/SIM-Energy/dataset.npz",
+      "sha256": "2ea23baaa883ac186aaa5b8c96004e77f63a0be974c8180f9bab964e9fcc4676",
+      "metadata_sha256": "0e9f5442938b5baadf18b619ef3e38fce10cd38579a4daa0d10e873ec473ec52",
+      "data_kind": "synthetic",
+      "label_kind": "independent_delayed_stochastic_cascade",
+      "text_encoder": {
+        "encoder": "frozen_local_LLM",
+        "model_identifier": "Llama-3-8b-instruct",
+        "model_config_sha256": "61f3de03a16ca8046b05dc777bce72717022bc8522152eee61a69072272ef54b",
+        "weight_files": [
+          {
+            "name": "model-00001-of-00004.safetensors",
+            "bytes": 4976698672,
+            "sha256": "d8cf9c4d0dd972e1a2131bfe656235ee98221679711a3beef6d46dadf0f20b5c"
+          },
+          {
+            "name": "model-00002-of-00004.safetensors",
+            "bytes": 4999802720,
+            "sha256": "8d4782b4a69ef03845159ce1a15e272aadaaf134dc138d68f616098e8531729c"
+          },
+          {
+            "name": "model-00004-of-00004.safetensors",
+            "bytes": 1168138808,
+            "sha256": "67e9ad31c8c32abf3a55ee7fc7217b3ecb35fd3c74d98a5bd233e0e4d6964f46"
+          },
+          {
+            "name": "model-00003-of-00004.safetensors",
+            "bytes": 4915916176,
+            "sha256": "3acdd690e65c24f42a24581b8467af98bd3ca357444580f8012aacd2bd607921"
+          }
+        ],
+        "pooling": "masked mean of evidence segment last hidden states, character offsets identify evidence tokens",
+        "projection_seed": 731,
+        "projection_dim": 64,
+        "original_hidden_dim": 4096,
+        "max_length": 256,
+        "prompt_prefix": "Encode this industrial risk evidence for future supply-chain risk prediction. Evidence: ",
+        "cache_sha256": "fcd062e8d781918da2ef5fe96f2015261a7c18925b4b11c45075b90705f062cf",
+        "torch_version": "2.12.0.dev20260316+cu128",
+        "device": "cuda:0",
+        "unique_evidence_segments": 3936,
+        "limitations": [
+          "Frozen feature extraction rather than end-to-end LLM fine-tuning.",
+          "Signal fields in bundled datasets are rule-extracted or simulated; the separate extractor supports local LLM JSON extraction.",
+          "One evidence unit is encoded per signal; full entity-neighborhood prompts are supported by extract_signals but not encoded in these cached runs."
+        ]
+      },
+      "temporal_cutoffs": {
+        "train": {
+          "snapshots": 47,
+          "prediction_day_min": 100,
+          "prediction_day_max": 560,
+          "target_day_min": 130,
+          "target_day_max": 590
+        },
+        "validation": {
+          "snapshots": 14,
+          "prediction_day_min": 600,
+          "prediction_day_max": 730,
+          "target_day_min": 630,
+          "target_day_max": 760
+        },
+        "test": {
+          "snapshots": 17,
+          "prediction_day_min": 770,
+          "prediction_day_max": 930,
+          "target_day_min": 800,
+          "target_day_max": 960
+        }
+      },
+      "test_indices": [
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "dataset": "SIM-Semi",
+      "file": "data/prepared/SIM-Semi/dataset.npz",
+      "sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da",
+      "metadata_sha256": "aa8eccb98940bda82ab3a111306502ef1f16b08393df04242f1661f753bdf8b3",
+      "data_kind": "synthetic",
+      "label_kind": "independent_delayed_stochastic_cascade",
+      "text_encoder": {
+        "encoder": "frozen_local_LLM",
+        "model_identifier": "Llama-3-8b-instruct",
+        "model_config_sha256": "61f3de03a16ca8046b05dc777bce72717022bc8522152eee61a69072272ef54b",
+        "weight_files": [
+          {
+            "name": "model-00001-of-00004.safetensors",
+            "bytes": 4976698672,
+            "sha256": "d8cf9c4d0dd972e1a2131bfe656235ee98221679711a3beef6d46dadf0f20b5c"
+          },
+          {
+            "name": "model-00002-of-00004.safetensors",
+            "bytes": 4999802720,
+            "sha256": "8d4782b4a69ef03845159ce1a15e272aadaaf134dc138d68f616098e8531729c"
+          },
+          {
+            "name": "model-00004-of-00004.safetensors",
+            "bytes": 1168138808,
+            "sha256": "67e9ad31c8c32abf3a55ee7fc7217b3ecb35fd3c74d98a5bd233e0e4d6964f46"
+          },
+          {
+            "name": "model-00003-of-00004.safetensors",
+            "bytes": 4915916176,
+            "sha256": "3acdd690e65c24f42a24581b8467af98bd3ca357444580f8012aacd2bd607921"
+          }
+        ],
+        "pooling": "masked mean of evidence segment last hidden states, character offsets identify evidence tokens",
+        "projection_seed": 731,
+        "projection_dim": 64,
+        "original_hidden_dim": 4096,
+        "max_length": 256,
+        "prompt_prefix": "Encode this industrial risk evidence for future supply-chain risk prediction. Evidence: ",
+        "cache_sha256": "fcd062e8d781918da2ef5fe96f2015261a7c18925b4b11c45075b90705f062cf",
+        "torch_version": "2.12.0.dev20260316+cu128",
+        "device": "cuda:0",
+        "unique_evidence_segments": 3936,
+        "limitations": [
+          "Frozen feature extraction rather than end-to-end LLM fine-tuning.",
+          "Signal fields in bundled datasets are rule-extracted or simulated; the separate extractor supports local LLM JSON extraction.",
+          "One evidence unit is encoded per signal; full entity-neighborhood prompts are supported by extract_signals but not encoded in these cached runs."
+        ]
+      },
+      "temporal_cutoffs": {
+        "train": {
+          "snapshots": 47,
+          "prediction_day_min": 100,
+          "prediction_day_max": 560,
+          "target_day_min": 130,
+          "target_day_max": 590
+        },
+        "validation": {
+          "snapshots": 14,
+          "prediction_day_min": 600,
+          "prediction_day_max": 730,
+          "target_day_min": 630,
+          "target_day_max": 760
+        },
+        "test": {
+          "snapshots": 17,
+          "prediction_day_min": 770,
+          "prediction_day_max": 930,
+          "target_day_min": 800,
+          "target_day_max": 960
+        }
+      },
+      "test_indices": [
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "dataset": "ICKG-Weak",
+      "mode": "full",
+      "seed": 101,
+      "result_file": "results/formal/ICKG-Weak/full/seed_101/result.json",
+      "result_sha256": "4378faa55d937a76574fb8b18da57054edfb8055b84d3571d807a1ff211e357b",
+      "prediction_file": "results/formal/ICKG-Weak/full/seed_101/predictions.npz",
+      "prediction_sha256": "dfc3f54a5648fc4bee71fddc02f7f757a634a66dd24751501666efd153ad1aa5",
+      "dataset_sha256": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735",
+      "test_rows": 58
+    },
+    {
+      "dataset": "ICKG-Weak",
+      "mode": "full",
+      "seed": 17,
+      "result_file": "results/formal/ICKG-Weak/full/seed_17/result.json",
+      "result_sha256": "de7d2bbbe154f446fffc187c17070dc250667c6eb98011f3e3008544f2d6959e",
+      "prediction_file": "results/formal/ICKG-Weak/full/seed_17/predictions.npz",
+      "prediction_sha256": "136250db9b46b2ec54b8f5f621321b168783d26a43787df0b682266ab1200ee9",
+      "dataset_sha256": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735",
+      "test_rows": 58
+    },
+    {
+      "dataset": "ICKG-Weak",
+      "mode": "full",
+      "seed": 29,
+      "result_file": "results/formal/ICKG-Weak/full/seed_29/result.json",
+      "result_sha256": "35dc95ecd64d75d325afe020959b6329ed70c7f725cd0b890bd3eb49d4885e22",
+      "prediction_file": "results/formal/ICKG-Weak/full/seed_29/predictions.npz",
+      "prediction_sha256": "109fe6cc7a6f2dc6c6eaea31b80095506dcd2ed69c1d5be9b58666cbf1f21540",
+      "dataset_sha256": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735",
+      "test_rows": 58
+    },
+    {
+      "dataset": "ICKG-Weak",
+      "mode": "full",
+      "seed": 43,
+      "result_file": "results/formal/ICKG-Weak/full/seed_43/result.json",
+      "result_sha256": "c2ccb2b06e09e138e4a5e73f9ae8acdfc39d4b3f950cd05c931656c41a5d914f",
+      "prediction_file": "results/formal/ICKG-Weak/full/seed_43/predictions.npz",
+      "prediction_sha256": "99b0dd3e45056530fb1c51cfece48b889f964dd04932262aefac3080973d5633",
+      "dataset_sha256": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735",
+      "test_rows": 58
+    },
+    {
+      "dataset": "ICKG-Weak",
+      "mode": "full",
+      "seed": 71,
+      "result_file": "results/formal/ICKG-Weak/full/seed_71/result.json",
+      "result_sha256": "2a82e302a184f260aa37622d755f810c921caf6dfbcdcee1702ed7cf7d2d566d",
+      "prediction_file": "results/formal/ICKG-Weak/full/seed_71/predictions.npz",
+      "prediction_sha256": "6361be12a8e78b99c5119778eed2a4886af0d3bff3941dede13fca071426d6c2",
+      "dataset_sha256": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735",
+      "test_rows": 58
+    },
+    {
+      "dataset": "ICKG-Weak",
+      "mode": "no_stm",
+      "seed": 101,
+      "result_file": "results/formal/ICKG-Weak/no_stm/seed_101/result.json",
+      "result_sha256": "cf7f3b5235c50ff958eb9d6d217edbffb4807f5ecea0f80027fa7903772616f4",
+      "prediction_file": "results/formal/ICKG-Weak/no_stm/seed_101/predictions.npz",
+      "prediction_sha256": "8ea01e0968fdda118d18581a78ea089195a76230aaaa4222dc17889a30339080",
+      "dataset_sha256": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735",
+      "test_rows": 58
+    },
+    {
+      "dataset": "ICKG-Weak",
+      "mode": "no_stm",
+      "seed": 17,
+      "result_file": "results/formal/ICKG-Weak/no_stm/seed_17/result.json",
+      "result_sha256": "61462e7b7f3bd148be1fd142039a61cba241c703f37e36f213c2637efe258fc1",
+      "prediction_file": "results/formal/ICKG-Weak/no_stm/seed_17/predictions.npz",
+      "prediction_sha256": "ada7cd33527423d9558a0c7725d8eb00ffb24dc5a23b754c25de1ef265e16d49",
+      "dataset_sha256": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735",
+      "test_rows": 58
+    },
+    {
+      "dataset": "ICKG-Weak",
+      "mode": "no_stm",
+      "seed": 29,
+      "result_file": "results/formal/ICKG-Weak/no_stm/seed_29/result.json",
+      "result_sha256": "6e0a168e56b970535ff71932db3165912c24013330332b8a2f3a71bbfbf6729d",
+      "prediction_file": "results/formal/ICKG-Weak/no_stm/seed_29/predictions.npz",
+      "prediction_sha256": "32e24c2519a3ac168253e22293b2f5c8ee30412a198682167549fd0ca1a29bf2",
+      "dataset_sha256": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735",
+      "test_rows": 58
+    },
+    {
+      "dataset": "ICKG-Weak",
+      "mode": "no_stm",
+      "seed": 43,
+      "result_file": "results/formal/ICKG-Weak/no_stm/seed_43/result.json",
+      "result_sha256": "093d20bc112efc267be301e6b3f38e3ce534a17ed14544203f3221cc900e7f17",
+      "prediction_file": "results/formal/ICKG-Weak/no_stm/seed_43/predictions.npz",
+      "prediction_sha256": "a3711cffbdcb0dfea83cab5c8757716ed78abf19d602a5800ccc439633c18b41",
+      "dataset_sha256": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735",
+      "test_rows": 58
+    },
+    {
+      "dataset": "ICKG-Weak",
+      "mode": "no_stm",
+      "seed": 71,
+      "result_file": "results/formal/ICKG-Weak/no_stm/seed_71/result.json",
+      "result_sha256": "9259f7d81519f60df2f920aabe464b87f186733728f541ac74e3d7f0244d1352",
+      "prediction_file": "results/formal/ICKG-Weak/no_stm/seed_71/predictions.npz",
+      "prediction_sha256": "a9d3ea9ba620e440f5b15f04dd581e95d7e39ebd4d6bab51bcdf2b3232658ff6",
+      "dataset_sha256": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735",
+      "test_rows": 58
+    },
+    {
+      "dataset": "SIM-Auto",
+      "mode": "full",
+      "seed": 101,
+      "result_file": "results/formal/SIM-Auto/full/seed_101/result.json",
+      "result_sha256": "1205d500ab203064ca55778f56f41de09d4907438bc9fefeebf087ae73d81712",
+      "prediction_file": "results/formal/SIM-Auto/full/seed_101/predictions.npz",
+      "prediction_sha256": "92fe9cebfda220187bc452a4579447e52030ff9ec9742f8a074d498d80db2d99",
+      "dataset_sha256": "4e6d9baa6fb71bba375db77cf9c72ec9b862a37434715b36277dd7265588d017",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Auto",
+      "mode": "full",
+      "seed": 17,
+      "result_file": "results/formal/SIM-Auto/full/seed_17/result.json",
+      "result_sha256": "27585346db660c1e9bb8c1780f0abeafed1d2ba19b002ef4e135a2e02cd3684c",
+      "prediction_file": "results/formal/SIM-Auto/full/seed_17/predictions.npz",
+      "prediction_sha256": "8ea4a44a416af627227c89b0bf68499a75b25229b94b6fd291c4fffaa7ea16bb",
+      "dataset_sha256": "4e6d9baa6fb71bba375db77cf9c72ec9b862a37434715b36277dd7265588d017",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Auto",
+      "mode": "full",
+      "seed": 29,
+      "result_file": "results/formal/SIM-Auto/full/seed_29/result.json",
+      "result_sha256": "df1c1f13ae9e35e53bb1e797328018f59e0a203f13837bb27a56ae8bd250fd5a",
+      "prediction_file": "results/formal/SIM-Auto/full/seed_29/predictions.npz",
+      "prediction_sha256": "d36753809197dc1b73db2e95a3b376ddd16c80303d7f04d28a3881cfb1853edc",
+      "dataset_sha256": "4e6d9baa6fb71bba375db77cf9c72ec9b862a37434715b36277dd7265588d017",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Auto",
+      "mode": "full",
+      "seed": 43,
+      "result_file": "results/formal/SIM-Auto/full/seed_43/result.json",
+      "result_sha256": "c36e234fed5934abec9cafc5534c98e09056cab14edc8ab399112c055af39323",
+      "prediction_file": "results/formal/SIM-Auto/full/seed_43/predictions.npz",
+      "prediction_sha256": "e315062297039267c73064e2277b2ff312a0c9676db612a64364a056847b7e3a",
+      "dataset_sha256": "4e6d9baa6fb71bba375db77cf9c72ec9b862a37434715b36277dd7265588d017",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Auto",
+      "mode": "full",
+      "seed": 71,
+      "result_file": "results/formal/SIM-Auto/full/seed_71/result.json",
+      "result_sha256": "c0ddd7012b58f80f41473b847f873f0a9455488324c607a298599a6f7ce04d90",
+      "prediction_file": "results/formal/SIM-Auto/full/seed_71/predictions.npz",
+      "prediction_sha256": "260472e6705fedf550d311d40dbfa4e1ae04a1d0224d595c127ea352240942ef",
+      "dataset_sha256": "4e6d9baa6fb71bba375db77cf9c72ec9b862a37434715b36277dd7265588d017",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Auto",
+      "mode": "no_stm",
+      "seed": 101,
+      "result_file": "results/formal/SIM-Auto/no_stm/seed_101/result.json",
+      "result_sha256": "1d92087e26e914c26863d1372aa355e8392cb260c9e920a99dd6ac331074e412",
+      "prediction_file": "results/formal/SIM-Auto/no_stm/seed_101/predictions.npz",
+      "prediction_sha256": "c1ed5d2eed8636a12ab50cf8caf19924d410f73d7348c054020bbb4585d95ab6",
+      "dataset_sha256": "4e6d9baa6fb71bba375db77cf9c72ec9b862a37434715b36277dd7265588d017",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Auto",
+      "mode": "no_stm",
+      "seed": 17,
+      "result_file": "results/formal/SIM-Auto/no_stm/seed_17/result.json",
+      "result_sha256": "b7632ed827368339a79319c9edd890416fd7b66b487d0300c9e107619306cfdc",
+      "prediction_file": "results/formal/SIM-Auto/no_stm/seed_17/predictions.npz",
+      "prediction_sha256": "862b1049c028d56d58610f75644ce19ccfe503859e71a981748117a0ef5682a2",
+      "dataset_sha256": "4e6d9baa6fb71bba375db77cf9c72ec9b862a37434715b36277dd7265588d017",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Auto",
+      "mode": "no_stm",
+      "seed": 29,
+      "result_file": "results/formal/SIM-Auto/no_stm/seed_29/result.json",
+      "result_sha256": "74f52b46662670281542d42808822f207330c2469e4855d707d0c16ecd089bc7",
+      "prediction_file": "results/formal/SIM-Auto/no_stm/seed_29/predictions.npz",
+      "prediction_sha256": "8e337e2ecca5ea80acfa56f912809a891e4b9891c8b20103d651364b7989bda9",
+      "dataset_sha256": "4e6d9baa6fb71bba375db77cf9c72ec9b862a37434715b36277dd7265588d017",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Auto",
+      "mode": "no_stm",
+      "seed": 43,
+      "result_file": "results/formal/SIM-Auto/no_stm/seed_43/result.json",
+      "result_sha256": "6483778148b7ce66fa4fd102d7d46037fcff4aa405eba44cea240927e02c965e",
+      "prediction_file": "results/formal/SIM-Auto/no_stm/seed_43/predictions.npz",
+      "prediction_sha256": "e8ab65022c209c15f925a3ce78d0db30ba62daa4549c096f2143a193f709ecae",
+      "dataset_sha256": "4e6d9baa6fb71bba375db77cf9c72ec9b862a37434715b36277dd7265588d017",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Auto",
+      "mode": "no_stm",
+      "seed": 71,
+      "result_file": "results/formal/SIM-Auto/no_stm/seed_71/result.json",
+      "result_sha256": "c4ddc2d6c9ade5b4d7a956ea47b98b27796b186608ca58d980a70879f6166a5c",
+      "prediction_file": "results/formal/SIM-Auto/no_stm/seed_71/predictions.npz",
+      "prediction_sha256": "027da07294e287cf6746017ba0b3bfd51e0c1abafb8ccac9e087eba7fe599d9f",
+      "dataset_sha256": "4e6d9baa6fb71bba375db77cf9c72ec9b862a37434715b36277dd7265588d017",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Energy",
+      "mode": "full",
+      "seed": 101,
+      "result_file": "results/formal/SIM-Energy/full/seed_101/result.json",
+      "result_sha256": "2eb42dafd296d41a958e0008f1c791aaf6950feb93a3c225e7db07b6a941fe0f",
+      "prediction_file": "results/formal/SIM-Energy/full/seed_101/predictions.npz",
+      "prediction_sha256": "6b1e87a51d649a8d17683120b7086dab36e08b8f9e317973ff209543a0400e09",
+      "dataset_sha256": "2ea23baaa883ac186aaa5b8c96004e77f63a0be974c8180f9bab964e9fcc4676",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Energy",
+      "mode": "full",
+      "seed": 17,
+      "result_file": "results/formal/SIM-Energy/full/seed_17/result.json",
+      "result_sha256": "ba4fe71817b4b6ca3f863fa27e269c42905ea62f71578a5bc0b7198307b8fd28",
+      "prediction_file": "results/formal/SIM-Energy/full/seed_17/predictions.npz",
+      "prediction_sha256": "70345e89dc5321a3b5c33afe482e35fc669b50ed931e87ff0998a5ea2c7922b8",
+      "dataset_sha256": "2ea23baaa883ac186aaa5b8c96004e77f63a0be974c8180f9bab964e9fcc4676",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Energy",
+      "mode": "full",
+      "seed": 29,
+      "result_file": "results/formal/SIM-Energy/full/seed_29/result.json",
+      "result_sha256": "7b2258f05a1b1650da547a3fb7db42f03181c15e71ae3df2f09b45c1956aaa5c",
+      "prediction_file": "results/formal/SIM-Energy/full/seed_29/predictions.npz",
+      "prediction_sha256": "bbd6cab5994e9c9ad7ae16438799baf151ab06fb2cd55368322f51acc1dacdf6",
+      "dataset_sha256": "2ea23baaa883ac186aaa5b8c96004e77f63a0be974c8180f9bab964e9fcc4676",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Energy",
+      "mode": "full",
+      "seed": 43,
+      "result_file": "results/formal/SIM-Energy/full/seed_43/result.json",
+      "result_sha256": "2fa07f8c421283c54c762e62c00040548c39c017509e72a838fe0d0302061247",
+      "prediction_file": "results/formal/SIM-Energy/full/seed_43/predictions.npz",
+      "prediction_sha256": "0387469a7508e710d87cada079e790b2729e02f07612af09f52de3fc65b71a02",
+      "dataset_sha256": "2ea23baaa883ac186aaa5b8c96004e77f63a0be974c8180f9bab964e9fcc4676",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Energy",
+      "mode": "full",
+      "seed": 71,
+      "result_file": "results/formal/SIM-Energy/full/seed_71/result.json",
+      "result_sha256": "0bd565d5cd397bca3b5c78a1a73b86a69c59a8392973d5a9d3b404e8ea3ba9c4",
+      "prediction_file": "results/formal/SIM-Energy/full/seed_71/predictions.npz",
+      "prediction_sha256": "a4452dd0551dbb86334bc4e53943c7268d426b9a6e8d7f2541be05e4a45ef333",
+      "dataset_sha256": "2ea23baaa883ac186aaa5b8c96004e77f63a0be974c8180f9bab964e9fcc4676",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Energy",
+      "mode": "no_stm",
+      "seed": 101,
+      "result_file": "results/formal/SIM-Energy/no_stm/seed_101/result.json",
+      "result_sha256": "314f069bf708ea38eed428df646dae28a32907787bba28ebd4069195352a6192",
+      "prediction_file": "results/formal/SIM-Energy/no_stm/seed_101/predictions.npz",
+      "prediction_sha256": "5ff100e831b78231025b888f6b0b12cc39d8c14888e4f7f4a326ba18055912d8",
+      "dataset_sha256": "2ea23baaa883ac186aaa5b8c96004e77f63a0be974c8180f9bab964e9fcc4676",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Energy",
+      "mode": "no_stm",
+      "seed": 17,
+      "result_file": "results/formal/SIM-Energy/no_stm/seed_17/result.json",
+      "result_sha256": "4ce821b37b148ba70d7e93ef68d319592a3c794d6494b5882477b9e1fd19caff",
+      "prediction_file": "results/formal/SIM-Energy/no_stm/seed_17/predictions.npz",
+      "prediction_sha256": "d5da64898f3a70e0110c6c340ec0b9f52401cbd601e947906ca719fdb65ec7b2",
+      "dataset_sha256": "2ea23baaa883ac186aaa5b8c96004e77f63a0be974c8180f9bab964e9fcc4676",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Energy",
+      "mode": "no_stm",
+      "seed": 29,
+      "result_file": "results/formal/SIM-Energy/no_stm/seed_29/result.json",
+      "result_sha256": "39fccdcebd24d58e2ef327b06ad3b8ef89cc5de65a29649a062bc75bf4b6ede0",
+      "prediction_file": "results/formal/SIM-Energy/no_stm/seed_29/predictions.npz",
+      "prediction_sha256": "59f6101fb76ffbcdf7c3e0046c9f561ba14cd1cfa62dbba44ba827676774b308",
+      "dataset_sha256": "2ea23baaa883ac186aaa5b8c96004e77f63a0be974c8180f9bab964e9fcc4676",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Energy",
+      "mode": "no_stm",
+      "seed": 43,
+      "result_file": "results/formal/SIM-Energy/no_stm/seed_43/result.json",
+      "result_sha256": "f22a27a6967e7ed552c250fa98b83d68e8dfae74e3e959206210b3b295b31c5e",
+      "prediction_file": "results/formal/SIM-Energy/no_stm/seed_43/predictions.npz",
+      "prediction_sha256": "36e8a7dd09d2a512f30babe91a168f49d457084dd4f7beaa40ad437c01d63712",
+      "dataset_sha256": "2ea23baaa883ac186aaa5b8c96004e77f63a0be974c8180f9bab964e9fcc4676",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Energy",
+      "mode": "no_stm",
+      "seed": 71,
+      "result_file": "results/formal/SIM-Energy/no_stm/seed_71/result.json",
+      "result_sha256": "b7fef74f4db4e1094d6df99dd84d65dc20389897a3c3b6a674280b88154892b1",
+      "prediction_file": "results/formal/SIM-Energy/no_stm/seed_71/predictions.npz",
+      "prediction_sha256": "16a85c340b8d60ac19a6219aa48def1b31285ccd4c3ad045a64779a1e0eb5ef7",
+      "dataset_sha256": "2ea23baaa883ac186aaa5b8c96004e77f63a0be974c8180f9bab964e9fcc4676",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Semi",
+      "mode": "full",
+      "seed": 101,
+      "result_file": "results/formal/SIM-Semi/full/seed_101/result.json",
+      "result_sha256": "3533890f1bd178ccf4342028003c01bbb6cd1757b96b8f38cf9209ea82396598",
+      "prediction_file": "results/formal/SIM-Semi/full/seed_101/predictions.npz",
+      "prediction_sha256": "c0778fbce3f1a650e49c06a72cf3fe75a1e054e74ed0e5cf6fa6716122039283",
+      "dataset_sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Semi",
+      "mode": "full",
+      "seed": 17,
+      "result_file": "results/formal/SIM-Semi/full/seed_17/result.json",
+      "result_sha256": "0dc6e7cae9e154fb64988f129cbe31e542bc4c90d7f8d98c7e73700fd6b5238f",
+      "prediction_file": "results/formal/SIM-Semi/full/seed_17/predictions.npz",
+      "prediction_sha256": "ba2c9a5773ea13646b6cc1feff6830adfdc239477c81e98fd2afecb4433cdd81",
+      "dataset_sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Semi",
+      "mode": "full",
+      "seed": 29,
+      "result_file": "results/formal/SIM-Semi/full/seed_29/result.json",
+      "result_sha256": "c08ffebf42b8706706d3adc1c7d132972e7e819b522d9fae93304b6f017b1c11",
+      "prediction_file": "results/formal/SIM-Semi/full/seed_29/predictions.npz",
+      "prediction_sha256": "08e81c816587803b5f002e81d7ec9e647e59761b37f8bef09450235008c6fbbe",
+      "dataset_sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Semi",
+      "mode": "full",
+      "seed": 43,
+      "result_file": "results/formal/SIM-Semi/full/seed_43/result.json",
+      "result_sha256": "4c909340a7f3ca3fdff388fe7d14ab7aa525ba612ae5031dd336eaeb1c301466",
+      "prediction_file": "results/formal/SIM-Semi/full/seed_43/predictions.npz",
+      "prediction_sha256": "0aa1b2055946e74dc7e2b75e952ec002525f3991e30ba677241387981cf15ec0",
+      "dataset_sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Semi",
+      "mode": "full",
+      "seed": 71,
+      "result_file": "results/formal/SIM-Semi/full/seed_71/result.json",
+      "result_sha256": "141599b0f2e0b1bbcddc0f8e71aa86efc3bbd1672a27f2c5ec57e2ba769d0a7f",
+      "prediction_file": "results/formal/SIM-Semi/full/seed_71/predictions.npz",
+      "prediction_sha256": "cd0a19601e5d30fcdd368efb49ac600cf1e81870d3e80db79f13a1bbbb756b2e",
+      "dataset_sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Semi",
+      "mode": "no_stm",
+      "seed": 101,
+      "result_file": "results/formal/SIM-Semi/no_stm/seed_101/result.json",
+      "result_sha256": "1a7dfcaf7752af6f600423f80757b84b9a50dd7636cb6d0fff50b5d949a441ef",
+      "prediction_file": "results/formal/SIM-Semi/no_stm/seed_101/predictions.npz",
+      "prediction_sha256": "83ab4c0d457a84690965bd63b4c6de1b7f37cd0f186e9014ff1eeebc6f9cbc65",
+      "dataset_sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Semi",
+      "mode": "no_stm",
+      "seed": 17,
+      "result_file": "results/formal/SIM-Semi/no_stm/seed_17/result.json",
+      "result_sha256": "893deeed634260d1441dfd9577062fedecb68115dcfcdfd541701b3ae55b3e5b",
+      "prediction_file": "results/formal/SIM-Semi/no_stm/seed_17/predictions.npz",
+      "prediction_sha256": "781e20fb02c703e8d0483ba9360169df29f4fd3ba6a04a395213f4d3dffcb05b",
+      "dataset_sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Semi",
+      "mode": "no_stm",
+      "seed": 29,
+      "result_file": "results/formal/SIM-Semi/no_stm/seed_29/result.json",
+      "result_sha256": "158fe928125e749602b863c36cd69419cff1334c38d02337985a69ca4636c635",
+      "prediction_file": "results/formal/SIM-Semi/no_stm/seed_29/predictions.npz",
+      "prediction_sha256": "2ff3acaa86edae100095b5df2abbb2026392aee39a454918a30306ed6ab620eb",
+      "dataset_sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Semi",
+      "mode": "no_stm",
+      "seed": 43,
+      "result_file": "results/formal/SIM-Semi/no_stm/seed_43/result.json",
+      "result_sha256": "c589e899cfa4b324a08087a32c8f29b905b2ca304c5f8fc451e5bf2c009665e0",
+      "prediction_file": "results/formal/SIM-Semi/no_stm/seed_43/predictions.npz",
+      "prediction_sha256": "9f6279069b09229b1ebfbda5bc46ad605fefe90e2f8831e63f8302d672cacc4c",
+      "dataset_sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da",
+      "test_rows": 17
+    },
+    {
+      "dataset": "SIM-Semi",
+      "mode": "no_stm",
+      "seed": 71,
+      "result_file": "results/formal/SIM-Semi/no_stm/seed_71/result.json",
+      "result_sha256": "7d1c619a55b96c59bfac8daaf33005f0b2b9f5886a69b2268fe0874f45541338",
+      "prediction_file": "results/formal/SIM-Semi/no_stm/seed_71/predictions.npz",
+      "prediction_sha256": "008e205e1d6138897eb4f125281bc310aafef45e622cb449b4fff1415bb1c04b",
+      "dataset_sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da",
+      "test_rows": 17
+    }
+  ],
+  "skipped": [
+    {
+      "dataset": "ICKG-Weak",
+      "figure": "causal_case",
+      "reason": "no propagation edge ground truth; no case generated"
+    }
+  ],
+  "case": {
+    "dataset": "SIM-Semi",
+    "seed": 17,
+    "snapshot_index": 67,
+    "source_node": 15,
+    "selection": "first test index with source and >=1 positive simulator edge; smallest observed source index",
+    "display": "all nodes and edges in the source-directed 2-hop induced subgraph",
+    "display_nodes": 20,
+    "display_edges": 35,
+    "path_policy": "unnormalized product of saved intensities; no repeated nodes",
+    "validation_selected_node_threshold": 0.7599999999999999,
+    "prediction_day": 770,
+    "target_day": 800,
+    "dataset_sha256": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da"
+  },
+  "outputs": [
+    {
+      "file": "captions.md",
+      "sha256": "0d15d12a2954c3c04785225073c25835afc33758f43fe797bc613c08f84a1d03"
+    },
+    {
+      "file": "ICKG-Weak_context_structure_strata.pdf",
+      "sha256": "338d6b2f960a1ea71699c4f5238649f09e2cbc4570d3e00f4eb4cc4e517e9d11"
+    },
+    {
+      "file": "ICKG-Weak_context_structure_strata.png",
+      "sha256": "f083ed65fcccfa47e11b8e10eefc30a5845bff174a05a254c057428db30d4c15"
+    },
+    {
+      "file": "ICKG-Weak_context_structure_strata.svg",
+      "sha256": "1e0c42fbfac737fb2c644bfbbbebb59144322b4128baf82ceb8d81745b1a74d8"
+    },
+    {
+      "file": "SIM-Auto_context_structure_strata.pdf",
+      "sha256": "91c99210b3e006d97c9e56fdf59b90c2085667c1f64814e9b12f723896e7b3ee"
+    },
+    {
+      "file": "SIM-Auto_context_structure_strata.png",
+      "sha256": "4fe50a93feb6dbb814bc5a2da793f73ff026e82d0b740da143c2f18001cb0e43"
+    },
+    {
+      "file": "SIM-Auto_context_structure_strata.svg",
+      "sha256": "6ccab9df0517a14cc361352d17ab390d558509555e7b484dff24d0f2ecf657ef"
+    },
+    {
+      "file": "SIM-Energy_context_structure_strata.pdf",
+      "sha256": "20c051d3120bc2e8e8a30f5a1301a86c78648da12cd36c9df7566c120e27b946"
+    },
+    {
+      "file": "SIM-Energy_context_structure_strata.png",
+      "sha256": "03879b08379e2ce412d79d3820419fe3e757e00e6d479d62178bb975154fd74d"
+    },
+    {
+      "file": "SIM-Energy_context_structure_strata.svg",
+      "sha256": "f778eabdf94dbd91f0f758d5cc2dcde26ec6f4a6325e436dba3c8bfe09d189a7"
+    },
+    {
+      "file": "SIM-Semi_context_structure_strata.pdf",
+      "sha256": "09560d007b37495e3589daf74e26027cf976cb00e66a4d2cb4a7e1a7644ed271"
+    },
+    {
+      "file": "SIM-Semi_context_structure_strata.png",
+      "sha256": "02431462ab97940b4e9109cef9752d02bfc02dd5eaa521725d0387e4391a3a10"
+    },
+    {
+      "file": "SIM-Semi_context_structure_strata.svg",
+      "sha256": "ff177e2ee995bf9cbbc37eb0e9c30ab1923c417e0996d231963b97eeb9302024"
+    },
+    {
+      "file": "SIM-Semi_simulator_case_seed17.pdf",
+      "sha256": "464f520b2447330e6d9da755a1e99d50a7aedffe0cf1c6b9311a3675c13e2e0c"
+    },
+    {
+      "file": "SIM-Semi_simulator_case_seed17.png",
+      "sha256": "e5087e33f0c5687daa38d58f4c98d4f58ee8ba48cb46cff30c975c25c9292600"
+    },
+    {
+      "file": "SIM-Semi_simulator_case_seed17.svg",
+      "sha256": "1b09e9211a5dd62f0f47ef9725fa60501ef5903e1a88acb1c4d12829e1fd407b"
+    },
+    {
+      "file": "source_data/SIM-Semi_simulator_case_seed17_edges.csv",
+      "sha256": "26bbd23c6f64d3e17773645ad745dc78071053783bf55ac2d2ab99d4da0ffe32"
+    },
+    {
+      "file": "source_data/SIM-Semi_simulator_case_seed17_nodes.csv",
+      "sha256": "91501d8300ab3998a6d6b7af7f85c50a4866e543542451b3d892f7b5c4edc86c"
+    },
+    {
+      "file": "source_data/SIM-Semi_simulator_case_seed17_paths.csv",
+      "sha256": "4d3514d5d55425f1e58c27527620371d46d83fe13351d5e9e6198d76d849e377"
+    },
+    {
+      "file": "source_data/strata_metrics.csv",
+      "sha256": "b4769f6200e6f3eab4b6fa6f2cb0b90ad8bc1eaa2725b77c7e7fe2462c5f3c06"
+    },
+    {
+      "file": "source_data/strata_rows.csv",
+      "sha256": "82d8700e596c81848ddf6ae7ddd2ea794496e361dda7263987e6e6047a66e384"
+    },
+    {
+      "file": "source_data/strata_summary.csv",
+      "sha256": "6b0e01af349b0116da75150bc4cf90da7d4be44130cf298547b64f5e62ec24de"
+    }
+  ]
+}

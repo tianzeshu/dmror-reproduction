@@ -1,0 +1,25 @@
+{
+  "audit_date_client": "2026-10-02 Asia/Shanghai",
+  "command": "python -m pytest tests/test_model.py tests/test_training.py tests/test_loss_audit.py -q",
+  "result": "30 passed in 16.00s",
+  "gpu_test_skipped": false,
+  "environment": {
+    "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Jun 11 2026, 15:13:20) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "torch": "2.11.0+cu128",
+    "numpy": "1.24.4",
+    "sklearn": "1.7.2",
+    "cuda": "12.8"
+  },
+  "tested_sources_sha256": {
+    "dmror/model.py": "dc78d84af1eaa2aacb74a3c804a3c9e34d78c9def3ae039567cf6405feeecc49",
+    "dmror/losses.py": "171602befd4913c820010fcd8531f2df2591b4bfb68a667d4468d635412ca51d",
+    "dmror/train.py": "189725588dade6b629b1dd9c992022f0109feb496276b233eae402e1fa2a9a40",
+    "dmror/paths.py": "ae80b4fb3c695fc0bcaabc51ed0dbeb7fae07d5f99468e2d05e56dcd0d177f69",
+    "dmror/metrics.py": "257d7c4eaad3b322044b3938b80b63beec53cc502867000460f90bd7c178ad88",
+    "dmror/predict.py": "6dd229fba332772b39cb386cd6890cdddac92e79ffdb70e9a1b8884d37f5a28c",
+    "tests/test_model.py": "c3922ee28af73dcf0f9df3b65a4246409dc2fe51c32aa4a9c88b79dd27cb7735",
+    "tests/test_training.py": "0320593b9344d659a92713cf1fc35d928e5690a0b78f09672e53756fdac6c474",
+    "tests/test_loss_audit.py": "050c3cf0a0b908bcace416df1e3af36199c45c273ac11a173c99681508f34ff7"
+  }
+}

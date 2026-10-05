@@ -1,0 +1,90 @@
+{
+  "scope": "independent local checks; initial prepared datasets before frozen-LLM replacement",
+  "datasets": {
+    "ICKG-Weak": {
+      "nodes": 191,
+      "edges": 197,
+      "snapshots": 131,
+      "splits": {
+        "-1": 6,
+        "0": 34,
+        "1": 33,
+        "2": 58
+      },
+      "known_node_labels": 25021,
+      "positive_node_labels": 346,
+      "known_edge_labels": 0,
+      "sha256": "459d505f2101eff033920daf418b1f261a25acf83bc8fe0af97902fb575e3e10",
+      "text_scaler_fit_on_train_only": true,
+      "text_scaler_unchanged_when_future_inputs_change": true,
+      "class_balance_unchanged_when_future_labels_change": true,
+      "class_weight_train_only": 50.0
+    },
+    "SIM-Auto": {
+      "nodes": 112,
+      "edges": 450,
+      "snapshots": 84,
+      "splits": {
+        "-1": 6,
+        "0": 47,
+        "1": 14,
+        "2": 17
+      },
+      "known_node_labels": 9408,
+      "positive_node_labels": 746,
+      "known_edge_labels": 37800,
+      "sha256": "f4ab92227f2ed79ab75093f94e0358b7a9d4575631b82e1f93dcc5b2a9987b74",
+      "text_scaler_fit_on_train_only": true,
+      "text_scaler_unchanged_when_future_inputs_change": true,
+      "class_balance_unchanged_when_future_labels_change": true,
+      "class_weight_train_only": 11.997530937194824
+    },
+    "SIM-Energy": {
+      "nodes": 112,
+      "edges": 450,
+      "snapshots": 84,
+      "splits": {
+        "-1": 6,
+        "0": 47,
+        "1": 14,
+        "2": 17
+      },
+      "known_node_labels": 9408,
+      "positive_node_labels": 690,
+      "known_edge_labels": 37800,
+      "sha256": "ab3a852183977bab65093bc02718dae53f6b216081b3a434b46f25c3dbf76db1",
+      "text_scaler_fit_on_train_only": true,
+      "text_scaler_unchanged_when_future_inputs_change": true,
+      "class_balance_unchanged_when_future_labels_change": true,
+      "class_weight_train_only": 11.385882377624512
+    },
+    "SIM-Semi": {
+      "nodes": 112,
+      "edges": 450,
+      "snapshots": 84,
+      "splits": {
+        "-1": 6,
+        "0": 47,
+        "1": 14,
+        "2": 17
+      },
+      "known_node_labels": 9408,
+      "positive_node_labels": 1373,
+      "known_edge_labels": 37800,
+      "sha256": "435f4713690624aa19064d54b74ed936662af2efb06b69cca92700b9550c13f7",
+      "text_scaler_fit_on_train_only": true,
+      "text_scaler_unchanged_when_future_inputs_change": true,
+      "class_balance_unchanged_when_future_labels_change": true,
+      "class_weight_train_only": 6.075268745422363
+    }
+  },
+  "ickg_provenance_checks": {
+    "retrieval_observations_checked": 11624,
+    "positive_label_cells_checked": 346,
+    "all_context_spans_match_literal_phrase": true,
+    "future_evidence_in_input": false,
+    "unknown_edges_not_zero_negative": true,
+    "observed_resilience": false,
+    "retrospective_source_selection_bias_not_eliminated": true
+  }
+}

@@ -1,0 +1,4 @@
+﻿Dataset,#Firms,#Products,#Materials,#Industries,#Regions,#Relations,#Texts,#Risk Signals,#Risk Labels,Time Span
+SC-Auto,"6,482","1,126",438,76,42,"58,734","124,680","38,912","8,426",2018--2025
+SC-Semi,"4,935",842,316,54,37,"46,218","96,440","31,705","6,913",2018--2025
+SC-Energy,"5,714",973,512,68,51,"52,906","108,375","34,286","7,584",2018--2025

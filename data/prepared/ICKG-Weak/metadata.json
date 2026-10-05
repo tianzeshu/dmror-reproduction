@@ -1,0 +1,174 @@
+{
+  "name": "ICKG-Weak",
+  "data_kind": "real_source_weak_labels",
+  "is_real_world": true,
+  "is_disruption_gold_standard": false,
+  "generator": "dmror.build_ickg",
+  "source_provenance": [
+    {
+      "filename": "canonical_entities_merged.jsonl",
+      "server_path": "/root/ICKG/phase03c_entity_canonical_consolidation/output/canonical_entities_merged.jsonl",
+      "sha256": "c246f1afbb8be6e6c956c1ed6b97467ba7d420b8ea022fc7af4da0483d5aa8a4"
+    },
+    {
+      "filename": "kg_edges_high_precision.jsonl",
+      "server_path": "/root/ICKG/phase05_build_icr_snapshot/output/kg_edges_high_precision.jsonl",
+      "sha256": "3ad550641dd590b490c47c194cd243db027be843aced1e25d358af1da8269cbf"
+    },
+    {
+      "filename": "contexts.jsonl",
+      "server_path": "/root/ICKG/phase06_context_repository/output/contexts.jsonl",
+      "sha256": "4109e5df303e1edb9562d74fc518bdc6580463f3a0c5bf4735f97d25c3af0d91"
+    },
+    {
+      "filename": "context_entity_links.jsonl",
+      "server_path": "/root/ICKG/phase06_context_repository/output/context_entity_links.jsonl",
+      "sha256": "f64b5466ff4ee007028f2f72091d69f74e6725f4bbdb99f9859df0fbcfb29732"
+    }
+  ],
+  "source_counts": {
+    "entities": 8852,
+    "high_precision_edges": 2236,
+    "contexts": 18486,
+    "links": 28360
+  },
+  "graph_cutoff_exclusive": "2022-01-01",
+  "node_selection": "linked context existed before first query",
+  "first_query_date": "2022-01-01",
+  "last_query_date": "2025-07-24",
+  "source_date_coverage_end": "2025-08-30",
+  "forecast_horizon_days": 30,
+  "query_step_days": 10,
+  "retrieval_size": 5,
+  "lookback_days": 30,
+  "retrieval_rule": "strict open past interval, constant 0.8 confidence, descending publication date; context_id tie break",
+  "temporal_split": "2022 train, 2023 validation, 2024-2025 test; crossing or touching target boundary purged",
+  "signal_timestamp_kind": "reported publication date; contemporaneous crawl availability not established",
+  "text_encoder": {
+    "encoder": "frozen_local_LLM",
+    "model_identifier": "Llama-3-8b-instruct",
+    "model_config_sha256": "61f3de03a16ca8046b05dc777bce72717022bc8522152eee61a69072272ef54b",
+    "weight_files": [
+      {
+        "name": "model-00001-of-00004.safetensors",
+        "bytes": 4976698672,
+        "sha256": "d8cf9c4d0dd972e1a2131bfe656235ee98221679711a3beef6d46dadf0f20b5c"
+      },
+      {
+        "name": "model-00002-of-00004.safetensors",
+        "bytes": 4999802720,
+        "sha256": "8d4782b4a69ef03845159ce1a15e272aadaaf134dc138d68f616098e8531729c"
+      },
+      {
+        "name": "model-00004-of-00004.safetensors",
+        "bytes": 1168138808,
+        "sha256": "67e9ad31c8c32abf3a55ee7fc7217b3ecb35fd3c74d98a5bd233e0e4d6964f46"
+      },
+      {
+        "name": "model-00003-of-00004.safetensors",
+        "bytes": 4915916176,
+        "sha256": "3acdd690e65c24f42a24581b8467af98bd3ca357444580f8012aacd2bd607921"
+      }
+    ],
+    "pooling": "masked mean of evidence segment last hidden states, character offsets identify evidence tokens",
+    "projection_seed": 731,
+    "projection_dim": 64,
+    "original_hidden_dim": 4096,
+    "max_length": 256,
+    "prompt_prefix": "Encode this industrial risk evidence for future supply-chain risk prediction. Evidence: ",
+    "cache_sha256": "fcd062e8d781918da2ef5fe96f2015261a7c18925b4b11c45075b90705f062cf",
+    "torch_version": "2.12.0.dev20260316+cu128",
+    "device": "cuda:0",
+    "unique_evidence_segments": 3936,
+    "limitations": [
+      "Frozen feature extraction rather than end-to-end LLM fine-tuning.",
+      "Signal fields in bundled datasets are rule-extracted or simulated; the separate extractor supports local LLM JSON extraction.",
+      "One evidence unit is encoded per signal; full entity-neighborhood prompts are supported by extract_signals but not encoded in these cached runs."
+    ]
+  },
+  "node_feature_semantics": "type one-hot plus three zero placeholders; names/country/sector/final counts excluded",
+  "relation_types": [
+    "Supplies",
+    "Cooperates",
+    "InvestsIn",
+    "Holding",
+    "Acquires",
+    "Competes",
+    "JointVenture"
+  ],
+  "entity_types": [
+    "Company",
+    "Product",
+    "Material",
+    "Industry",
+    "Region"
+  ],
+  "edge_dependency": "unobserved constant 1; observed mask false",
+  "edge_features": "unobserved zero; observed mask false",
+  "resilience_source": "unobserved zeros; resilience_observed_mask false",
+  "label_kind": "future_30_day_linked_snippet_literal_risk_expression_publication",
+  "label_rule": {
+    "version": "ickg-risk-publication-literal-v1",
+    "phrases": [
+      "断供",
+      "供应中断",
+      "停产",
+      "减产",
+      "破产",
+      "违约",
+      "短缺",
+      "缺货",
+      "制裁",
+      "出口管制",
+      "出口限制",
+      "禁运",
+      "裁员",
+      "火灾",
+      "罢工",
+      "供应链中断",
+      "交付延迟",
+      "供应不足",
+      "产能不足",
+      "暂停生产",
+      "关闭工厂",
+      "生产中断",
+      "限电",
+      "chip shortage",
+      "supply disruption",
+      "export control",
+      "sanction",
+      "bankrupt",
+      "layoff",
+      "production halt"
+    ],
+    "positive": "linked snippet dated in [query,query+30) matches a literal risk term",
+    "negative": "no such matched linked snippet recorded in this corpus; does not imply actual safety"
+  },
+  "path_ground_truth": "unknown; edge_labels all -1; source_mask all false; causal path precision unavailable",
+  "scope_ground_truth": "publication-rule node set only; not measured physical affected entities",
+  "statistics": {
+    "nodes": 191,
+    "edges": 197,
+    "snapshots": 131,
+    "splits": {
+      "-1": 6,
+      "0": 34,
+      "1": 33,
+      "2": 58
+    },
+    "known_node_labels": 25021,
+    "positive_node_labels": 346,
+    "known_edge_labels": 0,
+    "sha256": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735"
+  },
+  "limitations": [
+    "This is not the paper SC-Auto, SC-Semi or SC-Energy dataset and does not establish real disruption accuracy.",
+    "High-precision edge inclusion and canonical entity consolidation were produced retrospectively using complete-source evidence; even date freezing cannot remove that selection bias.",
+    "Publication dates are not proven historical ingestion/availability dates; this is retrospective evaluation, not a certified online backtest.",
+    "Literal weak labels include hypothetical and negated risk discussion; entity linking and relation correctness are not human gold standards.",
+    "No observed resilience, dependency, edge attributes, source-cause labels, affected-set gold truth or causal-path truth were found.",
+    "Thirty-day target windows overlap across ten-day queries; snapshot samples are correlated and seed variability is not a population confidence interval.",
+    "The corpus has collection/coverage bias and severe class imbalance; a zero label records absence of matching captured text only.",
+    "Raw public webpage text redistribution licences were not independently verified; source text is not licensed as this project's original code."
+  ]
+}

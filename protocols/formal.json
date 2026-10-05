@@ -1,0 +1,3250 @@
+{
+  "stage": "formal_five_seed_suite",
+  "output": "results/formal",
+  "selection": "validation AUPRC only; full and each independent baseline have equal 4-configuration budgets; ablations retain full settings",
+  "selected": {
+    "ICKG-Weak": {
+      "winner": {
+        "configuration": "config_3",
+        "validation_auprc": 0.023534987851335135,
+        "lr": 0.001,
+        "hidden": 128,
+        "best_epoch": 2
+      },
+      "validation_only_candidates": [
+        {
+          "configuration": "config_0",
+          "validation_auprc": 0.014080863482342096,
+          "lr": 0.0003,
+          "hidden": 64,
+          "best_epoch": 11
+        },
+        {
+          "configuration": "config_1",
+          "validation_auprc": 0.014989593026594797,
+          "lr": 0.001,
+          "hidden": 64,
+          "best_epoch": 4
+        },
+        {
+          "configuration": "config_2",
+          "validation_auprc": 0.020147079304666325,
+          "lr": 0.0003,
+          "hidden": 128,
+          "best_epoch": 5
+        },
+        {
+          "configuration": "config_3",
+          "validation_auprc": 0.023534987851335135,
+          "lr": 0.001,
+          "hidden": 128,
+          "best_epoch": 2
+        }
+      ]
+    },
+    "SIM-Auto": {
+      "winner": {
+        "configuration": "config_3",
+        "validation_auprc": 0.5030180580639272,
+        "lr": 0.001,
+        "hidden": 128,
+        "best_epoch": 31
+      },
+      "validation_only_candidates": [
+        {
+          "configuration": "config_0",
+          "validation_auprc": 0.4448266293225449,
+          "lr": 0.0003,
+          "hidden": 64,
+          "best_epoch": 49
+        },
+        {
+          "configuration": "config_1",
+          "validation_auprc": 0.4962858791126558,
+          "lr": 0.001,
+          "hidden": 64,
+          "best_epoch": 50
+        },
+        {
+          "configuration": "config_2",
+          "validation_auprc": 0.4759606995300942,
+          "lr": 0.0003,
+          "hidden": 128,
+          "best_epoch": 50
+        },
+        {
+          "configuration": "config_3",
+          "validation_auprc": 0.5030180580639272,
+          "lr": 0.001,
+          "hidden": 128,
+          "best_epoch": 31
+        }
+      ]
+    },
+    "SIM-Energy": {
+      "winner": {
+        "configuration": "config_3",
+        "validation_auprc": 0.3312204531308698,
+        "lr": 0.001,
+        "hidden": 128,
+        "best_epoch": 5
+      },
+      "validation_only_candidates": [
+        {
+          "configuration": "config_0",
+          "validation_auprc": 0.3113274927606933,
+          "lr": 0.0003,
+          "hidden": 64,
+          "best_epoch": 21
+        },
+        {
+          "configuration": "config_1",
+          "validation_auprc": 0.3227929225200718,
+          "lr": 0.001,
+          "hidden": 64,
+          "best_epoch": 14
+        },
+        {
+          "configuration": "config_2",
+          "validation_auprc": 0.32839212119498395,
+          "lr": 0.0003,
+          "hidden": 128,
+          "best_epoch": 14
+        },
+        {
+          "configuration": "config_3",
+          "validation_auprc": 0.3312204531308698,
+          "lr": 0.001,
+          "hidden": 128,
+          "best_epoch": 5
+        }
+      ]
+    },
+    "SIM-Semi": {
+      "winner": {
+        "configuration": "config_1",
+        "validation_auprc": 0.6610772122666897,
+        "lr": 0.001,
+        "hidden": 64,
+        "best_epoch": 38
+      },
+      "validation_only_candidates": [
+        {
+          "configuration": "config_0",
+          "validation_auprc": 0.6192358199100921,
+          "lr": 0.0003,
+          "hidden": 64,
+          "best_epoch": 49
+        },
+        {
+          "configuration": "config_1",
+          "validation_auprc": 0.6610772122666897,
+          "lr": 0.001,
+          "hidden": 64,
+          "best_epoch": 38
+        },
+        {
+          "configuration": "config_2",
+          "validation_auprc": 0.6358257988767912,
+          "lr": 0.0003,
+          "hidden": 128,
+          "best_epoch": 45
+        },
+        {
+          "configuration": "config_3",
+          "validation_auprc": 0.6585707994173656,
+          "lr": 0.001,
+          "hidden": 128,
+          "best_epoch": 23
+        }
+      ]
+    }
+  },
+  "baseline_selected": {
+    "ICKG-Weak": {
+      "text_mlp": {
+        "winner": {
+          "configuration": "config_2",
+          "validation_auprc": 0.03144376428201072,
+          "lr": 0.0003,
+          "hidden": 128,
+          "best_epoch": 1
+        },
+        "validation_only_candidates": [
+          {
+            "configuration": "config_0",
+            "validation_auprc": 0.029493396481866913,
+            "lr": 0.0003,
+            "hidden": 64,
+            "best_epoch": 18
+          },
+          {
+            "configuration": "config_1",
+            "validation_auprc": 0.026612970066111817,
+            "lr": 0.001,
+            "hidden": 64,
+            "best_epoch": 13
+          },
+          {
+            "configuration": "config_2",
+            "validation_auprc": 0.03144376428201072,
+            "lr": 0.0003,
+            "hidden": 128,
+            "best_epoch": 1
+          },
+          {
+            "configuration": "config_3",
+            "validation_auprc": 0.02629505663216758,
+            "lr": 0.001,
+            "hidden": 128,
+            "best_epoch": 1
+          }
+        ]
+      },
+      "graph_only": {
+        "winner": {
+          "configuration": "config_3",
+          "validation_auprc": 0.029883487403448664,
+          "lr": 0.001,
+          "hidden": 128,
+          "best_epoch": 10
+        },
+        "validation_only_candidates": [
+          {
+            "configuration": "config_0",
+            "validation_auprc": 0.01128050137409376,
+            "lr": 0.0003,
+            "hidden": 64,
+            "best_epoch": 11
+          },
+          {
+            "configuration": "config_1",
+            "validation_auprc": 0.029106230462422448,
+            "lr": 0.001,
+            "hidden": 64,
+            "best_epoch": 18
+          },
+          {
+            "configuration": "config_2",
+            "validation_auprc": 0.02933954045026857,
+            "lr": 0.0003,
+            "hidden": 128,
+            "best_epoch": 18
+          },
+          {
+            "configuration": "config_3",
+            "validation_auprc": 0.029883487403448664,
+            "lr": 0.001,
+            "hidden": 128,
+            "best_epoch": 10
+          }
+        ]
+      },
+      "concat": {
+        "winner": {
+          "configuration": "config_0",
+          "validation_auprc": 0.04877496174472019,
+          "lr": 0.0003,
+          "hidden": 64,
+          "best_epoch": 1
+        },
+        "validation_only_candidates": [
+          {
+            "configuration": "config_0",
+            "validation_auprc": 0.04877496174472019,
+            "lr": 0.0003,
+            "hidden": 64,
+            "best_epoch": 1
+          },
+          {
+            "configuration": "config_1",
+            "validation_auprc": 0.022940424752844673,
+            "lr": 0.001,
+            "hidden": 64,
+            "best_epoch": 15
+          },
+          {
+            "configuration": "config_2",
+            "validation_auprc": 0.023399747361672475,
+            "lr": 0.0003,
+            "hidden": 128,
+            "best_epoch": 43
+          },
+          {
+            "configuration": "config_3",
+            "validation_auprc": 0.027956731837066446,
+            "lr": 0.001,
+            "hidden": 128,
+            "best_epoch": 25
+          }
+        ]
+      }
+    },
+    "SIM-Auto": {
+      "text_mlp": {
+        "winner": {
+          "configuration": "config_2",
+          "validation_auprc": 0.29028806918190386,
+          "lr": 0.0003,
+          "hidden": 128,
+          "best_epoch": 21
+        },
+        "validation_only_candidates": [
+          {
+            "configuration": "config_0",
+            "validation_auprc": 0.277078757579896,
+            "lr": 0.0003,
+            "hidden": 64,
+            "best_epoch": 26
+          },
+          {
+            "configuration": "config_1",
+            "validation_auprc": 0.2780589549560861,
+            "lr": 0.001,
+            "hidden": 64,
+            "best_epoch": 16
+          },
+          {
+            "configuration": "config_2",
+            "validation_auprc": 0.29028806918190386,
+            "lr": 0.0003,
+            "hidden": 128,
+            "best_epoch": 21
+          },
+          {
+            "configuration": "config_3",
+            "validation_auprc": 0.28791362356719863,
+            "lr": 0.001,
+            "hidden": 128,
+            "best_epoch": 23
+          }
+        ]
+      },
+      "graph_only": {
+        "winner": {
+          "configuration": "config_3",
+          "validation_auprc": 0.22519089120469532,
+          "lr": 0.001,
+          "hidden": 128,
+          "best_epoch": 5
+        },
+        "validation_only_candidates": [
+          {
+            "configuration": "config_0",
+            "validation_auprc": 0.22050631290063136,
+            "lr": 0.0003,
+            "hidden": 64,
+            "best_epoch": 8
+          },
+          {
+            "configuration": "config_1",
+            "validation_auprc": 0.2188881202509998,
+            "lr": 0.001,
+            "hidden": 64,
+            "best_epoch": 2
+          },
+          {
+            "configuration": "config_2",
+            "validation_auprc": 0.21523290615196894,
+            "lr": 0.0003,
+            "hidden": 128,
+            "best_epoch": 4
+          },
+          {
+            "configuration": "config_3",
+            "validation_auprc": 0.22519089120469532,
+            "lr": 0.001,
+            "hidden": 128,
+            "best_epoch": 5
+          }
+        ]
+      },
+      "concat": {
+        "winner": {
+          "configuration": "config_2",
+          "validation_auprc": 0.40601039666313365,
+          "lr": 0.0003,
+          "hidden": 128,
+          "best_epoch": 36
+        },
+        "validation_only_candidates": [
+          {
+            "configuration": "config_0",
+            "validation_auprc": 0.3989203165505558,
+            "lr": 0.0003,
+            "hidden": 64,
+            "best_epoch": 37
+          },
+          {
+            "configuration": "config_1",
+            "validation_auprc": 0.3980501721097381,
+            "lr": 0.001,
+            "hidden": 64,
+            "best_epoch": 14
+          },
+          {
+            "configuration": "config_2",
+            "validation_auprc": 0.40601039666313365,
+            "lr": 0.0003,
+            "hidden": 128,
+            "best_epoch": 36
+          },
+          {
+            "configuration": "config_3",
+            "validation_auprc": 0.4026065109201823,
+            "lr": 0.001,
+            "hidden": 128,
+            "best_epoch": 18
+          }
+        ]
+      }
+    },
+    "SIM-Energy": {
+      "text_mlp": {
+        "winner": {
+          "configuration": "config_2",
+          "validation_auprc": 0.25852860401574573,
+          "lr": 0.0003,
+          "hidden": 128,
+          "best_epoch": 34
+        },
+        "validation_only_candidates": [
+          {
+            "configuration": "config_0",
+            "validation_auprc": 0.25493602089069606,
+            "lr": 0.0003,
+            "hidden": 64,
+            "best_epoch": 47
+          },
+          {
+            "configuration": "config_1",
+            "validation_auprc": 0.25824884224598593,
+            "lr": 0.001,
+            "hidden": 64,
+            "best_epoch": 15
+          },
+          {
+            "configuration": "config_2",
+            "validation_auprc": 0.25852860401574573,
+            "lr": 0.0003,
+            "hidden": 128,
+            "best_epoch": 34
+          },
+          {
+            "configuration": "config_3",
+            "validation_auprc": 0.2583668487365236,
+            "lr": 0.001,
+            "hidden": 128,
+            "best_epoch": 11
+          }
+        ]
+      },
+      "graph_only": {
+        "winner": {
+          "configuration": "config_1",
+          "validation_auprc": 0.18303027470954134,
+          "lr": 0.001,
+          "hidden": 64,
+          "best_epoch": 1
+        },
+        "validation_only_candidates": [
+          {
+            "configuration": "config_0",
+            "validation_auprc": 0.18292484242570073,
+            "lr": 0.0003,
+            "hidden": 64,
+            "best_epoch": 8
+          },
+          {
+            "configuration": "config_1",
+            "validation_auprc": 0.18303027470954134,
+            "lr": 0.001,
+            "hidden": 64,
+            "best_epoch": 1
+          },
+          {
+            "configuration": "config_2",
+            "validation_auprc": 0.18005625631901767,
+            "lr": 0.0003,
+            "hidden": 128,
+            "best_epoch": 2
+          },
+          {
+            "configuration": "config_3",
+            "validation_auprc": 0.17868120264457824,
+            "lr": 0.001,
+            "hidden": 128,
+            "best_epoch": 1
+          }
+        ]
+      },
+      "concat": {
+        "winner": {
+          "configuration": "config_3",
+          "validation_auprc": 0.33674861693608776,
+          "lr": 0.001,
+          "hidden": 128,
+          "best_epoch": 17
+        },
+        "validation_only_candidates": [
+          {
+            "configuration": "config_0",
+            "validation_auprc": 0.2563247598291575,
+            "lr": 0.0003,
+            "hidden": 64,
+            "best_epoch": 8
+          },
+          {
+            "configuration": "config_1",
+            "validation_auprc": 0.32071749044664477,
+            "lr": 0.001,
+            "hidden": 64,
+            "best_epoch": 23
+          },
+          {
+            "configuration": "config_2",
+            "validation_auprc": 0.32434370747266744,
+            "lr": 0.0003,
+            "hidden": 128,
+            "best_epoch": 44
+          },
+          {
+            "configuration": "config_3",
+            "validation_auprc": 0.33674861693608776,
+            "lr": 0.001,
+            "hidden": 128,
+            "best_epoch": 17
+          }
+        ]
+      }
+    },
+    "SIM-Semi": {
+      "text_mlp": {
+        "winner": {
+          "configuration": "config_3",
+          "validation_auprc": 0.3943258173725499,
+          "lr": 0.001,
+          "hidden": 128,
+          "best_epoch": 5
+        },
+        "validation_only_candidates": [
+          {
+            "configuration": "config_0",
+            "validation_auprc": 0.3900579393912019,
+            "lr": 0.0003,
+            "hidden": 64,
+            "best_epoch": 22
+          },
+          {
+            "configuration": "config_1",
+            "validation_auprc": 0.3912168220042993,
+            "lr": 0.001,
+            "hidden": 64,
+            "best_epoch": 9
+          },
+          {
+            "configuration": "config_2",
+            "validation_auprc": 0.39414849786841083,
+            "lr": 0.0003,
+            "hidden": 128,
+            "best_epoch": 12
+          },
+          {
+            "configuration": "config_3",
+            "validation_auprc": 0.3943258173725499,
+            "lr": 0.001,
+            "hidden": 128,
+            "best_epoch": 5
+          }
+        ]
+      },
+      "graph_only": {
+        "winner": {
+          "configuration": "config_2",
+          "validation_auprc": 0.3528066384409788,
+          "lr": 0.0003,
+          "hidden": 128,
+          "best_epoch": 6
+        },
+        "validation_only_candidates": [
+          {
+            "configuration": "config_0",
+            "validation_auprc": 0.3463806335805423,
+            "lr": 0.0003,
+            "hidden": 64,
+            "best_epoch": 20
+          },
+          {
+            "configuration": "config_1",
+            "validation_auprc": 0.34920586038151225,
+            "lr": 0.001,
+            "hidden": 64,
+            "best_epoch": 5
+          },
+          {
+            "configuration": "config_2",
+            "validation_auprc": 0.3528066384409788,
+            "lr": 0.0003,
+            "hidden": 128,
+            "best_epoch": 6
+          },
+          {
+            "configuration": "config_3",
+            "validation_auprc": 0.35083117853786144,
+            "lr": 0.001,
+            "hidden": 128,
+            "best_epoch": 2
+          }
+        ]
+      },
+      "concat": {
+        "winner": {
+          "configuration": "config_3",
+          "validation_auprc": 0.5303117341487216,
+          "lr": 0.001,
+          "hidden": 128,
+          "best_epoch": 6
+        },
+        "validation_only_candidates": [
+          {
+            "configuration": "config_0",
+            "validation_auprc": 0.5282383032306058,
+            "lr": 0.0003,
+            "hidden": 64,
+            "best_epoch": 26
+          },
+          {
+            "configuration": "config_1",
+            "validation_auprc": 0.5302653438658688,
+            "lr": 0.001,
+            "hidden": 64,
+            "best_epoch": 9
+          },
+          {
+            "configuration": "config_2",
+            "validation_auprc": 0.5248927824309234,
+            "lr": 0.0003,
+            "hidden": 128,
+            "best_epoch": 21
+          },
+          {
+            "configuration": "config_3",
+            "validation_auprc": 0.5303117341487216,
+            "lr": 0.001,
+            "hidden": 128,
+            "best_epoch": 6
+          }
+        ]
+      }
+    }
+  },
+  "common": {
+    "epochs": 60,
+    "patience": 12,
+    "threads": 1,
+    "batch_size": 8,
+    "layers": 2
+  },
+  "jobs": [
+    {
+      "name": "ICKG-Weak/full/seed_17",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/full/seed_29",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/full/seed_43",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/full/seed_71",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/full/seed_101",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/text_mlp/seed_17",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 17,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/text_mlp/seed_29",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 29,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/text_mlp/seed_43",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 43,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/text_mlp/seed_71",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 71,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/text_mlp/seed_101",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 101,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/graph_only/seed_17",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/graph_only/seed_29",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/graph_only/seed_43",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/graph_only/seed_71",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/graph_only/seed_101",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/concat/seed_17",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 17,
+        "lr": 0.0003,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "ICKG-Weak/concat/seed_29",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 29,
+        "lr": 0.0003,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "ICKG-Weak/concat/seed_43",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 43,
+        "lr": 0.0003,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "ICKG-Weak/concat/seed_71",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 71,
+        "lr": 0.0003,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "ICKG-Weak/concat/seed_101",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 101,
+        "lr": 0.0003,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_stm/seed_17",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_stm/seed_29",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_stm/seed_43",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_stm/seed_71",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_stm/seed_101",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_ltm/seed_17",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_ltm/seed_29",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_ltm/seed_43",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_ltm/seed_71",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_ltm/seed_101",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_time/seed_17",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_time/seed_29",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_time/seed_43",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_time/seed_71",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_time/seed_101",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_resgate/seed_17",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_resgate/seed_29",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_resgate/seed_43",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_resgate/seed_71",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_resgate/seed_101",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_overload/seed_17",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_overload/seed_29",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_overload/seed_43",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_overload/seed_71",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_overload/seed_101",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/avg_fusion/seed_17",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/avg_fusion/seed_29",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/avg_fusion/seed_43",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/avg_fusion/seed_71",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/avg_fusion/seed_101",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/scalar_gate/seed_17",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/scalar_gate/seed_29",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/scalar_gate/seed_43",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/scalar_gate/seed_71",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/scalar_gate/seed_101",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_align/seed_17",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_align/seed_29",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_align/seed_43",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_align/seed_71",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_align/seed_101",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_path/seed_17",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_path/seed_29",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_path/seed_43",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_path/seed_71",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "ICKG-Weak/no_path/seed_101",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/full/seed_17",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/full/seed_29",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/full/seed_43",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/full/seed_71",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/full/seed_101",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/text_mlp/seed_17",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 17,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/text_mlp/seed_29",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 29,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/text_mlp/seed_43",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 43,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/text_mlp/seed_71",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 71,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/text_mlp/seed_101",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 101,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/graph_only/seed_17",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/graph_only/seed_29",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/graph_only/seed_43",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/graph_only/seed_71",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/graph_only/seed_101",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/concat/seed_17",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 17,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/concat/seed_29",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 29,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/concat/seed_43",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 43,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/concat/seed_71",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 71,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/concat/seed_101",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 101,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_stm/seed_17",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_stm/seed_29",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_stm/seed_43",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_stm/seed_71",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_stm/seed_101",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_ltm/seed_17",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_ltm/seed_29",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_ltm/seed_43",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_ltm/seed_71",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_ltm/seed_101",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_time/seed_17",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_time/seed_29",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_time/seed_43",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_time/seed_71",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_time/seed_101",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_resgate/seed_17",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_resgate/seed_29",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_resgate/seed_43",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_resgate/seed_71",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_resgate/seed_101",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_overload/seed_17",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_overload/seed_29",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_overload/seed_43",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_overload/seed_71",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_overload/seed_101",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/avg_fusion/seed_17",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/avg_fusion/seed_29",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/avg_fusion/seed_43",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/avg_fusion/seed_71",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/avg_fusion/seed_101",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/scalar_gate/seed_17",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/scalar_gate/seed_29",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/scalar_gate/seed_43",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/scalar_gate/seed_71",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/scalar_gate/seed_101",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_align/seed_17",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_align/seed_29",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_align/seed_43",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_align/seed_71",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_align/seed_101",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_path/seed_17",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_path/seed_29",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_path/seed_43",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_path/seed_71",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Auto/no_path/seed_101",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/full/seed_17",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/full/seed_29",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/full/seed_43",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/full/seed_71",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/full/seed_101",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/text_mlp/seed_17",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 17,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/text_mlp/seed_29",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 29,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/text_mlp/seed_43",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 43,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/text_mlp/seed_71",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 71,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/text_mlp/seed_101",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 101,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/graph_only/seed_17",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Energy/graph_only/seed_29",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Energy/graph_only/seed_43",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Energy/graph_only/seed_71",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Energy/graph_only/seed_101",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Energy/concat/seed_17",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/concat/seed_29",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/concat/seed_43",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/concat/seed_71",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/concat/seed_101",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_stm/seed_17",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_stm/seed_29",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_stm/seed_43",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_stm/seed_71",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_stm/seed_101",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_ltm/seed_17",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_ltm/seed_29",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_ltm/seed_43",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_ltm/seed_71",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_ltm/seed_101",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_time/seed_17",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_time/seed_29",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_time/seed_43",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_time/seed_71",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_time/seed_101",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_resgate/seed_17",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_resgate/seed_29",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_resgate/seed_43",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_resgate/seed_71",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_resgate/seed_101",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_overload/seed_17",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_overload/seed_29",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_overload/seed_43",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_overload/seed_71",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_overload/seed_101",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/avg_fusion/seed_17",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/avg_fusion/seed_29",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/avg_fusion/seed_43",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/avg_fusion/seed_71",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/avg_fusion/seed_101",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/scalar_gate/seed_17",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/scalar_gate/seed_29",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/scalar_gate/seed_43",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/scalar_gate/seed_71",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/scalar_gate/seed_101",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_align/seed_17",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_align/seed_29",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_align/seed_43",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_align/seed_71",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_align/seed_101",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_path/seed_17",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_path/seed_29",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_path/seed_43",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_path/seed_71",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Energy/no_path/seed_101",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/full/seed_17",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/full/seed_29",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/full/seed_43",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/full/seed_71",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/full/seed_101",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "full",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/text_mlp/seed_17",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/text_mlp/seed_29",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/text_mlp/seed_43",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/text_mlp/seed_71",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/text_mlp/seed_101",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "text_mlp",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/graph_only/seed_17",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 17,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/graph_only/seed_29",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 29,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/graph_only/seed_43",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 43,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/graph_only/seed_71",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 71,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/graph_only/seed_101",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "graph_only",
+        "seed": 101,
+        "lr": 0.0003,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/concat/seed_17",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/concat/seed_29",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/concat/seed_43",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/concat/seed_71",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/concat/seed_101",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "concat",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 128
+      }
+    },
+    {
+      "name": "SIM-Semi/no_stm/seed_17",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_stm/seed_29",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_stm/seed_43",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_stm/seed_71",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_stm/seed_101",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_stm",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_ltm/seed_17",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_ltm/seed_29",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_ltm/seed_43",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_ltm/seed_71",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_ltm/seed_101",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_ltm",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_time/seed_17",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_time/seed_29",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_time/seed_43",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_time/seed_71",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_time/seed_101",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_time",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_resgate/seed_17",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_resgate/seed_29",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_resgate/seed_43",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_resgate/seed_71",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_resgate/seed_101",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_resgate",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_overload/seed_17",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_overload/seed_29",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_overload/seed_43",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_overload/seed_71",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_overload/seed_101",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_overload",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/avg_fusion/seed_17",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/avg_fusion/seed_29",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/avg_fusion/seed_43",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/avg_fusion/seed_71",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/avg_fusion/seed_101",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "avg_fusion",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/scalar_gate/seed_17",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/scalar_gate/seed_29",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/scalar_gate/seed_43",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/scalar_gate/seed_71",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/scalar_gate/seed_101",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "scalar_gate",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_align/seed_17",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_align/seed_29",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_align/seed_43",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_align/seed_71",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_align/seed_101",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_align",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_path/seed_17",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 17,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_path/seed_29",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 29,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_path/seed_43",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 43,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_path/seed_71",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 71,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    },
+    {
+      "name": "SIM-Semi/no_path/seed_101",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "mode": "no_path",
+        "seed": 101,
+        "lr": 0.001,
+        "hidden": 64
+      }
+    }
+  ]
+}

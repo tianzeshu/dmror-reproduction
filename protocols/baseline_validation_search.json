@@ -1,0 +1,448 @@
+{
+  "stage": "baseline_validation_search",
+  "purpose": "Give each independent baseline the same 4-configuration validation budget as the full model",
+  "output": "results/baseline_validation_search",
+  "common": {
+    "epochs": 50,
+    "patience": 10,
+    "threads": 1,
+    "batch_size": 8,
+    "layers": 2,
+    "seed": 17,
+    "mode": "full"
+  },
+  "jobs": [
+    {
+      "name": "SIM-Auto/text_mlp/config_0",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "SIM-Auto/text_mlp/config_1",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "SIM-Auto/text_mlp/config_2",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "SIM-Auto/text_mlp/config_3",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "SIM-Auto/graph_only/config_0",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "SIM-Auto/graph_only/config_1",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "SIM-Auto/graph_only/config_2",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "SIM-Auto/graph_only/config_3",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "SIM-Auto/concat/config_0",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64,
+        "mode": "concat"
+      }
+    },
+    {
+      "name": "SIM-Auto/concat/config_1",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64,
+        "mode": "concat"
+      }
+    },
+    {
+      "name": "SIM-Auto/concat/config_2",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128,
+        "mode": "concat"
+      }
+    },
+    {
+      "name": "SIM-Auto/concat/config_3",
+      "dataset": "data/prepared/SIM-Auto/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128,
+        "mode": "concat"
+      }
+    },
+    {
+      "name": "SIM-Semi/text_mlp/config_0",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "SIM-Semi/text_mlp/config_1",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "SIM-Semi/text_mlp/config_2",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "SIM-Semi/text_mlp/config_3",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "SIM-Semi/graph_only/config_0",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "SIM-Semi/graph_only/config_1",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "SIM-Semi/graph_only/config_2",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "SIM-Semi/graph_only/config_3",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "SIM-Semi/concat/config_0",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64,
+        "mode": "concat"
+      }
+    },
+    {
+      "name": "SIM-Semi/concat/config_1",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64,
+        "mode": "concat"
+      }
+    },
+    {
+      "name": "SIM-Semi/concat/config_2",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128,
+        "mode": "concat"
+      }
+    },
+    {
+      "name": "SIM-Semi/concat/config_3",
+      "dataset": "data/prepared/SIM-Semi/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128,
+        "mode": "concat"
+      }
+    },
+    {
+      "name": "SIM-Energy/text_mlp/config_0",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "SIM-Energy/text_mlp/config_1",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "SIM-Energy/text_mlp/config_2",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "SIM-Energy/text_mlp/config_3",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "SIM-Energy/graph_only/config_0",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "SIM-Energy/graph_only/config_1",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "SIM-Energy/graph_only/config_2",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "SIM-Energy/graph_only/config_3",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "SIM-Energy/concat/config_0",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64,
+        "mode": "concat"
+      }
+    },
+    {
+      "name": "SIM-Energy/concat/config_1",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64,
+        "mode": "concat"
+      }
+    },
+    {
+      "name": "SIM-Energy/concat/config_2",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128,
+        "mode": "concat"
+      }
+    },
+    {
+      "name": "SIM-Energy/concat/config_3",
+      "dataset": "data/prepared/SIM-Energy/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128,
+        "mode": "concat"
+      }
+    },
+    {
+      "name": "ICKG-Weak/text_mlp/config_0",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "ICKG-Weak/text_mlp/config_1",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "ICKG-Weak/text_mlp/config_2",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "ICKG-Weak/text_mlp/config_3",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128,
+        "mode": "text_mlp"
+      }
+    },
+    {
+      "name": "ICKG-Weak/graph_only/config_0",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "ICKG-Weak/graph_only/config_1",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "ICKG-Weak/graph_only/config_2",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "ICKG-Weak/graph_only/config_3",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128,
+        "mode": "graph_only"
+      }
+    },
+    {
+      "name": "ICKG-Weak/concat/config_0",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 64,
+        "mode": "concat"
+      }
+    },
+    {
+      "name": "ICKG-Weak/concat/config_1",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 64,
+        "mode": "concat"
+      }
+    },
+    {
+      "name": "ICKG-Weak/concat/config_2",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.0003,
+        "hidden": 128,
+        "mode": "concat"
+      }
+    },
+    {
+      "name": "ICKG-Weak/concat/config_3",
+      "dataset": "data/prepared/ICKG-Weak/dataset.npz",
+      "parameters": {
+        "lr": 0.001,
+        "hidden": 128,
+        "mode": "concat"
+      }
+    }
+  ]
+}

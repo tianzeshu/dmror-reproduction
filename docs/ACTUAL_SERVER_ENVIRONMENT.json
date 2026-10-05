@@ -1,0 +1,25 @@
+{
+  "python": "3.11.15 (main, Mar 11 2026, 17:20:07) [GCC 14.3.0]",
+  "platform": "Linux-6.14.0-37-generic-x86_64-with-glibc2.41",
+  "numpy": "2.3.5",
+  "torch": "2.12.0.dev20260316+cu128",
+  "torch_cuda_build": "12.8",
+  "cudnn": 91900,
+  "sklearn": "1.8.0",
+  "transformers": "5.2.0",
+  "gpu_names": [
+    "NVIDIA GeForce RTX 5090",
+    "NVIDIA GeForce RTX 5090",
+    "NVIDIA GeForce RTX 5090",
+    "NVIDIA GeForce RTX 5090"
+  ],
+  "compiled_arches": [
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "execution_scope": "Actual formal training and frozen LLM feature extraction runtime; matplotlib is local for plots."
+}

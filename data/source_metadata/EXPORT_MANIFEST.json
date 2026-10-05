@@ -1,0 +1,103 @@
+{
+  "public_export_date": "2026-10-05",
+  "exports": {
+    "ickg_source_contexts.jsonl": {
+      "source_sha256": "4109e5df303e1edb9562d74fc518bdc6580463f3a0c5bf4735f97d25c3af0d91",
+      "records": 18486,
+      "retained_fields": [
+        "context_id",
+        "context_type",
+        "doc_id",
+        "context_date",
+        "source_type",
+        "source_name",
+        "url",
+        "char_start",
+        "char_end",
+        "anchored_edge_ids",
+        "anchored_entity_ids",
+        "evidence_ids",
+        "relation_types",
+        "splits",
+        "quality_weight",
+        "source",
+        "text_length"
+      ],
+      "original_text_omitted": true
+    },
+    "ickg_signals_metadata.jsonl": {
+      "source_sha256": "d237056f1586cc16a0e85c397230107369ea61ae4142b0dc2e50d9eb7163ed81",
+      "records": 5099,
+      "retained_fields": [
+        "signal_id",
+        "tau",
+        "timestamp_day",
+        "entity_id",
+        "node_index",
+        "context_id",
+        "doc_id",
+        "url",
+        "source_kind",
+        "confidence"
+      ],
+      "original_text_omitted": true
+    },
+    "ickg_label_evidence_metadata.jsonl": {
+      "source_sha256": "77097bebc13edecc762c1b5d33e160567483a434f93234081b4eaecfda9fafff",
+      "records": 936,
+      "retained_fields": [
+        "prediction_day",
+        "prediction_date",
+        "target_end_exclusive",
+        "split",
+        "node_index",
+        "entity_id",
+        "date",
+        "doc_id",
+        "context_id",
+        "url",
+        "matched_phrase",
+        "context_span",
+        "document_span",
+        "rule_version",
+        "weak_evidence_only"
+      ],
+      "original_text_omitted": true
+    },
+    "related_news_source_metadata.jsonl": {
+      "source_sha256": "c9b254ff9e1316a8e89ddc9df9e2f2433ce232c36195aaeba4b881751d5bc0bf",
+      "records": 10010,
+      "retained_fields": [
+        "doc_id",
+        "raw_id",
+        "source_type",
+        "source_dataset",
+        "source_name",
+        "source_quality",
+        "publish_date",
+        "date",
+        "url",
+        "canonical_url",
+        "content_hash",
+        "text_hash",
+        "is_duplicate",
+        "text_length",
+        "topic_scope",
+        "language",
+        "source_country",
+        "source_domain",
+        "source_id",
+        "crawl_time",
+        "original_document_id"
+      ],
+      "original_text_omitted": true
+    }
+  },
+  "retained_original_data_npz_sha256": {
+    "ICKG-Weak": "b6b22b31f55ed301f8fda3dfc3f26a6d69a1588d22a2781a6f8f3c2c5a631735",
+    "SIM-Auto": "4e6d9baa6fb71bba375db77cf9c72ec9b862a37434715b36277dd7265588d017",
+    "SIM-Energy": "2ea23baaa883ac186aaa5b8c96004e77f63a0be974c8180f9bab964e9fcc4676",
+    "SIM-Semi": "54f9fd516dd6bda7be62f0c16561e9f6c0fe5841c8997a04b3cc0ffc1a5dc5da"
+  },
+  "note": "Article text, snippets, unpublished manuscript, and device/database inventories are excluded. Original dataset.npz and numeric cache are unchanged."
+}

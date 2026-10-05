@@ -1,0 +1,5124 @@
+{
+  "mode": "full",
+  "scientific_scope": "Metrics inherit the dataset provenance: simulated labels demonstrate implementation only; weak public labels do not establish causal propagation.",
+  "path_policy": "trained DM-ROR propagation intensity",
+  "path_sources": "input observed source_mask; labels never select sources",
+  "threshold_policy": "retained training-validation threshold; no inference-label tuning",
+  "records": [
+    {
+      "time_index": 67,
+      "prediction_day": "770",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        42,
+        51,
+        54,
+        66,
+        69,
+        80,
+        82,
+        83,
+        84,
+        90,
+        95,
+        97,
+        103,
+        108
+      ],
+      "top_nodes": [
+        {
+          "index": 84,
+          "label": "84",
+          "probability": 0.9903513789176941
+        },
+        {
+          "index": 97,
+          "label": "97",
+          "probability": 0.9833329916000366
+        },
+        {
+          "index": 51,
+          "label": "51",
+          "probability": 0.9829728603363037
+        },
+        {
+          "index": 66,
+          "label": "66",
+          "probability": 0.9483410716056824
+        },
+        {
+          "index": 69,
+          "label": "69",
+          "probability": 0.9470635652542114
+        },
+        {
+          "index": 90,
+          "label": "90",
+          "probability": 0.9431024789810181
+        },
+        {
+          "index": 108,
+          "label": "108",
+          "probability": 0.9370169639587402
+        },
+        {
+          "index": 82,
+          "label": "82",
+          "probability": 0.926692545413971
+        },
+        {
+          "index": 80,
+          "label": "80",
+          "probability": 0.9187664985656738
+        },
+        {
+          "index": 54,
+          "label": "54",
+          "probability": 0.890719473361969
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            51,
+            69
+          ],
+          "edge_ids": [
+            308
+          ],
+          "score": 3.741626501083374,
+          "log_score": 1.319520410225542,
+          "node_labels": [
+            "51",
+            "69"
+          ],
+          "source": 51
+        },
+        {
+          "nodes": [
+            51,
+            66
+          ],
+          "edge_ids": [
+            306
+          ],
+          "score": 3.414809226989746,
+          "log_score": 1.228121628208975,
+          "node_labels": [
+            "51",
+            "66"
+          ],
+          "source": 51
+        },
+        {
+          "nodes": [
+            51,
+            83
+          ],
+          "edge_ids": [
+            309
+          ],
+          "score": 3.369938373565674,
+          "log_score": 1.2148944574213008,
+          "node_labels": [
+            "51",
+            "83"
+          ],
+          "source": 51
+        },
+        {
+          "nodes": [
+            51,
+            108
+          ],
+          "edge_ids": [
+            311
+          ],
+          "score": 3.189079523086548,
+          "log_score": 1.1597323244014055,
+          "node_labels": [
+            "51",
+            "108"
+          ],
+          "source": 51
+        },
+        {
+          "nodes": [
+            51,
+            67
+          ],
+          "edge_ids": [
+            307
+          ],
+          "score": 2.9228127002716064,
+          "log_score": 1.0725464061668997,
+          "node_labels": [
+            "51",
+            "67"
+          ],
+          "source": 51
+        },
+        {
+          "nodes": [
+            95,
+            80
+          ],
+          "edge_ids": [
+            429
+          ],
+          "score": 2.903637409210205,
+          "log_score": 1.06596423007961,
+          "node_labels": [
+            "95",
+            "80"
+          ],
+          "source": 95
+        },
+        {
+          "nodes": [
+            95,
+            84
+          ],
+          "edge_ids": [
+            430
+          ],
+          "score": 2.574233055114746,
+          "log_score": 0.9455516470778761,
+          "node_labels": [
+            "95",
+            "84"
+          ],
+          "source": 95
+        },
+        {
+          "nodes": [
+            95,
+            90
+          ],
+          "edge_ids": [
+            431
+          ],
+          "score": 1.1912519931793213,
+          "log_score": 0.17500484916793593,
+          "node_labels": [
+            "95",
+            "90"
+          ],
+          "source": 95
+        },
+        {
+          "nodes": [
+            97,
+            84
+          ],
+          "edge_ids": [
+            436
+          ],
+          "score": 4.484813690185546,
+          "log_score": 1.5006969539981003,
+          "node_labels": [
+            "97",
+            "84"
+          ],
+          "source": 97
+        },
+        {
+          "nodes": [
+            97,
+            82
+          ],
+          "edge_ids": [
+            435
+          ],
+          "score": 3.3541738986968994,
+          "log_score": 1.2102055102074847,
+          "node_labels": [
+            "97",
+            "82"
+          ],
+          "source": 97
+        },
+        {
+          "nodes": [
+            97,
+            90
+          ],
+          "edge_ids": [
+            437
+          ],
+          "score": 2.0725085735321045,
+          "log_score": 0.7287597448255619,
+          "node_labels": [
+            "97",
+            "90"
+          ],
+          "source": 97
+        }
+      ]
+    },
+    {
+      "time_index": 68,
+      "prediction_day": "780",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        26,
+        32,
+        45,
+        54,
+        56,
+        62,
+        64,
+        74,
+        82,
+        86,
+        103,
+        106,
+        108,
+        111
+      ],
+      "top_nodes": [
+        {
+          "index": 54,
+          "label": "54",
+          "probability": 0.9912737011909485
+        },
+        {
+          "index": 26,
+          "label": "26",
+          "probability": 0.9886287450790405
+        },
+        {
+          "index": 86,
+          "label": "86",
+          "probability": 0.9612624645233154
+        },
+        {
+          "index": 64,
+          "label": "64",
+          "probability": 0.950110912322998
+        },
+        {
+          "index": 108,
+          "label": "108",
+          "probability": 0.9378293752670288
+        },
+        {
+          "index": 82,
+          "label": "82",
+          "probability": 0.9338078498840332
+        },
+        {
+          "index": 56,
+          "label": "56",
+          "probability": 0.9301924109458923
+        },
+        {
+          "index": 74,
+          "label": "74",
+          "probability": 0.9299325346946716
+        },
+        {
+          "index": 32,
+          "label": "32",
+          "probability": 0.9193974137306213
+        },
+        {
+          "index": 62,
+          "label": "62",
+          "probability": 0.9139912724494934
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            1,
+            32,
+            54,
+            86
+          ],
+          "edge_ids": [
+            8,
+            194,
+            327
+          ],
+          "score": 17.84262076354087,
+          "log_score": 2.881590020148482,
+          "node_labels": [
+            "1",
+            "32",
+            "54",
+            "86"
+          ],
+          "source": 1
+        },
+        {
+          "nodes": [
+            1,
+            32,
+            54,
+            64
+          ],
+          "edge_ids": [
+            8,
+            194,
+            325
+          ],
+          "score": 15.171941166133722,
+          "log_score": 2.719447746026735,
+          "node_labels": [
+            "1",
+            "32",
+            "54",
+            "64"
+          ],
+          "source": 1
+        },
+        {
+          "nodes": [
+            1,
+            32,
+            54,
+            74
+          ],
+          "edge_ids": [
+            8,
+            194,
+            326
+          ],
+          "score": 14.702735144413142,
+          "log_score": 2.6880335407226776,
+          "node_labels": [
+            "1",
+            "32",
+            "54",
+            "74"
+          ],
+          "source": 1
+        },
+        {
+          "nodes": [
+            1,
+            32,
+            54,
+            111
+          ],
+          "edge_ids": [
+            8,
+            194,
+            329
+          ],
+          "score": 13.810810064854918,
+          "log_score": 2.6254516235470167,
+          "node_labels": [
+            "1",
+            "32",
+            "54",
+            "111"
+          ],
+          "source": 1
+        },
+        {
+          "nodes": [
+            1,
+            32,
+            54,
+            62
+          ],
+          "edge_ids": [
+            8,
+            194,
+            324
+          ],
+          "score": 13.006642925428697,
+          "log_score": 2.565460221212173,
+          "node_labels": [
+            "1",
+            "32",
+            "54",
+            "62"
+          ],
+          "source": 1
+        },
+        {
+          "nodes": [
+            26,
+            56
+          ],
+          "edge_ids": [
+            158
+          ],
+          "score": 5.2894158363342285,
+          "log_score": 1.6657078118584625,
+          "node_labels": [
+            "26",
+            "56"
+          ],
+          "source": 26
+        },
+        {
+          "nodes": [
+            26,
+            108
+          ],
+          "edge_ids": [
+            161
+          ],
+          "score": 3.8738172054290767,
+          "log_score": 1.3542403789022959,
+          "node_labels": [
+            "26",
+            "108"
+          ],
+          "source": 26
+        },
+        {
+          "nodes": [
+            26,
+            82
+          ],
+          "edge_ids": [
+            159
+          ],
+          "score": 3.5811302661895748,
+          "log_score": 1.2756784673972739,
+          "node_labels": [
+            "26",
+            "82"
+          ],
+          "source": 26
+        },
+        {
+          "nodes": [
+            26,
+            43
+          ],
+          "edge_ids": [
+            156
+          ],
+          "score": 2.608903169631958,
+          "log_score": 0.9589298914880653,
+          "node_labels": [
+            "26",
+            "43"
+          ],
+          "source": 26
+        },
+        {
+          "nodes": [
+            26,
+            103
+          ],
+          "edge_ids": [
+            160
+          ],
+          "score": 2.2962112426757812,
+          "log_score": 0.8312604788748823,
+          "node_labels": [
+            "26",
+            "103"
+          ],
+          "source": 26
+        },
+        {
+          "nodes": [
+            45,
+            78
+          ],
+          "edge_ids": [
+            272
+          ],
+          "score": 2.2058370113372803,
+          "log_score": 0.791107033848462,
+          "node_labels": [
+            "45",
+            "78"
+          ],
+          "source": 45
+        },
+        {
+          "nodes": [
+            45,
+            61
+          ],
+          "edge_ids": [
+            270
+          ],
+          "score": 1.3575037717819214,
+          "log_score": 0.305647551298647,
+          "node_labels": [
+            "45",
+            "61"
+          ],
+          "source": 45
+        },
+        {
+          "nodes": [
+            45,
+            69
+          ],
+          "edge_ids": [
+            271
+          ],
+          "score": 1.1901317834854126,
+          "log_score": 0.17406404341666484,
+          "node_labels": [
+            "45",
+            "69"
+          ],
+          "source": 45
+        },
+        {
+          "nodes": [
+            45,
+            89
+          ],
+          "edge_ids": [
+            273
+          ],
+          "score": 0.5815022587776184,
+          "log_score": -0.5421404226326503,
+          "node_labels": [
+            "45",
+            "89"
+          ],
+          "source": 45
+        },
+        {
+          "nodes": [
+            45,
+            107
+          ],
+          "edge_ids": [
+            275
+          ],
+          "score": 0.4648248553276062,
+          "log_score": -0.7660945995566201,
+          "node_labels": [
+            "45",
+            "107"
+          ],
+          "source": 45
+        },
+        {
+          "nodes": [
+            54,
+            86
+          ],
+          "edge_ids": [
+            327
+          ],
+          "score": 4.347813129425049,
+          "log_score": 1.469672989822262,
+          "node_labels": [
+            "54",
+            "86"
+          ],
+          "source": 54
+        },
+        {
+          "nodes": [
+            54,
+            64
+          ],
+          "edge_ids": [
+            325
+          ],
+          "score": 3.697033405303955,
+          "log_score": 1.3075307157005145,
+          "node_labels": [
+            "54",
+            "64"
+          ],
+          "source": 54
+        },
+        {
+          "nodes": [
+            54,
+            74
+          ],
+          "edge_ids": [
+            326
+          ],
+          "score": 3.5826992988586426,
+          "log_score": 1.2761165103964573,
+          "node_labels": [
+            "54",
+            "74"
+          ],
+          "source": 54
+        },
+        {
+          "nodes": [
+            54,
+            111
+          ],
+          "edge_ids": [
+            329
+          ],
+          "score": 3.365358829498291,
+          "log_score": 1.2135345932207964,
+          "node_labels": [
+            "54",
+            "111"
+          ],
+          "source": 54
+        },
+        {
+          "nodes": [
+            54,
+            62
+          ],
+          "edge_ids": [
+            324
+          ],
+          "score": 3.1694028377532955,
+          "log_score": 1.1535431908859528,
+          "node_labels": [
+            "54",
+            "62"
+          ],
+          "source": 54
+        }
+      ]
+    },
+    {
+      "time_index": 69,
+      "prediction_day": "790",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        11,
+        23,
+        33,
+        47,
+        48,
+        69,
+        71,
+        74,
+        79,
+        80,
+        90,
+        91,
+        103,
+        108,
+        110,
+        111
+      ],
+      "top_nodes": [
+        {
+          "index": 48,
+          "label": "48",
+          "probability": 0.9863939881324768
+        },
+        {
+          "index": 11,
+          "label": "11",
+          "probability": 0.9607482552528381
+        },
+        {
+          "index": 71,
+          "label": "71",
+          "probability": 0.9402656555175781
+        },
+        {
+          "index": 23,
+          "label": "23",
+          "probability": 0.9401663541793823
+        },
+        {
+          "index": 91,
+          "label": "91",
+          "probability": 0.9269910454750061
+        },
+        {
+          "index": 110,
+          "label": "110",
+          "probability": 0.9253463745117188
+        },
+        {
+          "index": 74,
+          "label": "74",
+          "probability": 0.9147124886512756
+        },
+        {
+          "index": 108,
+          "label": "108",
+          "probability": 0.8940942883491516
+        },
+        {
+          "index": 103,
+          "label": "103",
+          "probability": 0.8515217304229736
+        },
+        {
+          "index": 90,
+          "label": "90",
+          "probability": 0.8443325161933899
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            11,
+            33,
+            48,
+            74
+          ],
+          "edge_ids": [
+            68,
+            200,
+            289
+          ],
+          "score": 7.64723219878214,
+          "log_score": 2.0343437782907907,
+          "node_labels": [
+            "11",
+            "33",
+            "48",
+            "74"
+          ],
+          "source": 11
+        },
+        {
+          "nodes": [
+            11,
+            33,
+            48,
+            71
+          ],
+          "edge_ids": [
+            68,
+            200,
+            288
+          ],
+          "score": 7.533563334390707,
+          "log_score": 2.0193681482578762,
+          "node_labels": [
+            "11",
+            "33",
+            "48",
+            "71"
+          ],
+          "source": 11
+        },
+        {
+          "nodes": [
+            11,
+            33,
+            43
+          ],
+          "edge_ids": [
+            68,
+            198
+          ],
+          "score": 6.947749559659145,
+          "log_score": 1.9384178027751569,
+          "node_labels": [
+            "11",
+            "33",
+            "43"
+          ],
+          "source": 11
+        },
+        {
+          "nodes": [
+            11,
+            33,
+            45
+          ],
+          "edge_ids": [
+            68,
+            199
+          ],
+          "score": 6.2531610368012585,
+          "log_score": 1.8330871017800532,
+          "node_labels": [
+            "11",
+            "33",
+            "45"
+          ],
+          "source": 11
+        },
+        {
+          "nodes": [
+            11,
+            33,
+            48,
+            79
+          ],
+          "edge_ids": [
+            68,
+            200,
+            290
+          ],
+          "score": 6.178063695625615,
+          "log_score": 1.821004904515371,
+          "node_labels": [
+            "11",
+            "33",
+            "48",
+            "79"
+          ],
+          "source": 11
+        },
+        {
+          "nodes": [
+            23,
+            47,
+            62
+          ],
+          "edge_ids": [
+            139,
+            283
+          ],
+          "score": 5.167887593133628,
+          "log_score": 1.6424640156891155,
+          "node_labels": [
+            "23",
+            "47",
+            "62"
+          ],
+          "source": 23
+        },
+        {
+          "nodes": [
+            23,
+            47
+          ],
+          "edge_ids": [
+            139
+          ],
+          "score": 2.5797619819641113,
+          "log_score": 0.9476971396250969,
+          "node_labels": [
+            "23",
+            "47"
+          ],
+          "source": 23
+        },
+        {
+          "nodes": [
+            23,
+            44
+          ],
+          "edge_ids": [
+            138
+          ],
+          "score": 2.0910484790802,
+          "log_score": 0.7376656048167615,
+          "node_labels": [
+            "23",
+            "44"
+          ],
+          "source": 23
+        },
+        {
+          "nodes": [
+            23,
+            91
+          ],
+          "edge_ids": [
+            141
+          ],
+          "score": 1.8473032712936401,
+          "log_score": 0.6137268844322049,
+          "node_labels": [
+            "23",
+            "91"
+          ],
+          "source": 23
+        },
+        {
+          "nodes": [
+            23,
+            47,
+            73
+          ],
+          "edge_ids": [
+            139,
+            284
+          ],
+          "score": 1.692305608783471,
+          "log_score": 0.5260918647226177,
+          "node_labels": [
+            "23",
+            "47",
+            "73"
+          ],
+          "source": 23
+        },
+        {
+          "nodes": [
+            46,
+            70
+          ],
+          "edge_ids": [
+            278
+          ],
+          "score": 1.4792981147766113,
+          "log_score": 0.39156772851289623,
+          "node_labels": [
+            "46",
+            "70"
+          ],
+          "source": 46
+        },
+        {
+          "nodes": [
+            46,
+            64
+          ],
+          "edge_ids": [
+            276
+          ],
+          "score": 1.3592356443405151,
+          "log_score": 0.3069225155318137,
+          "node_labels": [
+            "46",
+            "64"
+          ],
+          "source": 46
+        },
+        {
+          "nodes": [
+            46,
+            65
+          ],
+          "edge_ids": [
+            277
+          ],
+          "score": 1.1989355087280273,
+          "log_score": 0.1814340870491732,
+          "node_labels": [
+            "46",
+            "65"
+          ],
+          "source": 46
+        },
+        {
+          "nodes": [
+            46,
+            108
+          ],
+          "edge_ids": [
+            281
+          ],
+          "score": 0.5677250623703003,
+          "log_score": -0.5661180225713545,
+          "node_labels": [
+            "46",
+            "108"
+          ],
+          "source": 46
+        },
+        {
+          "nodes": [
+            46,
+            103
+          ],
+          "edge_ids": [
+            280
+          ],
+          "score": 0.4127476215362549,
+          "log_score": -0.884918958678806,
+          "node_labels": [
+            "46",
+            "103"
+          ],
+          "source": 46
+        },
+        {
+          "nodes": [
+            48,
+            74
+          ],
+          "edge_ids": [
+            289
+          ],
+          "score": 3.5730419158935547,
+          "log_score": 1.2734173102608901,
+          "node_labels": [
+            "48",
+            "74"
+          ],
+          "source": 48
+        },
+        {
+          "nodes": [
+            48,
+            71
+          ],
+          "edge_ids": [
+            288
+          ],
+          "score": 3.5199320316314697,
+          "log_score": 1.2584416802279756,
+          "node_labels": [
+            "48",
+            "71"
+          ],
+          "source": 48
+        },
+        {
+          "nodes": [
+            48,
+            79
+          ],
+          "edge_ids": [
+            290
+          ],
+          "score": 2.8865973949432373,
+          "log_score": 1.0600784364854705,
+          "node_labels": [
+            "48",
+            "79"
+          ],
+          "source": 48
+        },
+        {
+          "nodes": [
+            48,
+            110
+          ],
+          "edge_ids": [
+            293
+          ],
+          "score": 2.734501600265503,
+          "log_score": 1.005949189017722,
+          "node_labels": [
+            "48",
+            "110"
+          ],
+          "source": 48
+        },
+        {
+          "nodes": [
+            48,
+            80
+          ],
+          "edge_ids": [
+            291
+          ],
+          "score": 1.5155566930770874,
+          "log_score": 0.4157828256428756,
+          "node_labels": [
+            "48",
+            "80"
+          ],
+          "source": 48
+        }
+      ]
+    },
+    {
+      "time_index": 70,
+      "prediction_day": "800",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        23,
+        44,
+        49,
+        57,
+        81,
+        84,
+        89,
+        90,
+        92,
+        110
+      ],
+      "top_nodes": [
+        {
+          "index": 23,
+          "label": "23",
+          "probability": 0.9860191345214844
+        },
+        {
+          "index": 44,
+          "label": "44",
+          "probability": 0.9340593814849854
+        },
+        {
+          "index": 57,
+          "label": "57",
+          "probability": 0.9255801439285278
+        },
+        {
+          "index": 84,
+          "label": "84",
+          "probability": 0.9253204464912415
+        },
+        {
+          "index": 49,
+          "label": "49",
+          "probability": 0.9131253957748413
+        },
+        {
+          "index": 110,
+          "label": "110",
+          "probability": 0.8786450624465942
+        },
+        {
+          "index": 81,
+          "label": "81",
+          "probability": 0.8615443110466003
+        },
+        {
+          "index": 89,
+          "label": "89",
+          "probability": 0.8429557681083679
+        },
+        {
+          "index": 90,
+          "label": "90",
+          "probability": 0.820934534072876
+        },
+        {
+          "index": 92,
+          "label": "92",
+          "probability": 0.8183537721633911
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            14,
+            111
+          ],
+          "edge_ids": [
+            89
+          ],
+          "score": 0.36041781306266785,
+          "log_score": -1.0204913286573054,
+          "node_labels": [
+            "14",
+            "111"
+          ],
+          "source": 14
+        },
+        {
+          "nodes": [
+            14,
+            106
+          ],
+          "edge_ids": [
+            88
+          ],
+          "score": 0.2512858510017395,
+          "log_score": -1.3811641392339933,
+          "node_labels": [
+            "14",
+            "106"
+          ],
+          "source": 14
+        },
+        {
+          "nodes": [
+            14,
+            82
+          ],
+          "edge_ids": [
+            87
+          ],
+          "score": 0.17250017821788788,
+          "log_score": -1.7573570093640802,
+          "node_labels": [
+            "14",
+            "82"
+          ],
+          "source": 14
+        },
+        {
+          "nodes": [
+            14,
+            22
+          ],
+          "edge_ids": [
+            84
+          ],
+          "score": 0.16603083908557892,
+          "log_score": -1.7955817302561503,
+          "node_labels": [
+            "14",
+            "22"
+          ],
+          "source": 14
+        },
+        {
+          "nodes": [
+            14,
+            31
+          ],
+          "edge_ids": [
+            86
+          ],
+          "score": 0.04138242453336715,
+          "log_score": -3.184899016468005,
+          "node_labels": [
+            "14",
+            "31"
+          ],
+          "source": 14
+        },
+        {
+          "nodes": [
+            23,
+            44
+          ],
+          "edge_ids": [
+            138
+          ],
+          "score": 4.080923080444336,
+          "log_score": 1.4063232080334283,
+          "node_labels": [
+            "23",
+            "44"
+          ],
+          "source": 23
+        },
+        {
+          "nodes": [
+            23,
+            49
+          ],
+          "edge_ids": [
+            140
+          ],
+          "score": 3.7751088142395024,
+          "log_score": 1.3284292072496633,
+          "node_labels": [
+            "23",
+            "49"
+          ],
+          "source": 23
+        },
+        {
+          "nodes": [
+            23,
+            110
+          ],
+          "edge_ids": [
+            143
+          ],
+          "score": 3.118335008621216,
+          "log_score": 1.1372992082960296,
+          "node_labels": [
+            "23",
+            "110"
+          ],
+          "source": 23
+        },
+        {
+          "nodes": [
+            23,
+            47
+          ],
+          "edge_ids": [
+            139
+          ],
+          "score": 1.6763391494750977,
+          "log_score": 0.5166123380773004,
+          "node_labels": [
+            "23",
+            "47"
+          ],
+          "source": 23
+        },
+        {
+          "nodes": [
+            23,
+            49,
+            74
+          ],
+          "edge_ids": [
+            140,
+            296
+          ],
+          "score": 1.4197510473774033,
+          "log_score": 0.35048153749473354,
+          "node_labels": [
+            "23",
+            "49",
+            "74"
+          ],
+          "source": 23
+        },
+        {
+          "nodes": [
+            24,
+            57
+          ],
+          "edge_ids": [
+            146
+          ],
+          "score": 3.778124332427978,
+          "log_score": 1.329227678127004,
+          "node_labels": [
+            "24",
+            "57"
+          ],
+          "source": 24
+        },
+        {
+          "nodes": [
+            24,
+            42
+          ],
+          "edge_ids": [
+            144
+          ],
+          "score": 1.0489064455032349,
+          "log_score": 0.04774814097868181,
+          "node_labels": [
+            "24",
+            "42"
+          ],
+          "source": 24
+        },
+        {
+          "nodes": [
+            24,
+            57,
+            69
+          ],
+          "edge_ids": [
+            146,
+            344
+          ],
+          "score": 0.33661830756860306,
+          "log_score": -1.088805609017619,
+          "node_labels": [
+            "24",
+            "57",
+            "69"
+          ],
+          "source": 24
+        },
+        {
+          "nodes": [
+            24,
+            52
+          ],
+          "edge_ids": [
+            145
+          ],
+          "score": 0.31650683283805847,
+          "log_score": -1.1504104488850995,
+          "node_labels": [
+            "24",
+            "52"
+          ],
+          "source": 24
+        },
+        {
+          "nodes": [
+            24,
+            57,
+            62
+          ],
+          "edge_ids": [
+            146,
+            343
+          ],
+          "score": 0.28112338736114134,
+          "log_score": -1.268961605095664,
+          "node_labels": [
+            "24",
+            "57",
+            "62"
+          ],
+          "source": 24
+        },
+        {
+          "nodes": [
+            92,
+            84
+          ],
+          "edge_ids": [
+            421
+          ],
+          "score": 2.694077253341675,
+          "log_score": 0.9910557536503974,
+          "node_labels": [
+            "92",
+            "84"
+          ],
+          "source": 92
+        },
+        {
+          "nodes": [
+            92,
+            89
+          ],
+          "edge_ids": [
+            422
+          ],
+          "score": 1.881430983543396,
+          "log_score": 0.6320326487646408,
+          "node_labels": [
+            "92",
+            "89"
+          ],
+          "source": 92
+        },
+        {
+          "nodes": [
+            92,
+            81
+          ],
+          "edge_ids": [
+            420
+          ],
+          "score": 1.238242268562317,
+          "log_score": 0.2136928486244534,
+          "node_labels": [
+            "92",
+            "81"
+          ],
+          "source": 92
+        }
+      ]
+    },
+    {
+      "time_index": 71,
+      "prediction_day": "810",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        0,
+        26,
+        49,
+        54,
+        80,
+        81,
+        88,
+        91,
+        94,
+        102,
+        107
+      ],
+      "top_nodes": [
+        {
+          "index": 0,
+          "label": "0",
+          "probability": 0.9884131550788879
+        },
+        {
+          "index": 94,
+          "label": "94",
+          "probability": 0.9809174537658691
+        },
+        {
+          "index": 80,
+          "label": "80",
+          "probability": 0.9732992053031921
+        },
+        {
+          "index": 107,
+          "label": "107",
+          "probability": 0.9325537085533142
+        },
+        {
+          "index": 102,
+          "label": "102",
+          "probability": 0.9236219525337219
+        },
+        {
+          "index": 88,
+          "label": "88",
+          "probability": 0.8912373781204224
+        },
+        {
+          "index": 54,
+          "label": "54",
+          "probability": 0.8618407249450684
+        },
+        {
+          "index": 49,
+          "label": "49",
+          "probability": 0.8297670483589172
+        },
+        {
+          "index": 26,
+          "label": "26",
+          "probability": 0.8205353021621704
+        },
+        {
+          "index": 91,
+          "label": "91",
+          "probability": 0.8180868625640869
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            0,
+            107
+          ],
+          "edge_ids": [
+            5
+          ],
+          "score": 5.547417163848876,
+          "log_score": 1.7133324435542936,
+          "node_labels": [
+            "0",
+            "107"
+          ],
+          "source": 0
+        },
+        {
+          "nodes": [
+            0,
+            80
+          ],
+          "edge_ids": [
+            3
+          ],
+          "score": 5.206341743469237,
+          "log_score": 1.6498774485725654,
+          "node_labels": [
+            "0",
+            "80"
+          ],
+          "source": 0
+        },
+        {
+          "nodes": [
+            0,
+            20
+          ],
+          "edge_ids": [
+            0
+          ],
+          "score": 4.410068988800049,
+          "log_score": 1.4838903330552249,
+          "node_labels": [
+            "0",
+            "20"
+          ],
+          "source": 0
+        },
+        {
+          "nodes": [
+            0,
+            102
+          ],
+          "edge_ids": [
+            4
+          ],
+          "score": 3.2099475860595703,
+          "log_score": 1.166254608678264,
+          "node_labels": [
+            "0",
+            "102"
+          ],
+          "source": 0
+        },
+        {
+          "nodes": [
+            0,
+            36
+          ],
+          "edge_ids": [
+            2
+          ],
+          "score": 1.9438668489456177,
+          "log_score": 0.6646792103517397,
+          "node_labels": [
+            "0",
+            "36"
+          ],
+          "source": 0
+        },
+        {
+          "nodes": [
+            21,
+            54
+          ],
+          "edge_ids": [
+            128
+          ],
+          "score": 2.4416112899780273,
+          "log_score": 0.8926581861053489,
+          "node_labels": [
+            "21",
+            "54"
+          ],
+          "source": 21
+        },
+        {
+          "nodes": [
+            21,
+            41
+          ],
+          "edge_ids": [
+            126
+          ],
+          "score": 1.8493763208389282,
+          "log_score": 0.6148484583803568,
+          "node_labels": [
+            "21",
+            "41"
+          ],
+          "source": 21
+        },
+        {
+          "nodes": [
+            21,
+            42
+          ],
+          "edge_ids": [
+            127
+          ],
+          "score": 1.342864751815796,
+          "log_score": 0.29480520645039726,
+          "node_labels": [
+            "21",
+            "42"
+          ],
+          "source": 21
+        },
+        {
+          "nodes": [
+            21,
+            54,
+            62
+          ],
+          "edge_ids": [
+            128,
+            324
+          ],
+          "score": 1.0226260412274257,
+          "log_score": 0.02237386904206451,
+          "node_labels": [
+            "21",
+            "54",
+            "62"
+          ],
+          "source": 21
+        },
+        {
+          "nodes": [
+            21,
+            54,
+            74
+          ],
+          "edge_ids": [
+            128,
+            326
+          ],
+          "score": 0.625571339269726,
+          "log_score": -0.4690899039882701,
+          "node_labels": [
+            "21",
+            "54",
+            "74"
+          ],
+          "source": 21
+        },
+        {
+          "nodes": [
+            94,
+            91
+          ],
+          "edge_ids": [
+            428
+          ],
+          "score": 3.2425866127014165,
+          "log_score": 1.1763713485560796,
+          "node_labels": [
+            "94",
+            "91"
+          ],
+          "source": 94
+        },
+        {
+          "nodes": [
+            94,
+            88
+          ],
+          "edge_ids": [
+            427
+          ],
+          "score": 2.9428014755249023,
+          "log_score": 1.0793620104775397,
+          "node_labels": [
+            "94",
+            "88"
+          ],
+          "source": 94
+        },
+        {
+          "nodes": [
+            94,
+            81
+          ],
+          "edge_ids": [
+            426
+          ],
+          "score": 2.2607834339141846,
+          "log_score": 0.8157114053886293,
+          "node_labels": [
+            "94",
+            "81"
+          ],
+          "source": 94
+        }
+      ]
+    },
+    {
+      "time_index": 72,
+      "prediction_day": "820",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        0,
+        30,
+        49,
+        80,
+        86,
+        102,
+        107
+      ],
+      "top_nodes": [
+        {
+          "index": 107,
+          "label": "107",
+          "probability": 0.9884838461875916
+        },
+        {
+          "index": 30,
+          "label": "30",
+          "probability": 0.9828740358352661
+        },
+        {
+          "index": 80,
+          "label": "80",
+          "probability": 0.9761818647384644
+        },
+        {
+          "index": 102,
+          "label": "102",
+          "probability": 0.973737895488739
+        },
+        {
+          "index": 49,
+          "label": "49",
+          "probability": 0.9714328050613403
+        },
+        {
+          "index": 0,
+          "label": "0",
+          "probability": 0.9655648469924927
+        },
+        {
+          "index": 86,
+          "label": "86",
+          "probability": 0.9429081678390503
+        },
+        {
+          "index": 45,
+          "label": "45",
+          "probability": 0.7420773506164551
+        },
+        {
+          "index": 106,
+          "label": "106",
+          "probability": 0.7353079915046692
+        },
+        {
+          "index": 104,
+          "label": "104",
+          "probability": 0.7319072484970093
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            0,
+            107
+          ],
+          "edge_ids": [
+            5
+          ],
+          "score": 6.018669605255127,
+          "log_score": 1.7948662390927623,
+          "node_labels": [
+            "0",
+            "107"
+          ],
+          "source": 0
+        },
+        {
+          "nodes": [
+            0,
+            80
+          ],
+          "edge_ids": [
+            3
+          ],
+          "score": 5.551692008972167,
+          "log_score": 1.714102747777472,
+          "node_labels": [
+            "0",
+            "80"
+          ],
+          "source": 0
+        },
+        {
+          "nodes": [
+            0,
+            102
+          ],
+          "edge_ids": [
+            4
+          ],
+          "score": 4.0932159423828125,
+          "log_score": 1.4093309550686746,
+          "node_labels": [
+            "0",
+            "102"
+          ],
+          "source": 0
+        },
+        {
+          "nodes": [
+            0,
+            36
+          ],
+          "edge_ids": [
+            2
+          ],
+          "score": 1.2430020570755005,
+          "log_score": 0.21752946745520185,
+          "node_labels": [
+            "0",
+            "36"
+          ],
+          "source": 0
+        },
+        {
+          "nodes": [
+            0,
+            20
+          ],
+          "edge_ids": [
+            0
+          ],
+          "score": 0.6261059045791626,
+          "log_score": -0.4682357455467635,
+          "node_labels": [
+            "0",
+            "20"
+          ],
+          "source": 0
+        },
+        {
+          "nodes": [
+            30,
+            49
+          ],
+          "edge_ids": [
+            181
+          ],
+          "score": 4.769492149353027,
+          "log_score": 1.5622398315912935,
+          "node_labels": [
+            "30",
+            "49"
+          ],
+          "source": 30
+        },
+        {
+          "nodes": [
+            30,
+            107
+          ],
+          "edge_ids": [
+            185
+          ],
+          "score": 3.720530271530152,
+          "log_score": 1.3138662042365796,
+          "node_labels": [
+            "30",
+            "107"
+          ],
+          "source": 30
+        },
+        {
+          "nodes": [
+            30,
+            86
+          ],
+          "edge_ids": [
+            183
+          ],
+          "score": 3.500016689300537,
+          "log_score": 1.2527677368555814,
+          "node_labels": [
+            "30",
+            "86"
+          ],
+          "source": 30
+        },
+        {
+          "nodes": [
+            30,
+            45
+          ],
+          "edge_ids": [
+            180
+          ],
+          "score": 2.288379192352295,
+          "log_score": 0.827843790708905,
+          "node_labels": [
+            "30",
+            "45"
+          ],
+          "source": 30
+        },
+        {
+          "nodes": [
+            30,
+            102
+          ],
+          "edge_ids": [
+            184
+          ],
+          "score": 1.8575820922851562,
+          "log_score": 0.6192756916723203,
+          "node_labels": [
+            "30",
+            "102"
+          ],
+          "source": 30
+        }
+      ]
+    },
+    {
+      "time_index": 73,
+      "prediction_day": "830",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        29,
+        35,
+        43,
+        46,
+        51,
+        54,
+        57,
+        58,
+        62,
+        64,
+        70,
+        71,
+        74,
+        80,
+        84,
+        85,
+        87,
+        90,
+        95,
+        102,
+        103,
+        105,
+        107,
+        108,
+        110
+      ],
+      "top_nodes": [
+        {
+          "index": 90,
+          "label": "90",
+          "probability": 0.9888518452644348
+        },
+        {
+          "index": 35,
+          "label": "35",
+          "probability": 0.9872329235076904
+        },
+        {
+          "index": 95,
+          "label": "95",
+          "probability": 0.9857946634292603
+        },
+        {
+          "index": 46,
+          "label": "46",
+          "probability": 0.9835139513015747
+        },
+        {
+          "index": 64,
+          "label": "64",
+          "probability": 0.9804741144180298
+        },
+        {
+          "index": 43,
+          "label": "43",
+          "probability": 0.9783409237861633
+        },
+        {
+          "index": 62,
+          "label": "62",
+          "probability": 0.9706665277481079
+        },
+        {
+          "index": 84,
+          "label": "84",
+          "probability": 0.9703852534294128
+        },
+        {
+          "index": 57,
+          "label": "57",
+          "probability": 0.9650225639343262
+        },
+        {
+          "index": 87,
+          "label": "87",
+          "probability": 0.962378203868866
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            35,
+            57
+          ],
+          "edge_ids": [
+            211
+          ],
+          "score": 5.235355377197265,
+          "log_score": 1.6554347268698635,
+          "node_labels": [
+            "35",
+            "57"
+          ],
+          "source": 35
+        },
+        {
+          "nodes": [
+            35,
+            107
+          ],
+          "edge_ids": [
+            215
+          ],
+          "score": 2.730493307113647,
+          "log_score": 1.0044822914492746,
+          "node_labels": [
+            "35",
+            "107"
+          ],
+          "source": 35
+        },
+        {
+          "nodes": [
+            35,
+            58
+          ],
+          "edge_ids": [
+            212
+          ],
+          "score": 2.6231021881103516,
+          "log_score": 0.9643576586124744,
+          "node_labels": [
+            "35",
+            "58"
+          ],
+          "source": 35
+        },
+        {
+          "nodes": [
+            35,
+            102
+          ],
+          "edge_ids": [
+            214
+          ],
+          "score": 1.9019818305969238,
+          "log_score": 0.6428964112894126,
+          "node_labels": [
+            "35",
+            "102"
+          ],
+          "source": 35
+        },
+        {
+          "nodes": [
+            35,
+            91
+          ],
+          "edge_ids": [
+            213
+          ],
+          "score": 0.8449648022651672,
+          "log_score": -0.16846030661658276,
+          "node_labels": [
+            "35",
+            "91"
+          ],
+          "source": 35
+        },
+        {
+          "nodes": [
+            43,
+            87
+          ],
+          "edge_ids": [
+            261
+          ],
+          "score": 4.228782653808594,
+          "log_score": 1.4419141629413406,
+          "node_labels": [
+            "43",
+            "87"
+          ],
+          "source": 43
+        },
+        {
+          "nodes": [
+            43,
+            74
+          ],
+          "edge_ids": [
+            260
+          ],
+          "score": 3.913299083709717,
+          "log_score": 1.3643807736602493,
+          "node_labels": [
+            "43",
+            "74"
+          ],
+          "source": 43
+        },
+        {
+          "nodes": [
+            43,
+            62
+          ],
+          "edge_ids": [
+            258
+          ],
+          "score": 3.667118787765503,
+          "log_score": 1.2994062822829593,
+          "node_labels": [
+            "43",
+            "62"
+          ],
+          "source": 43
+        },
+        {
+          "nodes": [
+            43,
+            110
+          ],
+          "edge_ids": [
+            263
+          ],
+          "score": 3.1618118286132812,
+          "log_score": 1.1511452267739966,
+          "node_labels": [
+            "43",
+            "110"
+          ],
+          "source": 43
+        },
+        {
+          "nodes": [
+            43,
+            71
+          ],
+          "edge_ids": [
+            259
+          ],
+          "score": 2.91364073753357,
+          "log_score": 1.06940341174875,
+          "node_labels": [
+            "43",
+            "71"
+          ],
+          "source": 43
+        },
+        {
+          "nodes": [
+            46,
+            64
+          ],
+          "edge_ids": [
+            276
+          ],
+          "score": 5.3955583572387695,
+          "log_score": 1.685576088672486,
+          "node_labels": [
+            "46",
+            "64"
+          ],
+          "source": 46
+        },
+        {
+          "nodes": [
+            46,
+            90
+          ],
+          "edge_ids": [
+            279
+          ],
+          "score": 5.323923587799071,
+          "log_score": 1.6722105480254867,
+          "node_labels": [
+            "46",
+            "90"
+          ],
+          "source": 46
+        },
+        {
+          "nodes": [
+            46,
+            108
+          ],
+          "edge_ids": [
+            281
+          ],
+          "score": 3.876535654067993,
+          "log_score": 1.3549418821240662,
+          "node_labels": [
+            "46",
+            "108"
+          ],
+          "source": 46
+        },
+        {
+          "nodes": [
+            46,
+            103
+          ],
+          "edge_ids": [
+            280
+          ],
+          "score": 3.4122354984283447,
+          "log_score": 1.227367647888985,
+          "node_labels": [
+            "46",
+            "103"
+          ],
+          "source": 46
+        },
+        {
+          "nodes": [
+            46,
+            70
+          ],
+          "edge_ids": [
+            278
+          ],
+          "score": 2.5850915908813477,
+          "log_score": 0.9497609390082752,
+          "node_labels": [
+            "46",
+            "70"
+          ],
+          "source": 46
+        },
+        {
+          "nodes": [
+            95,
+            84
+          ],
+          "edge_ids": [
+            430
+          ],
+          "score": 4.184076309204102,
+          "log_score": 1.4312859649338057,
+          "node_labels": [
+            "95",
+            "84"
+          ],
+          "source": 95
+        },
+        {
+          "nodes": [
+            95,
+            80
+          ],
+          "edge_ids": [
+            429
+          ],
+          "score": 3.625444173812866,
+          "log_score": 1.2879768115073618,
+          "node_labels": [
+            "95",
+            "80"
+          ],
+          "source": 95
+        },
+        {
+          "nodes": [
+            95,
+            90
+          ],
+          "edge_ids": [
+            431
+          ],
+          "score": 2.0854430198669434,
+          "log_score": 0.7349813122326726,
+          "node_labels": [
+            "95",
+            "90"
+          ],
+          "source": 95
+        }
+      ]
+    },
+    {
+      "time_index": 74,
+      "prediction_day": "840",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        11,
+        25,
+        38,
+        44,
+        46,
+        54,
+        81,
+        84,
+        89,
+        92,
+        103,
+        108
+      ],
+      "top_nodes": [
+        {
+          "index": 92,
+          "label": "92",
+          "probability": 0.9814913272857666
+        },
+        {
+          "index": 84,
+          "label": "84",
+          "probability": 0.9647765755653381
+        },
+        {
+          "index": 11,
+          "label": "11",
+          "probability": 0.9627719521522522
+        },
+        {
+          "index": 108,
+          "label": "108",
+          "probability": 0.9112195372581482
+        },
+        {
+          "index": 89,
+          "label": "89",
+          "probability": 0.9110174775123596
+        },
+        {
+          "index": 81,
+          "label": "81",
+          "probability": 0.8951831459999084
+        },
+        {
+          "index": 44,
+          "label": "44",
+          "probability": 0.8840300440788269
+        },
+        {
+          "index": 25,
+          "label": "25",
+          "probability": 0.8663662075996399
+        },
+        {
+          "index": 38,
+          "label": "38",
+          "probability": 0.8495234251022339
+        },
+        {
+          "index": 46,
+          "label": "46",
+          "probability": 0.8494951128959656
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            11,
+            25
+          ],
+          "edge_ids": [
+            67
+          ],
+          "score": 5.127819061279297,
+          "log_score": 1.634680434533942,
+          "node_labels": [
+            "11",
+            "25"
+          ],
+          "source": 11
+        },
+        {
+          "nodes": [
+            11,
+            91
+          ],
+          "edge_ids": [
+            69
+          ],
+          "score": 2.5354630947113037,
+          "log_score": 0.9303763007186101,
+          "node_labels": [
+            "11",
+            "91"
+          ],
+          "source": 11
+        },
+        {
+          "nodes": [
+            11,
+            108
+          ],
+          "edge_ids": [
+            71
+          ],
+          "score": 1.5809417963027954,
+          "log_score": 0.4580207430669299,
+          "node_labels": [
+            "11",
+            "108"
+          ],
+          "source": 11
+        },
+        {
+          "nodes": [
+            11,
+            103
+          ],
+          "edge_ids": [
+            70
+          ],
+          "score": 1.547645092010498,
+          "log_score": 0.43673448015437455,
+          "node_labels": [
+            "11",
+            "103"
+          ],
+          "source": 11
+        },
+        {
+          "nodes": [
+            11,
+            25,
+            46
+          ],
+          "edge_ids": [
+            67,
+            150
+          ],
+          "score": 0.6096262097815668,
+          "log_score": -0.4949092804854591,
+          "node_labels": [
+            "11",
+            "25",
+            "46"
+          ],
+          "source": 11
+        },
+        {
+          "nodes": [
+            92,
+            84
+          ],
+          "edge_ids": [
+            421
+          ],
+          "score": 4.255125522613525,
+          "log_score": 1.4481242616169008,
+          "node_labels": [
+            "92",
+            "84"
+          ],
+          "source": 92
+        },
+        {
+          "nodes": [
+            92,
+            89
+          ],
+          "edge_ids": [
+            422
+          ],
+          "score": 3.0801942348480225,
+          "log_score": 1.124992658259424,
+          "node_labels": [
+            "92",
+            "89"
+          ],
+          "source": 92
+        },
+        {
+          "nodes": [
+            92,
+            81
+          ],
+          "edge_ids": [
+            420
+          ],
+          "score": 1.9658963680267334,
+          "log_score": 0.675948308243443,
+          "node_labels": [
+            "92",
+            "81"
+          ],
+          "source": 92
+        }
+      ]
+    },
+    {
+      "time_index": 75,
+      "prediction_day": "850",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        9,
+        43,
+        50,
+        51,
+        62,
+        71,
+        73,
+        74,
+        78,
+        82,
+        87,
+        89,
+        102,
+        105,
+        106,
+        107,
+        110,
+        111
+      ],
+      "top_nodes": [
+        {
+          "index": 74,
+          "label": "74",
+          "probability": 0.9920071363449097
+        },
+        {
+          "index": 50,
+          "label": "50",
+          "probability": 0.9842545986175537
+        },
+        {
+          "index": 43,
+          "label": "43",
+          "probability": 0.9780257344245911
+        },
+        {
+          "index": 9,
+          "label": "9",
+          "probability": 0.9754194021224976
+        },
+        {
+          "index": 87,
+          "label": "87",
+          "probability": 0.9691421985626221
+        },
+        {
+          "index": 62,
+          "label": "62",
+          "probability": 0.9351010322570801
+        },
+        {
+          "index": 78,
+          "label": "78",
+          "probability": 0.9280478954315186
+        },
+        {
+          "index": 82,
+          "label": "82",
+          "probability": 0.9276721477508545
+        },
+        {
+          "index": 51,
+          "label": "51",
+          "probability": 0.8997727036476135
+        },
+        {
+          "index": 89,
+          "label": "89",
+          "probability": 0.8996120691299438
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            9,
+            89
+          ],
+          "edge_ids": [
+            57
+          ],
+          "score": 2.8225326538085938,
+          "log_score": 1.0376345860832061,
+          "node_labels": [
+            "9",
+            "89"
+          ],
+          "source": 9
+        },
+        {
+          "nodes": [
+            9,
+            106
+          ],
+          "edge_ids": [
+            58
+          ],
+          "score": 2.5818164348602295,
+          "log_score": 0.9484931957299174,
+          "node_labels": [
+            "9",
+            "106"
+          ],
+          "source": 9
+        },
+        {
+          "nodes": [
+            9,
+            111
+          ],
+          "edge_ids": [
+            59
+          ],
+          "score": 2.5177059173583984,
+          "log_score": 0.9233481366482827,
+          "node_labels": [
+            "9",
+            "111"
+          ],
+          "source": 9
+        },
+        {
+          "nodes": [
+            9,
+            26
+          ],
+          "edge_ids": [
+            55
+          ],
+          "score": 1.308508038520813,
+          "log_score": 0.2688875862789474,
+          "node_labels": [
+            "9",
+            "26"
+          ],
+          "source": 9
+        },
+        {
+          "nodes": [
+            9,
+            22
+          ],
+          "edge_ids": [
+            54
+          ],
+          "score": 0.4454253911972046,
+          "log_score": -0.8087255181564312,
+          "node_labels": [
+            "9",
+            "22"
+          ],
+          "source": 9
+        },
+        {
+          "nodes": [
+            43,
+            87
+          ],
+          "edge_ids": [
+            261
+          ],
+          "score": 4.212377548217773,
+          "log_score": 1.4380272265836394,
+          "node_labels": [
+            "43",
+            "87"
+          ],
+          "source": 43
+        },
+        {
+          "nodes": [
+            43,
+            74
+          ],
+          "edge_ids": [
+            260
+          ],
+          "score": 4.118433475494385,
+          "log_score": 1.4154728666632448,
+          "node_labels": [
+            "43",
+            "74"
+          ],
+          "source": 43
+        },
+        {
+          "nodes": [
+            43,
+            62
+          ],
+          "edge_ids": [
+            258
+          ],
+          "score": 3.5264458656311035,
+          "log_score": 1.260290526812729,
+          "node_labels": [
+            "43",
+            "62"
+          ],
+          "source": 43
+        },
+        {
+          "nodes": [
+            43,
+            110
+          ],
+          "edge_ids": [
+            263
+          ],
+          "score": 3.1137001514434814,
+          "log_score": 1.135811778295003,
+          "node_labels": [
+            "43",
+            "110"
+          ],
+          "source": 43
+        },
+        {
+          "nodes": [
+            43,
+            71
+          ],
+          "edge_ids": [
+            259
+          ],
+          "score": 2.967315673828125,
+          "log_score": 1.0876577306030106,
+          "node_labels": [
+            "43",
+            "71"
+          ],
+          "source": 43
+        },
+        {
+          "nodes": [
+            50,
+            78
+          ],
+          "edge_ids": [
+            302
+          ],
+          "score": 4.490436553955078,
+          "log_score": 1.5019499250801782,
+          "node_labels": [
+            "50",
+            "78"
+          ],
+          "source": 50
+        },
+        {
+          "nodes": [
+            50,
+            107
+          ],
+          "edge_ids": [
+            305
+          ],
+          "score": 3.80630612373352,
+          "log_score": 1.3366591975190252,
+          "node_labels": [
+            "50",
+            "107"
+          ],
+          "source": 50
+        },
+        {
+          "nodes": [
+            50,
+            82
+          ],
+          "edge_ids": [
+            303
+          ],
+          "score": 3.3893897533416744,
+          "log_score": 1.2206498914244188,
+          "node_labels": [
+            "50",
+            "82"
+          ],
+          "source": 50
+        },
+        {
+          "nodes": [
+            50,
+            73
+          ],
+          "edge_ids": [
+            300
+          ],
+          "score": 3.1237354278564453,
+          "log_score": 1.139029538204226,
+          "node_labels": [
+            "50",
+            "73"
+          ],
+          "source": 50
+        },
+        {
+          "nodes": [
+            50,
+            74
+          ],
+          "edge_ids": [
+            301
+          ],
+          "score": 3.0769708156585693,
+          "log_score": 1.1239456116210769,
+          "node_labels": [
+            "50",
+            "74"
+          ],
+          "source": 50
+        }
+      ]
+    },
+    {
+      "time_index": 76,
+      "prediction_day": "860",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        53,
+        85,
+        87
+      ],
+      "top_nodes": [
+        {
+          "index": 53,
+          "label": "53",
+          "probability": 0.8946799039840698
+        },
+        {
+          "index": 85,
+          "label": "85",
+          "probability": 0.8229894638061523
+        },
+        {
+          "index": 87,
+          "label": "87",
+          "probability": 0.8216295838356018
+        },
+        {
+          "index": 66,
+          "label": "66",
+          "probability": 0.7936528325080872
+        },
+        {
+          "index": 109,
+          "label": "109",
+          "probability": 0.7824164628982544
+        },
+        {
+          "index": 63,
+          "label": "63",
+          "probability": 0.7809130549430847
+        },
+        {
+          "index": 90,
+          "label": "90",
+          "probability": 0.7341172695159912
+        },
+        {
+          "index": 102,
+          "label": "102",
+          "probability": 0.7058621644973755
+        },
+        {
+          "index": 64,
+          "label": "64",
+          "probability": 0.6955341696739197
+        },
+        {
+          "index": 105,
+          "label": "105",
+          "probability": 0.6879907846450806
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            53,
+            63
+          ],
+          "edge_ids": [
+            318
+          ],
+          "score": 1.3882262706756592,
+          "log_score": 0.32802686801719844,
+          "node_labels": [
+            "53",
+            "63"
+          ],
+          "source": 53
+        },
+        {
+          "nodes": [
+            53,
+            66
+          ],
+          "edge_ids": [
+            319
+          ],
+          "score": 1.293411135673523,
+          "log_score": 0.25728301960634603,
+          "node_labels": [
+            "53",
+            "66"
+          ],
+          "source": 53
+        },
+        {
+          "nodes": [
+            53,
+            85
+          ],
+          "edge_ids": [
+            321
+          ],
+          "score": 0.7830580472946167,
+          "log_score": -0.244548451263275,
+          "node_labels": [
+            "53",
+            "85"
+          ],
+          "source": 53
+        },
+        {
+          "nodes": [
+            53,
+            67
+          ],
+          "edge_ids": [
+            320
+          ],
+          "score": 0.5337809324264526,
+          "log_score": -0.6277697630947155,
+          "node_labels": [
+            "53",
+            "67"
+          ],
+          "source": 53
+        },
+        {
+          "nodes": [
+            53,
+            110
+          ],
+          "edge_ids": [
+            323
+          ],
+          "score": 0.40517890453338623,
+          "log_score": -0.9034265698251988,
+          "node_labels": [
+            "53",
+            "110"
+          ],
+          "source": 53
+        },
+        {
+          "nodes": [
+            99,
+            87
+          ],
+          "edge_ids": [
+            441
+          ],
+          "score": 1.0550315380096436,
+          "log_score": 0.05357066032922102,
+          "node_labels": [
+            "99",
+            "87"
+          ],
+          "source": 99
+        },
+        {
+          "nodes": [
+            99,
+            90
+          ],
+          "edge_ids": [
+            443
+          ],
+          "score": 0.5681913495063782,
+          "log_score": -0.5652970340595358,
+          "node_labels": [
+            "99",
+            "90"
+          ],
+          "source": 99
+        },
+        {
+          "nodes": [
+            99,
+            88
+          ],
+          "edge_ids": [
+            442
+          ],
+          "score": 0.4066813886165619,
+          "log_score": -0.8997252290620678,
+          "node_labels": [
+            "99",
+            "88"
+          ],
+          "source": 99
+        }
+      ]
+    },
+    {
+      "time_index": 77,
+      "prediction_day": "870",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        9,
+        89,
+        106,
+        111
+      ],
+      "top_nodes": [
+        {
+          "index": 9,
+          "label": "9",
+          "probability": 0.9752023816108704
+        },
+        {
+          "index": 111,
+          "label": "111",
+          "probability": 0.8622720241546631
+        },
+        {
+          "index": 106,
+          "label": "106",
+          "probability": 0.8569010496139526
+        },
+        {
+          "index": 89,
+          "label": "89",
+          "probability": 0.8078519701957703
+        },
+        {
+          "index": 103,
+          "label": "103",
+          "probability": 0.7739149332046509
+        },
+        {
+          "index": 104,
+          "label": "104",
+          "probability": 0.7317160367965698
+        },
+        {
+          "index": 109,
+          "label": "109",
+          "probability": 0.731013298034668
+        },
+        {
+          "index": 85,
+          "label": "85",
+          "probability": 0.7251149415969849
+        },
+        {
+          "index": 102,
+          "label": "102",
+          "probability": 0.7068057656288147
+        },
+        {
+          "index": 84,
+          "label": "84",
+          "probability": 0.6955016851425171
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            9,
+            26
+          ],
+          "edge_ids": [
+            55
+          ],
+          "score": 2.6696388721466064,
+          "log_score": 0.9819432093868521,
+          "node_labels": [
+            "9",
+            "26"
+          ],
+          "source": 9
+        },
+        {
+          "nodes": [
+            9,
+            106
+          ],
+          "edge_ids": [
+            58
+          ],
+          "score": 2.565431833267212,
+          "log_score": 0.9421268205020389,
+          "node_labels": [
+            "9",
+            "106"
+          ],
+          "source": 9
+        },
+        {
+          "nodes": [
+            9,
+            111
+          ],
+          "edge_ids": [
+            59
+          ],
+          "score": 2.5023603439331055,
+          "log_score": 0.9172344240298536,
+          "node_labels": [
+            "9",
+            "111"
+          ],
+          "source": 9
+        },
+        {
+          "nodes": [
+            9,
+            22
+          ],
+          "edge_ids": [
+            54
+          ],
+          "score": 1.7767856121063232,
+          "log_score": 0.5748058959213972,
+          "node_labels": [
+            "9",
+            "22"
+          ],
+          "source": 9
+        },
+        {
+          "nodes": [
+            9,
+            89
+          ],
+          "edge_ids": [
+            57
+          ],
+          "score": 1.1393060684204102,
+          "log_score": 0.13041936515417094,
+          "node_labels": [
+            "9",
+            "89"
+          ],
+          "source": 9
+        }
+      ]
+    },
+    {
+      "time_index": 78,
+      "prediction_day": "880",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        10,
+        36,
+        42,
+        62,
+        64,
+        80,
+        86,
+        90,
+        102,
+        104,
+        109
+      ],
+      "top_nodes": [
+        {
+          "index": 42,
+          "label": "42",
+          "probability": 0.9925893545150757
+        },
+        {
+          "index": 36,
+          "label": "36",
+          "probability": 0.9719401001930237
+        },
+        {
+          "index": 10,
+          "label": "10",
+          "probability": 0.9718329310417175
+        },
+        {
+          "index": 86,
+          "label": "86",
+          "probability": 0.9613284468650818
+        },
+        {
+          "index": 90,
+          "label": "90",
+          "probability": 0.9454292058944702
+        },
+        {
+          "index": 109,
+          "label": "109",
+          "probability": 0.9291792511940002
+        },
+        {
+          "index": 104,
+          "label": "104",
+          "probability": 0.8956171274185181
+        },
+        {
+          "index": 62,
+          "label": "62",
+          "probability": 0.8902406096458435
+        },
+        {
+          "index": 80,
+          "label": "80",
+          "probability": 0.8674163818359375
+        },
+        {
+          "index": 64,
+          "label": "64",
+          "probability": 0.848717212677002
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            10,
+            36,
+            42,
+            62
+          ],
+          "edge_ids": [
+            62,
+            217,
+            252
+          ],
+          "score": 58.132830502909016,
+          "log_score": 4.062730573163439,
+          "node_labels": [
+            "10",
+            "36",
+            "42",
+            "62"
+          ],
+          "source": 10
+        },
+        {
+          "nodes": [
+            10,
+            36,
+            42,
+            86
+          ],
+          "edge_ids": [
+            62,
+            217,
+            255
+          ],
+          "score": 40.146157381349006,
+          "log_score": 3.692526729245955,
+          "node_labels": [
+            "10",
+            "36",
+            "42",
+            "86"
+          ],
+          "source": 10
+        },
+        {
+          "nodes": [
+            10,
+            36,
+            42,
+            109
+          ],
+          "edge_ids": [
+            62,
+            217,
+            257
+          ],
+          "score": 31.595361205140932,
+          "log_score": 3.4530103125114207,
+          "node_labels": [
+            "10",
+            "36",
+            "42",
+            "109"
+          ],
+          "source": 10
+        },
+        {
+          "nodes": [
+            10,
+            36,
+            42,
+            104
+          ],
+          "edge_ids": [
+            62,
+            217,
+            256
+          ],
+          "score": 23.30769524925467,
+          "log_score": 3.1487835742534704,
+          "node_labels": [
+            "10",
+            "36",
+            "42",
+            "104"
+          ],
+          "source": 10
+        },
+        {
+          "nodes": [
+            10,
+            36,
+            42,
+            64
+          ],
+          "edge_ids": [
+            62,
+            217,
+            253
+          ],
+          "score": 17.487023416249,
+          "log_score": 2.861459086796732,
+          "node_labels": [
+            "10",
+            "36",
+            "42",
+            "64"
+          ],
+          "source": 10
+        },
+        {
+          "nodes": [
+            34,
+            55
+          ],
+          "edge_ids": [
+            205
+          ],
+          "score": 0.026393035426735875,
+          "log_score": -3.6346551132270766,
+          "node_labels": [
+            "34",
+            "55"
+          ],
+          "source": 34
+        },
+        {
+          "nodes": [
+            34,
+            90
+          ],
+          "edge_ids": [
+            207
+          ],
+          "score": 0.0065303877927362945,
+          "log_score": -5.031288951126882,
+          "node_labels": [
+            "34",
+            "90"
+          ],
+          "source": 34
+        },
+        {
+          "nodes": [
+            34,
+            53
+          ],
+          "edge_ids": [
+            204
+          ],
+          "score": 0.005534355528652666,
+          "log_score": -5.196780155255135,
+          "node_labels": [
+            "34",
+            "53"
+          ],
+          "source": 34
+        },
+        {
+          "nodes": [
+            34,
+            111
+          ],
+          "edge_ids": [
+            209
+          ],
+          "score": 0.0020662893075495954,
+          "log_score": -6.182000885392518,
+          "node_labels": [
+            "34",
+            "111"
+          ],
+          "source": 34
+        },
+        {
+          "nodes": [
+            34,
+            106
+          ],
+          "edge_ids": [
+            208
+          ],
+          "score": 0.0015326997963711624,
+          "log_score": -6.480724525815712,
+          "node_labels": [
+            "34",
+            "106"
+          ],
+          "source": 34
+        },
+        {
+          "nodes": [
+            36,
+            42,
+            62
+          ],
+          "edge_ids": [
+            217,
+            252
+          ],
+          "score": 16.666782654399867,
+          "log_score": 2.813417675999813,
+          "node_labels": [
+            "36",
+            "42",
+            "62"
+          ],
+          "source": 36
+        },
+        {
+          "nodes": [
+            36,
+            42,
+            86
+          ],
+          "edge_ids": [
+            217,
+            255
+          ],
+          "score": 11.509972483634554,
+          "log_score": 2.4432138320823285,
+          "node_labels": [
+            "36",
+            "42",
+            "86"
+          ],
+          "source": 36
+        },
+        {
+          "nodes": [
+            36,
+            42,
+            109
+          ],
+          "edge_ids": [
+            217,
+            257
+          ],
+          "score": 9.058444488901843,
+          "log_score": 2.2036974153477944,
+          "node_labels": [
+            "36",
+            "42",
+            "109"
+          ],
+          "source": 36
+        },
+        {
+          "nodes": [
+            36,
+            42,
+            104
+          ],
+          "edge_ids": [
+            217,
+            256
+          ],
+          "score": 6.682356381646969,
+          "log_score": 1.8994706770898437,
+          "node_labels": [
+            "36",
+            "42",
+            "104"
+          ],
+          "source": 36
+        },
+        {
+          "nodes": [
+            36,
+            42,
+            64
+          ],
+          "edge_ids": [
+            217,
+            253
+          ],
+          "score": 5.013559739473521,
+          "log_score": 1.6121461896331055,
+          "node_labels": [
+            "36",
+            "42",
+            "64"
+          ],
+          "source": 36
+        },
+        {
+          "nodes": [
+            42,
+            62
+          ],
+          "edge_ids": [
+            252
+          ],
+          "score": 6.308158874511718,
+          "log_score": 1.8418438549776197,
+          "node_labels": [
+            "42",
+            "62"
+          ],
+          "source": 42
+        },
+        {
+          "nodes": [
+            42,
+            86
+          ],
+          "edge_ids": [
+            255
+          ],
+          "score": 4.3563737869262695,
+          "log_score": 1.4716400110601355,
+          "node_labels": [
+            "42",
+            "86"
+          ],
+          "source": 42
+        },
+        {
+          "nodes": [
+            42,
+            109
+          ],
+          "edge_ids": [
+            257
+          ],
+          "score": 3.4285025596618652,
+          "log_score": 1.2321235943256013,
+          "node_labels": [
+            "42",
+            "109"
+          ],
+          "source": 42
+        },
+        {
+          "nodes": [
+            42,
+            104
+          ],
+          "edge_ids": [
+            256
+          ],
+          "score": 2.529184341430664,
+          "log_score": 0.9278968560676508,
+          "node_labels": [
+            "42",
+            "104"
+          ],
+          "source": 42
+        },
+        {
+          "nodes": [
+            42,
+            64
+          ],
+          "edge_ids": [
+            253
+          ],
+          "score": 1.8975666761398315,
+          "log_score": 0.6405723686109125,
+          "node_labels": [
+            "42",
+            "64"
+          ],
+          "source": 42
+        }
+      ]
+    },
+    {
+      "time_index": 79,
+      "prediction_day": "890",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        27,
+        28,
+        46,
+        49,
+        52,
+        54,
+        62,
+        64,
+        80,
+        83,
+        84,
+        87,
+        101,
+        104,
+        109,
+        110
+      ],
+      "top_nodes": [
+        {
+          "index": 27,
+          "label": "27",
+          "probability": 0.988248348236084
+        },
+        {
+          "index": 101,
+          "label": "101",
+          "probability": 0.9846794009208679
+        },
+        {
+          "index": 83,
+          "label": "83",
+          "probability": 0.9720764756202698
+        },
+        {
+          "index": 80,
+          "label": "80",
+          "probability": 0.9627565145492554
+        },
+        {
+          "index": 52,
+          "label": "52",
+          "probability": 0.9502045512199402
+        },
+        {
+          "index": 109,
+          "label": "109",
+          "probability": 0.9499878883361816
+        },
+        {
+          "index": 28,
+          "label": "28",
+          "probability": 0.9326056838035583
+        },
+        {
+          "index": 87,
+          "label": "87",
+          "probability": 0.9289283156394958
+        },
+        {
+          "index": 104,
+          "label": "104",
+          "probability": 0.9093198180198669
+        },
+        {
+          "index": 46,
+          "label": "46",
+          "probability": 0.8844767212867737
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            27,
+            83
+          ],
+          "edge_ids": [
+            165
+          ],
+          "score": 4.805903911590576,
+          "log_score": 1.5698451436875596,
+          "node_labels": [
+            "27",
+            "83"
+          ],
+          "source": 27
+        },
+        {
+          "nodes": [
+            27,
+            56
+          ],
+          "edge_ids": [
+            164
+          ],
+          "score": 3.5665857791900635,
+          "log_score": 1.2716087738108266,
+          "node_labels": [
+            "27",
+            "56"
+          ],
+          "source": 27
+        },
+        {
+          "nodes": [
+            27,
+            46
+          ],
+          "edge_ids": [
+            162
+          ],
+          "score": 3.2622122764587407,
+          "log_score": 1.1824055776359883,
+          "node_labels": [
+            "27",
+            "46"
+          ],
+          "source": 27
+        },
+        {
+          "nodes": [
+            27,
+            52
+          ],
+          "edge_ids": [
+            163
+          ],
+          "score": 2.86514401435852,
+          "log_score": 1.0526186156951747,
+          "node_labels": [
+            "27",
+            "52"
+          ],
+          "source": 27
+        },
+        {
+          "nodes": [
+            27,
+            109
+          ],
+          "edge_ids": [
+            167
+          ],
+          "score": 2.759387969970703,
+          "log_score": 1.015008905128275,
+          "node_labels": [
+            "27",
+            "109"
+          ],
+          "source": 27
+        },
+        {
+          "nodes": [
+            28,
+            52
+          ],
+          "edge_ids": [
+            170
+          ],
+          "score": 3.212134122848511,
+          "log_score": 1.1669355520148759,
+          "node_labels": [
+            "28",
+            "52"
+          ],
+          "source": 28
+        },
+        {
+          "nodes": [
+            28,
+            49
+          ],
+          "edge_ids": [
+            169
+          ],
+          "score": 2.160086154937744,
+          "log_score": 0.7701481074458785,
+          "node_labels": [
+            "28",
+            "49"
+          ],
+          "source": 28
+        },
+        {
+          "nodes": [
+            28,
+            47
+          ],
+          "edge_ids": [
+            168
+          ],
+          "score": 1.3770934343338013,
+          "log_score": 0.31997507099126665,
+          "node_labels": [
+            "28",
+            "47"
+          ],
+          "source": 28
+        },
+        {
+          "nodes": [
+            28,
+            84
+          ],
+          "edge_ids": [
+            171
+          ],
+          "score": 1.0916191339492798,
+          "log_score": 0.08766203805064332,
+          "node_labels": [
+            "28",
+            "84"
+          ],
+          "source": 28
+        },
+        {
+          "nodes": [
+            28,
+            49,
+            66
+          ],
+          "edge_ids": [
+            169,
+            294
+          ],
+          "score": 0.9077644227906916,
+          "log_score": -0.09677038030860674,
+          "node_labels": [
+            "28",
+            "49",
+            "66"
+          ],
+          "source": 28
+        },
+        {
+          "nodes": [
+            54,
+            64
+          ],
+          "edge_ids": [
+            325
+          ],
+          "score": 1.923026204109192,
+          "log_score": 0.6539000931956473,
+          "node_labels": [
+            "54",
+            "64"
+          ],
+          "source": 54
+        },
+        {
+          "nodes": [
+            54,
+            62
+          ],
+          "edge_ids": [
+            324
+          ],
+          "score": 1.8917644023895264,
+          "log_score": 0.6375099398261147,
+          "node_labels": [
+            "54",
+            "62"
+          ],
+          "source": 54
+        },
+        {
+          "nodes": [
+            54,
+            74
+          ],
+          "edge_ids": [
+            326
+          ],
+          "score": 0.9325523376464844,
+          "log_score": -0.06983000287673084,
+          "node_labels": [
+            "54",
+            "74"
+          ],
+          "source": 54
+        },
+        {
+          "nodes": [
+            54,
+            111
+          ],
+          "edge_ids": [
+            329
+          ],
+          "score": 0.3756081163883209,
+          "log_score": -0.979208922753918,
+          "node_labels": [
+            "54",
+            "111"
+          ],
+          "source": 54
+        },
+        {
+          "nodes": [
+            54,
+            62,
+            109
+          ],
+          "edge_ids": [
+            324,
+            368
+          ],
+          "score": 0.33163177246830594,
+          "log_score": -1.1037300446647444,
+          "node_labels": [
+            "54",
+            "62",
+            "109"
+          ],
+          "source": 54
+        },
+        {
+          "nodes": [
+            101,
+            80
+          ],
+          "edge_ids": [
+            447
+          ],
+          "score": 5.216231822967528,
+          "log_score": 1.6517752682240534,
+          "node_labels": [
+            "101",
+            "80"
+          ],
+          "source": 101
+        },
+        {
+          "nodes": [
+            101,
+            87
+          ],
+          "edge_ids": [
+            449
+          ],
+          "score": 2.8880615234375,
+          "log_score": 1.0605855239329995,
+          "node_labels": [
+            "101",
+            "87"
+          ],
+          "source": 101
+        },
+        {
+          "nodes": [
+            101,
+            83
+          ],
+          "edge_ids": [
+            448
+          ],
+          "score": 1.4332706928253174,
+          "log_score": 0.359959030396406,
+          "node_labels": [
+            "101",
+            "83"
+          ],
+          "source": 101
+        }
+      ]
+    },
+    {
+      "time_index": 80,
+      "prediction_day": "900",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        22,
+        48,
+        54,
+        55,
+        71,
+        74,
+        79,
+        80,
+        87,
+        90,
+        104,
+        105,
+        109,
+        110
+      ],
+      "top_nodes": [
+        {
+          "index": 48,
+          "label": "48",
+          "probability": 0.983326256275177
+        },
+        {
+          "index": 22,
+          "label": "22",
+          "probability": 0.9471985101699829
+        },
+        {
+          "index": 74,
+          "label": "74",
+          "probability": 0.9247162938117981
+        },
+        {
+          "index": 54,
+          "label": "54",
+          "probability": 0.8910697102546692
+        },
+        {
+          "index": 109,
+          "label": "109",
+          "probability": 0.8842207789421082
+        },
+        {
+          "index": 90,
+          "label": "90",
+          "probability": 0.8816405534744263
+        },
+        {
+          "index": 110,
+          "label": "110",
+          "probability": 0.868985116481781
+        },
+        {
+          "index": 71,
+          "label": "71",
+          "probability": 0.8665347099304199
+        },
+        {
+          "index": 79,
+          "label": "79",
+          "probability": 0.8654912114143372
+        },
+        {
+          "index": 105,
+          "label": "105",
+          "probability": 0.8503124117851257
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            22,
+            54
+          ],
+          "edge_ids": [
+            134
+          ],
+          "score": 2.9899897575378414,
+          "log_score": 1.0952699618240995,
+          "node_labels": [
+            "22",
+            "54"
+          ],
+          "source": 22
+        },
+        {
+          "nodes": [
+            22,
+            90
+          ],
+          "edge_ids": [
+            135
+          ],
+          "score": 2.2541098594665527,
+          "log_score": 0.8127551542109194,
+          "node_labels": [
+            "22",
+            "90"
+          ],
+          "source": 22
+        },
+        {
+          "nodes": [
+            22,
+            40
+          ],
+          "edge_ids": [
+            132
+          ],
+          "score": 2.2117583751678467,
+          "log_score": 0.7937878440444033,
+          "node_labels": [
+            "22",
+            "40"
+          ],
+          "source": 22
+        },
+        {
+          "nodes": [
+            22,
+            45
+          ],
+          "edge_ids": [
+            133
+          ],
+          "score": 1.1865026950836182,
+          "log_score": 0.17101006834800678,
+          "node_labels": [
+            "22",
+            "45"
+          ],
+          "source": 22
+        },
+        {
+          "nodes": [
+            22,
+            109
+          ],
+          "edge_ids": [
+            137
+          ],
+          "score": 1.001776099205017,
+          "log_score": 0.0017745238059249456,
+          "node_labels": [
+            "22",
+            "109"
+          ],
+          "source": 22
+        },
+        {
+          "nodes": [
+            48,
+            74
+          ],
+          "edge_ids": [
+            289
+          ],
+          "score": 3.8967149257659917,
+          "log_score": 1.3601338714524345,
+          "node_labels": [
+            "48",
+            "74"
+          ],
+          "source": 48
+        },
+        {
+          "nodes": [
+            48,
+            110
+          ],
+          "edge_ids": [
+            293
+          ],
+          "score": 3.21396803855896,
+          "log_score": 1.1675063228224893,
+          "node_labels": [
+            "48",
+            "110"
+          ],
+          "source": 48
+        },
+        {
+          "nodes": [
+            48,
+            79
+          ],
+          "edge_ids": [
+            290
+          ],
+          "score": 3.0357000827789307,
+          "log_score": 1.1104420676901685,
+          "node_labels": [
+            "48",
+            "79"
+          ],
+          "source": 48
+        },
+        {
+          "nodes": [
+            48,
+            71
+          ],
+          "edge_ids": [
+            288
+          ],
+          "score": 2.966177225112915,
+          "log_score": 1.0872739941602205,
+          "node_labels": [
+            "48",
+            "71"
+          ],
+          "source": 48
+        },
+        {
+          "nodes": [
+            48,
+            80
+          ],
+          "edge_ids": [
+            291
+          ],
+          "score": 2.313790798187256,
+          "log_score": 0.8388872176781534,
+          "node_labels": [
+            "48",
+            "80"
+          ],
+          "source": 48
+        },
+        {
+          "nodes": [
+            55,
+            61
+          ],
+          "edge_ids": [
+            330
+          ],
+          "score": 1.4653959274291992,
+          "log_score": 0.3821254635868683,
+          "node_labels": [
+            "55",
+            "61"
+          ],
+          "source": 55
+        },
+        {
+          "nodes": [
+            55,
+            63
+          ],
+          "edge_ids": [
+            331
+          ],
+          "score": 1.4366313219070435,
+          "log_score": 0.3623010132240631,
+          "node_labels": [
+            "55",
+            "63"
+          ],
+          "source": 55
+        },
+        {
+          "nodes": [
+            55,
+            65
+          ],
+          "edge_ids": [
+            332
+          ],
+          "score": 1.3096567392349243,
+          "log_score": 0.2697650717585301,
+          "node_labels": [
+            "55",
+            "65"
+          ],
+          "source": 55
+        },
+        {
+          "nodes": [
+            55,
+            87
+          ],
+          "edge_ids": [
+            333
+          ],
+          "score": 1.0553475618362427,
+          "log_score": 0.05387015517257348,
+          "node_labels": [
+            "55",
+            "87"
+          ],
+          "source": 55
+        },
+        {
+          "nodes": [
+            55,
+            107
+          ],
+          "edge_ids": [
+            335
+          ],
+          "score": 0.6240778565406799,
+          "log_score": -0.47148014829860707,
+          "node_labels": [
+            "55",
+            "107"
+          ],
+          "source": 55
+        }
+      ]
+    },
+    {
+      "time_index": 81,
+      "prediction_day": "910",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        19,
+        35,
+        37,
+        42,
+        57,
+        81,
+        90,
+        104,
+        106,
+        109,
+        111
+      ],
+      "top_nodes": [
+        {
+          "index": 37,
+          "label": "37",
+          "probability": 0.9856486320495605
+        },
+        {
+          "index": 19,
+          "label": "19",
+          "probability": 0.9699281454086304
+        },
+        {
+          "index": 42,
+          "label": "42",
+          "probability": 0.9531729221343994
+        },
+        {
+          "index": 35,
+          "label": "35",
+          "probability": 0.9427809119224548
+        },
+        {
+          "index": 57,
+          "label": "57",
+          "probability": 0.9268744587898254
+        },
+        {
+          "index": 109,
+          "label": "109",
+          "probability": 0.9202248454093933
+        },
+        {
+          "index": 81,
+          "label": "81",
+          "probability": 0.8909333348274231
+        },
+        {
+          "index": 104,
+          "label": "104",
+          "probability": 0.8611869215965271
+        },
+        {
+          "index": 111,
+          "label": "111",
+          "probability": 0.8364366292953491
+        },
+        {
+          "index": 106,
+          "label": "106",
+          "probability": 0.8240008354187012
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            17,
+            29
+          ],
+          "edge_ids": [
+            103
+          ],
+          "score": 3.6680829524993896,
+          "log_score": 1.2996691693237197,
+          "node_labels": [
+            "17",
+            "29"
+          ],
+          "source": 17
+        },
+        {
+          "nodes": [
+            17,
+            35
+          ],
+          "edge_ids": [
+            104
+          ],
+          "score": 1.4595822095870972,
+          "log_score": 0.3781502369522277,
+          "node_labels": [
+            "17",
+            "35"
+          ],
+          "source": 17
+        },
+        {
+          "nodes": [
+            17,
+            35,
+            57
+          ],
+          "edge_ids": [
+            104,
+            211
+          ],
+          "score": 0.43485441840513417,
+          "log_score": -0.8327439742410917,
+          "node_labels": [
+            "17",
+            "35",
+            "57"
+          ],
+          "source": 17
+        },
+        {
+          "nodes": [
+            17,
+            85
+          ],
+          "edge_ids": [
+            105
+          ],
+          "score": 0.29577207565307617,
+          "log_score": -1.2181661359572125,
+          "node_labels": [
+            "17",
+            "85"
+          ],
+          "source": 17
+        },
+        {
+          "nodes": [
+            17,
+            109
+          ],
+          "edge_ids": [
+            107
+          ],
+          "score": 0.24122187495231628,
+          "log_score": -1.422038126067611,
+          "node_labels": [
+            "17",
+            "109"
+          ],
+          "source": 17
+        },
+        {
+          "nodes": [
+            19,
+            35
+          ],
+          "edge_ids": [
+            116
+          ],
+          "score": 5.270491123199462,
+          "log_score": 1.6621235504691048,
+          "node_labels": [
+            "19",
+            "35"
+          ],
+          "source": 19
+        },
+        {
+          "nodes": [
+            19,
+            23
+          ],
+          "edge_ids": [
+            115
+          ],
+          "score": 2.400524139404297,
+          "log_score": 0.8756871049284226,
+          "node_labels": [
+            "19",
+            "23"
+          ],
+          "source": 19
+        },
+        {
+          "nodes": [
+            19,
+            106
+          ],
+          "edge_ids": [
+            118
+          ],
+          "score": 1.9234756231307983,
+          "log_score": 0.6541337699460229,
+          "node_labels": [
+            "19",
+            "106"
+          ],
+          "source": 19
+        },
+        {
+          "nodes": [
+            19,
+            111
+          ],
+          "edge_ids": [
+            119
+          ],
+          "score": 1.897796392440796,
+          "log_score": 0.6406934196392826,
+          "node_labels": [
+            "19",
+            "111"
+          ],
+          "source": 19
+        },
+        {
+          "nodes": [
+            19,
+            35,
+            57
+          ],
+          "edge_ids": [
+            116,
+            211
+          ],
+          "score": 1.5702413588177961,
+          "log_score": 0.45122933927578535,
+          "node_labels": [
+            "19",
+            "35",
+            "57"
+          ],
+          "source": 19
+        },
+        {
+          "nodes": [
+            37,
+            41
+          ],
+          "edge_ids": [
+            222
+          ],
+          "score": 5.523492336273194,
+          "log_score": 1.7090103298526653,
+          "node_labels": [
+            "37",
+            "41"
+          ],
+          "source": 37
+        },
+        {
+          "nodes": [
+            37,
+            81
+          ],
+          "edge_ids": [
+            225
+          ],
+          "score": 3.45805025100708,
+          "log_score": 1.2407049189678554,
+          "node_labels": [
+            "37",
+            "81"
+          ],
+          "source": 37
+        },
+        {
+          "nodes": [
+            37,
+            109
+          ],
+          "edge_ids": [
+            227
+          ],
+          "score": 2.8908057212829585,
+          "log_score": 1.0615352595595577,
+          "node_labels": [
+            "37",
+            "109"
+          ],
+          "source": 37
+        },
+        {
+          "nodes": [
+            37,
+            42
+          ],
+          "edge_ids": [
+            223
+          ],
+          "score": 2.422441244125366,
+          "log_score": 0.8847758102576306,
+          "node_labels": [
+            "37",
+            "42"
+          ],
+          "source": 37
+        },
+        {
+          "nodes": [
+            37,
+            104
+          ],
+          "edge_ids": [
+            226
+          ],
+          "score": 2.1437203884124756,
+          "log_score": 0.7625428188512787,
+          "node_labels": [
+            "37",
+            "104"
+          ],
+          "source": 37
+        }
+      ]
+    },
+    {
+      "time_index": 82,
+      "prediction_day": "920",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        15,
+        26,
+        83,
+        90,
+        102,
+        103,
+        107,
+        111
+      ],
+      "top_nodes": [
+        {
+          "index": 15,
+          "label": "15",
+          "probability": 0.9821889996528625
+        },
+        {
+          "index": 83,
+          "label": "83",
+          "probability": 0.9244996905326843
+        },
+        {
+          "index": 102,
+          "label": "102",
+          "probability": 0.8690946102142334
+        },
+        {
+          "index": 107,
+          "label": "107",
+          "probability": 0.8313159346580505
+        },
+        {
+          "index": 90,
+          "label": "90",
+          "probability": 0.8215975761413574
+        },
+        {
+          "index": 26,
+          "label": "26",
+          "probability": 0.8205353021621704
+        },
+        {
+          "index": 111,
+          "label": "111",
+          "probability": 0.8188586831092834
+        },
+        {
+          "index": 103,
+          "label": "103",
+          "probability": 0.8046432137489319
+        },
+        {
+          "index": 63,
+          "label": "63",
+          "probability": 0.7710211873054504
+        },
+        {
+          "index": 73,
+          "label": "73",
+          "probability": 0.7697057127952576
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            11,
+            25
+          ],
+          "edge_ids": [
+            67
+          ],
+          "score": 1.8163172006607056,
+          "log_score": 0.5968109348934278,
+          "node_labels": [
+            "11",
+            "25"
+          ],
+          "source": 11
+        },
+        {
+          "nodes": [
+            11,
+            108
+          ],
+          "edge_ids": [
+            71
+          ],
+          "score": 0.14020755887031555,
+          "log_score": -1.9646313909254778,
+          "node_labels": [
+            "11",
+            "108"
+          ],
+          "source": 11
+        },
+        {
+          "nodes": [
+            11,
+            21
+          ],
+          "edge_ids": [
+            66
+          ],
+          "score": 0.10422496497631072,
+          "log_score": -2.261203591254568,
+          "node_labels": [
+            "11",
+            "21"
+          ],
+          "source": 11
+        },
+        {
+          "nodes": [
+            11,
+            103
+          ],
+          "edge_ids": [
+            70
+          ],
+          "score": 0.08820448815822603,
+          "log_score": -2.42809743111636,
+          "node_labels": [
+            "11",
+            "103"
+          ],
+          "source": 11
+        },
+        {
+          "nodes": [
+            11,
+            91
+          ],
+          "edge_ids": [
+            69
+          ],
+          "score": 0.07504919171333314,
+          "log_score": -2.589611490936237,
+          "node_labels": [
+            "11",
+            "91"
+          ],
+          "source": 11
+        },
+        {
+          "nodes": [
+            15,
+            34
+          ],
+          "edge_ids": [
+            92
+          ],
+          "score": 5.2372822761535645,
+          "log_score": 1.655802714198715,
+          "node_labels": [
+            "15",
+            "34"
+          ],
+          "source": 15
+        },
+        {
+          "nodes": [
+            15,
+            83
+          ],
+          "edge_ids": [
+            93
+          ],
+          "score": 4.066378116607666,
+          "log_score": 1.4027527056211397,
+          "node_labels": [
+            "15",
+            "83"
+          ],
+          "source": 15
+        },
+        {
+          "nodes": [
+            15,
+            107
+          ],
+          "edge_ids": [
+            95
+          ],
+          "score": 2.7552559375762935,
+          "log_score": 1.013510337591745,
+          "node_labels": [
+            "15",
+            "107"
+          ],
+          "source": 15
+        },
+        {
+          "nodes": [
+            15,
+            102
+          ],
+          "edge_ids": [
+            94
+          ],
+          "score": 1.8940844535827637,
+          "log_score": 0.6387355838345963,
+          "node_labels": [
+            "15",
+            "102"
+          ],
+          "source": 15
+        },
+        {
+          "nodes": [
+            15,
+            25
+          ],
+          "edge_ids": [
+            91
+          ],
+          "score": 1.6985515356063843,
+          "log_score": 0.5297758499929835,
+          "node_labels": [
+            "15",
+            "25"
+          ],
+          "source": 15
+        }
+      ]
+    },
+    {
+      "time_index": 83,
+      "prediction_day": "930",
+      "node_threshold_validation_selected": 0.7999999999999999,
+      "risk_scope_indices": [
+        9,
+        58,
+        89,
+        90,
+        111
+      ],
+      "top_nodes": [
+        {
+          "index": 9,
+          "label": "9",
+          "probability": 0.9753124713897705
+        },
+        {
+          "index": 89,
+          "label": "89",
+          "probability": 0.8986170291900635
+        },
+        {
+          "index": 111,
+          "label": "111",
+          "probability": 0.8670138716697693
+        },
+        {
+          "index": 90,
+          "label": "90",
+          "probability": 0.8506863713264465
+        },
+        {
+          "index": 58,
+          "label": "58",
+          "probability": 0.8267579078674316
+        },
+        {
+          "index": 66,
+          "label": "66",
+          "probability": 0.7849811315536499
+        },
+        {
+          "index": 68,
+          "label": "68",
+          "probability": 0.7618363499641418
+        },
+        {
+          "index": 104,
+          "label": "104",
+          "probability": 0.7320080399513245
+        },
+        {
+          "index": 102,
+          "label": "102",
+          "probability": 0.70647132396698
+        },
+        {
+          "index": 84,
+          "label": "84",
+          "probability": 0.6991814374923706
+        }
+      ],
+      "paths": [
+        {
+          "nodes": [
+            9,
+            89
+          ],
+          "edge_ids": [
+            57
+          ],
+          "score": 2.812969446182251,
+          "log_score": 1.0342406678000473,
+          "node_labels": [
+            "9",
+            "89"
+          ],
+          "source": 9
+        },
+        {
+          "nodes": [
+            9,
+            26
+          ],
+          "edge_ids": [
+            55
+          ],
+          "score": 2.61037278175354,
+          "log_score": 0.9594930393936788,
+          "node_labels": [
+            "9",
+            "26"
+          ],
+          "source": 9
+        },
+        {
+          "nodes": [
+            9,
+            22
+          ],
+          "edge_ids": [
+            54
+          ],
+          "score": 2.235858917236328,
+          "log_score": 0.8046254572540595,
+          "node_labels": [
+            "9",
+            "22"
+          ],
+          "source": 9
+        },
+        {
+          "nodes": [
+            9,
+            111
+          ],
+          "edge_ids": [
+            59
+          ],
+          "score": 1.9158231019973755,
+          "log_score": 0.6501473485625865,
+          "node_labels": [
+            "9",
+            "111"
+          ],
+          "source": 9
+        },
+        {
+          "nodes": [
+            9,
+            106
+          ],
+          "edge_ids": [
+            58
+          ],
+          "score": 0.9487273097038269,
+          "log_score": -0.05263386654898552,
+          "node_labels": [
+            "9",
+            "106"
+          ],
+          "source": 9
+        },
+        {
+          "nodes": [
+            58,
+            66
+          ],
+          "edge_ids": [
+            348
+          ],
+          "score": 1.670729398727417,
+          "log_score": 0.5132602967793273,
+          "node_labels": [
+            "58",
+            "66"
+          ],
+          "source": 58
+        },
+        {
+          "nodes": [
+            58,
+            68
+          ],
+          "edge_ids": [
+            349
+          ],
+          "score": 1.6606158018112183,
+          "log_score": 0.5071884985244851,
+          "node_labels": [
+            "58",
+            "68"
+          ],
+          "source": 58
+        },
+        {
+          "nodes": [
+            58,
+            79
+          ],
+          "edge_ids": [
+            350
+          ],
+          "score": 0.98042231798172,
+          "log_score": -0.019771863428037988,
+          "node_labels": [
+            "58",
+            "79"
+          ],
+          "source": 58
+        },
+        {
+          "nodes": [
+            58,
+            110
+          ],
+          "edge_ids": [
+            353
+          ],
+          "score": 0.40380722284317017,
+          "log_score": -0.9068176860836555,
+          "node_labels": [
+            "58",
+            "110"
+          ],
+          "source": 58
+        },
+        {
+          "nodes": [
+            58,
+            105
+          ],
+          "edge_ids": [
+            352
+          ],
+          "score": 0.3755209445953369,
+          "log_score": -0.9794410314497558,
+          "node_labels": [
+            "58",
+            "105"
+          ],
+          "source": 58
+        }
+      ]
+    }
+  ]
+}
